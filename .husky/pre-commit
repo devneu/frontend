@@ -1,0 +1,46 @@
+#!/bin/sh
+ "$(dirname "$0")/_/husky.sh"
+
+npm test
+
+
+#Check tsconfig standarts
+
+npm run check-types ||
+{
+  echo 'Failed Type check.
+
+  Are you seriously trying'
+  false;
+}
+
+
+#Check prettier standarts
+
+npm run check-format ||
+{
+  echo 'Failed Type check.
+
+  Are you seriously trying'
+  false;
+}
+
+#Check eslint standarts
+
+npm run check-lint ||
+{
+  echo 'Failed Type check.
+
+  Are you seriously trying'
+  false;
+}
+
+#Check passes
+
+npm run build ||
+{
+  echo 'Failed Type check.
+
+  Are you seriously trying'
+
+}
