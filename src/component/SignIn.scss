@@ -1,0 +1,63 @@
+.SignInWrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SignInBlockFlex {
+  width: 60%;
+  height: 500px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ImgBlock {
+  height: 100%;
+  width: 50%;
+  background-color: darkmagenta;
+  border-radius: 20px 0px 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: 346.275px;
+  }
+}
+.FormBlock {
+  height: 100%;
+  text-align: center;
+  width: 50%;
+  background-color: lightseagreen;
+  border-radius: 0px 20px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input, button {
+      margin: 5px 0px;
+    }
+
+    hr {
+      width: 100%;
+    }
+  }
+}
+
+.errorMassage {
+  color: darkred;
+  text-align: left;
+  padding: 2px 2px;
+  font-size: 13px;
+  width: 50%;
+  background-color: darkorange;
+  border-radius: 5px;
+}
