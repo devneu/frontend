@@ -7,7 +7,11 @@ import store from './store';
 import { incrementValue, decrementValue } from './actions'
 
 const mapStateToProps = (state: CounterState) => {
-  return state
+
+  console.log(state);
+  return {
+    state
+  };
 }
 
 const mapDispatchToProps = (dispatch: typeof store.dispatch) => {
@@ -17,11 +21,27 @@ const mapDispatchToProps = (dispatch: typeof store.dispatch) => {
   }
 }
 
-const connector = connect(mapStateToProps, mapDispatchToProps);
-type PropsFromRedux = ConnectedProps<typeof connector>;
-interface Props extends PropsFromRedux {
-  state?: CounterState,
-};
+// type PropsFromRedux = ConnectedProps<typeof connector>;
+
+// interface Props extends PropsFromRedux {
+//   state: CounterState,
+// };
+
+interface StateProps {
+  state: any;
+}
+
+interface DispatchProps {
+  onIncrement: () => void;
+  onDecrement: () => void;
+}
+
+interface OwnProps {
+
+}
+
+
+type Props = StateProps & DispatchProps & OwnProps; // TODO: read https://react-redux.js.org/using-react-redux/usage-with-typescript#manually-typing-connect
 
 const App = ({ state, onIncrement, onDecrement }: Props): ReactElement => {
   return (
@@ -51,4 +71,4 @@ const App = ({ state, onIncrement, onDecrement }: Props): ReactElement => {
 
 
 
-export default connector(App);
+export default connect<StateProps, DispatchProps, OwnProps, CounterState>(mapStateToProps, mapDispatchToProps)(App);
