@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1cee0c8-93ca-40a6-9c66-08056c90f4d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/SignIn.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frontend.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +68,7 @@
       <workItem from="1626782330443" duration="1781000" />
       <workItem from="1626784155449" duration="1772000" />
       <workItem from="1626785955600" duration="942000" />
+      <workItem from="1626898109979" duration="135000" />
     </task>
     <servers />
   </component>
@@ -82,7 +86,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="DEV-24-Create-Sign-In-Page-V2" />
+                        <option value="DEV-24-Create-Sign-in-Page" />
                       </list>
                     </value>
                   </entry>
@@ -98,6 +102,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="DEV-24-Create-Sign-in-Page" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="DEV-24-Create-Sign-In-Page-V2" />
