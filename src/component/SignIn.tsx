@@ -2,6 +2,8 @@ import React from "react";
 import "./SignIn.scss";
 import logo from "../logo.svg";
 import {useForm, SubmitHandler} from "react-hook-form";
+import GoogleLogin from 'react-google-login';
+import FacebookLogin from 'react-facebook-login';
 
 type Inputs = {
     email: string,
@@ -18,7 +20,15 @@ const SignIn = () => {
         formState: {errors}
     } = useForm();
 
-    const onSubmit: SubmitHandler<Inputs> = data => console.log("delivered: ", data);
+    const onSubmit: SubmitHandler<Inputs> = data => console.log("login button basic: ", data);
+
+    const responseGoogle = (response: any) => {
+        console.log("google profileInfo: ", response.profileObj);
+    }
+    const responseFacebook = (response: any) => {
+        console.log("facebook profileInfo: ", response);
+    }
+
 
     return (
         <div className="SignInWrapper">
@@ -41,8 +51,22 @@ const SignIn = () => {
 
                         <hr/>
 
-                        <button>Login with google</button>
-                        <button>Login with facebook</button>
+                        <GoogleLogin
+                            clientId="459389646319-e4g64jlp1jfpi66h3kgv1uuek71la5b0.apps.googleusercontent.com"
+                            buttonText="Login"
+                            onSuccess={responseGoogle}
+                            onFailure={responseGoogle}
+                            cookiePolicy={'single_host_origin'}
+                        />
+
+                        <FacebookLogin
+                            appId="226836885848996"
+                            autoLoad={false}
+                            fields="name,email,picture"
+                            callback={responseFacebook}
+                            cssClass="my-facebook-button-class"
+                            icon="fa-facebook"
+                        />
 
                         <hr/>
 
