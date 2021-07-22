@@ -1,12 +1,12 @@
 #!/bin/sh
  "$(dirname "$0")/_/husky.sh"
 
-npm test
+yarn test
 
 
 #Check tsconfig standarts
 
-npm run check-types ||
+yarn run check-types ||
 {
   echo 'Failed Type check.
 
@@ -17,7 +17,7 @@ npm run check-types ||
 
 #Check prettier standarts
 
-npm run check-format ||
+yarn run check-format ||
 {
   echo 'Failed Type check.
 
@@ -27,7 +27,7 @@ npm run check-format ||
 
 #Check eslint standarts
 
-npm run check-lint ||
+yarn run check-lint ||
 {
   echo 'Failed Type check.
 
@@ -37,7 +37,7 @@ npm run check-lint ||
 
 #Check passes
 
-npm run build ||
+yarn run build ||
 {
   echo 'Failed Type check.
 

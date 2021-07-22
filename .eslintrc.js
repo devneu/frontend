@@ -2,9 +2,9 @@ module.exports = {
   'env': {
     'browser': true,
     'es2021': true,
-  '  node': true,
+    'node': true,
   },
-  // 'extends': ["plugin:react/recommended", "google", "prettier"],
+  'extends': ["plugin:react/recommended", "google", "prettier"],
   'parser': '@typescript-eslint/parser',
   'parserOptions': {
     'ecmaFeatures': {
