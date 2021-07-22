@@ -1,7 +1,6 @@
 import { INCREMENT_VALUE, DECREMENT_VALUE } from '../actiontypes';
 
 const incrementValue = () => {
-
    return {
       type: INCREMENT_VALUE,
    }

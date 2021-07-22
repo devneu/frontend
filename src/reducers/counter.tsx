@@ -17,7 +17,6 @@ const counterReducer = function (state: InitialState, action: AnyAction): ICount
    switch (action.type) {
 
       case INCREMENT_VALUE:
-
          return {
             value: state.counter.value + 1
          };

@@ -8,8 +8,6 @@ export interface InitialState {
    }
 }
 const reducer = (state: any, action: AnyAction) => {
-   console.log(action.type);
-
    return {
       counter: counterReducer(state, action)
    }

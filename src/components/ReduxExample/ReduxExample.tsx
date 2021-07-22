@@ -38,6 +38,6 @@ const ReduxExample = ({ state, onIncrement, onDecrement }: Props): ReactElement 
    )
 
 }
-type Props = StateProps & DispatchProps & OwnProps; // TODO: read https://react-redux.js.org/using-react-redux/usage-with-typescript#manually-typing-connect
+type Props = StateProps & DispatchProps & OwnProps;
 
 export default connect<StateProps, DispatchProps, OwnProps, InitialState>(mapStateToProps, mapDispatchToProps)(ReduxExample);
