@@ -2,6 +2,7 @@ import React, {lazy, Suspense}from 'react'
 
 import { Switch, Route } from 'react-router-dom'
 import './App.scss';
+
 import Navigation from './components/Navigation'
 import Fallback from './components/Fallback/Fallback'
 
