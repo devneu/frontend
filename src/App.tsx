@@ -2,12 +2,12 @@ import React, {lazy, Suspense}from 'react'
 
 import { Switch, Route } from 'react-router-dom'
 import './App.scss';
-import Navigation from './Components/Navigation';
-import Fallback from './Components/Fallback/Fallback'
+import Navigation from './components/Navigation'
+import Fallback from './components/Fallback/Fallback'
 
-const HomeView  = lazy(()=> import('./View/HomeView/HomeView' /*webpackChunkName: "HomePage" */ ))
-const ChatView = lazy(() => import('./View/ChatView/ChatView' /*webpackChunkName: "ChatPage" */))
-const WeatherView  = lazy(()=> import('./View/WeatherView/WeatherView' /*webpackChunkName: "WeatherPage" */ ))
+const Home  = lazy(()=> import('./pages/Home/Home' /*webpackChunkName: "HomePage" */ ))
+const Chat = lazy(() => import('./pages/Chat/Chat' /*webpackChunkName: "ChatPage" */))
+const Weather  = lazy(()=> import('./pages/Weather/Weather' /*webpackChunkName: "WeatherPage" */ ))
 
 function App() {
   return (
@@ -18,13 +18,13 @@ function App() {
         
 <Switch>
       <Route exact path='/'>
-        <HomeView/>
+        <Home/>
         </Route>
         <Route path='/chat'>
-          <ChatView/>
+          <Chat/>
         </Route>
         <Route path='/weather'>
-          <WeatherView/>
+          <Weather/>
         </Route>
     </Switch>
       </main>
