@@ -1,31 +1,42 @@
-import React, { ReactElement } from 'react'
-import logo from './logo.svg';
+import React, {ReactElement, lazy, Suspense } from 'react';
+import { Switch, Route } from 'react-router-dom'
 import './App.scss';
 import ReduxExample from './components/redux-example'
 
+import Navigation from './components/Navigation'
+import Fallback from './components/Fallback/Fallback'
 
-const App = (): ReactElement => {
+const Home  = lazy(()=> import('./pages/Home/Home' /*webpackChunkName: "HomePage" */ ))
+const Chat = lazy(() => import('./pages/Chat/Chat' /*webpackChunkName: "ChatPage" */))
+const Weather  = lazy(()=> import('./pages/Weather/Weather' /*webpackChunkName: "WeatherPage" */ ))
+
+function App(): ReactElement {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <ReduxExample />
-      </header>
-    </div>
+    <>
+      <Navigation />
+      <Suspense fallback={<Fallback />}>
+    <main>
+
+<Switch>
+      <Route exact path='/'>
+        <Home/>
+        </Route>
+        <Route path='/chat'>
+          <Chat/>
+        </Route>
+        <Route path='/weather'>
+          <Weather/>
+        </Route>
+    </Switch>
+
+      <ReduxExample />
+      </main>
+      </Suspense>
+
+
+
+      </>
   );
 }
-
-
 
 export default App;
