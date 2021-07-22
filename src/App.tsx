@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react'
 import logo from './logo.svg';
 import './App.scss';
-import ReduxExample from './components/redux-example'
+import ReduxExampleContainer from './components/redux-example'
 
 
 const App = (): ReactElement => {
@@ -20,7 +20,7 @@ const App = (): ReactElement => {
         >
           Learn React
         </a>
-        <ReduxExample />
+        <ReduxExampleContainer />
       </header>
     </div>
   );

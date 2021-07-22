@@ -1,18 +1,14 @@
-import { CounterActionTypes } from '../actiontypes';
+enum CounterActionTypes {
+   INCREMENT = "[Counter]: Increment",
+   DECREMENT = "[Counter]: Decrement",
+}
 
 class CounterActions {
-   static incrementValue = () => {
-      return {
-         type: CounterActionTypes.INCREMENT,
-      }
-   };
-   static decrementValue = () => {
-      return {
-         type: CounterActionTypes.DECREMENT,
-      }
-   }
+   static incrementValue = () => ({ type: CounterActionTypes.INCREMENT });
+   static decrementValue = () => ({ type: CounterActionTypes.DECREMENT });
 }
 
 export {
+   CounterActionTypes,
    CounterActions
 }

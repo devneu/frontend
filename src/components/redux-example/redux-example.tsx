@@ -1,11 +1,16 @@
-import React, { Component } from 'react'
+import { ReactElement } from 'react'
 import { connect } from 'react-redux';
-import { IInitialState } from '../../reducers/index';
+import { createSelector } from 'reselect';
+import { InitialState } from '../../reducers/index';
 import { CounterActions } from '../../actions';
 
-const mapStateToProps = ({ counter: { value } }: IInitialState) => {
+const valueSelector = createSelector(
+   (state: InitialState) => state.counter.value,
+   value => value
+);
+const mapStateToProps = (state: InitialState) => {
    return {
-      value
+      value: valueSelector(state)
    };
 }
 
@@ -27,17 +32,15 @@ interface OwnProps { }
 
 type Props = StateProps & DispatchProps & OwnProps;
 
-class ReduxExample extends Component<Props> {
-   render() {
-      const { value, onIncrement, onDecrement } = this.props;
-      return (
-         <div>
-            <h1>Hello world React & Redux! {value}</h1>
-            <button onClick={onIncrement}>Increment</button>
-            <button onClick={onDecrement}>Decrement</button>
-         </div>
-      )
-   }
-}
+const ReduxExample = ({ value, onIncrement, onDecrement }: Props): ReactElement => {
+   return (
+      <div>
+         <h1>Hello world React & Redux! {value}</h1>
+         <button onClick={onIncrement}>Increment</button>
+         <button onClick={onDecrement}>Decrement</button>
+      </div>
+   )
 
-export default connect(mapStateToProps, mapDispatchToProps)(ReduxExample);
+}
+const ReduxExampleContainer: any = connect(mapStateToProps, mapDispatchToProps)(ReduxExample);
+export default ReduxExampleContainer;

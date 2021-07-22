@@ -1,5 +1,6 @@
-import { CounterActions } from './CounterActions';
+import { CounterActions, CounterActionTypes } from './CounterActions';
 
 export {
-   CounterActions
+   CounterActions,
+   CounterActionTypes
 }

@@ -3,7 +3,7 @@ import todo from './todo';
 import { combineReducers } from 'redux';
 
 
-export interface IInitialState {
+export interface InitialState {
    counter: {
       value: number,
    },

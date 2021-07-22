@@ -1,14 +1,14 @@
 import { AnyAction } from 'redux';
-import { CounterActionTypes } from '../actiontypes';
+import { CounterActionTypes } from '../actions';
 
-export interface ICounterState {
+export interface CounterStateInterface {
    value: number
 }
-const CounterState: ICounterState = {
+const CounterState: CounterStateInterface = {
    value: 0,
 }
 
-const counterReducer = function (state: ICounterState = CounterState, action: AnyAction): ICounterState {
+const counterReducer = function (state: CounterStateInterface = CounterState, action: AnyAction): CounterStateInterface {
 
    switch (action.type) {
 
