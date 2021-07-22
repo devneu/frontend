@@ -1,13 +1,4 @@
-const incrementValue = () => {
-   return {
-      type: 'INCREMENT_VALUE',
-   }
-}
-const decrementValue = () => {
-   return {
-      type: 'DECREMENT_VALUE',
-   }
-}
+import { incrementValue, decrementValue } from './CounterActions';
 
 export {
    incrementValue,
