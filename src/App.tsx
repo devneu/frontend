@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react'
 import logo from './logo.svg';
 import './App.scss';
-import ReduxExample from './components/ReduxExample'
+import ReduxExample from './components/redux-example'
 
 
 const App = (): ReactElement => {

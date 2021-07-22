@@ -1,6 +1,5 @@
-import { incrementValue, decrementValue } from './CounterActions';
+import { CounterActions } from './CounterActions';
 
 export {
-   incrementValue,
-   decrementValue,
+   CounterActions
 }

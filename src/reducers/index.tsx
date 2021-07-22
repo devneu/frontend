@@ -1,16 +1,17 @@
 import counterReducer from './counter';
-import { AnyAction } from 'redux';
+import todo from './todo';
+import { combineReducers } from 'redux';
 
 
-export interface InitialState {
+export interface IInitialState {
    counter: {
       value: number,
-   }
+   },
 }
-const reducer = (state: any, action: AnyAction) => {
-   return {
-      counter: counterReducer(state, action)
-   }
-}
+
+const reducer = combineReducers({
+   counter: counterReducer,
+   todo
+})
 
 export default reducer

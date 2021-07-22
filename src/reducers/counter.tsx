@@ -1,31 +1,27 @@
 import { AnyAction } from 'redux';
-import { INCREMENT_VALUE, DECREMENT_VALUE } from '../actiontypes';
-import { InitialState } from './index'
+import { CounterActionTypes } from '../actiontypes';
 
 export interface ICounterState {
    value: number
 }
+const CounterState: ICounterState = {
+   value: 0,
+}
 
-const counterReducer = function (state: InitialState, action: AnyAction): ICounterState {
+const counterReducer = function (state: ICounterState = CounterState, action: AnyAction): ICounterState {
 
-
-   if (state === undefined) {
-      return {
-         value: 0,
-      }
-   }
    switch (action.type) {
 
-      case INCREMENT_VALUE:
+      case CounterActionTypes.INCREMENT:
          return {
-            value: state.counter.value + 1
+            value: state.value + 1
          };
-      case DECREMENT_VALUE:
+      case CounterActionTypes.DECREMENT:
          return {
-            value: state.counter.value - 1
+            value: state.value - 1
          };
       default:
-         return state.counter;
+         return state;
    }
 };
 

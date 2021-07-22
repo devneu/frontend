@@ -1,17 +1,18 @@
-import { INCREMENT_VALUE, DECREMENT_VALUE } from '../actiontypes';
+import { CounterActionTypes } from '../actiontypes';
 
-const incrementValue = () => {
-   return {
-      type: INCREMENT_VALUE,
-   }
-}
-const decrementValue = () => {
-   return {
-      type: DECREMENT_VALUE,
+class CounterActions {
+   static incrementValue = () => {
+      return {
+         type: CounterActionTypes.INCREMENT,
+      }
+   };
+   static decrementValue = () => {
+      return {
+         type: CounterActionTypes.DECREMENT,
+      }
    }
 }
 
 export {
-   incrementValue,
-   decrementValue,
+   CounterActions
 }

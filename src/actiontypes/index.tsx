@@ -1,2 +1,6 @@
-export const INCREMENT_VALUE: string = "INCREMENT_VALUE";
-export const DECREMENT_VALUE: string = "DECREMENT_VALUE";
+enum CounterActionTypes {
+   INCREMENT = "[Counter]: Increment",
+   DECREMENT = "[Counter]: Decrement",
+}
+
+export { CounterActionTypes }
