@@ -14,7 +14,7 @@ export default function Navigation() {
     <Header style={{ position: "fixed", zIndex: 1, width: "100%" }}>
       <nav className="navigation">
         <DeploymentUnitOutlined
-          className="navigation--logo"
+          className="navigation-logo"
           style={{ fontSize: "30px", color: "#ffffff" }}
         />
         <Menu theme="dark" mode="horizontal" selectedKeys={location.pathname}>
