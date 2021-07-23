@@ -1,10 +1,11 @@
 import { createSelector } from 'reselect';
 import { InitialState } from '../reducers/index';
-
+import { CounterState } from '../reducers/counter';
 class CounterSelectors {
+   static domainSelector = (state: InitialState) => state.counter;
    static valueSelector = createSelector(
-      (state: InitialState) => state.counter.value,
-      value => value
+      CounterSelectors.domainSelector,
+      (state: CounterState) => state.value
    )
 }
 
