@@ -9,7 +9,7 @@ import { DeploymentUnitOutlined } from "@ant-design/icons";
 const { Header } = Layout;
 
 export default function Navigation() {
-  const [currentPage, setCurrentPage] = useState("bla");
+  const [currentPage, setCurrentPage] = useState(null);
   const location = useLocation();
 
   const handleCurrentPageNumber = useCallback(() => {
