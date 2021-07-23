@@ -12,9 +12,9 @@ export default function Navigation() {
 
   return (
     <Header style={{ position: "fixed", zIndex: 1, width: "100%" }}>
-      <nav className="Navigation">
+      <nav className="navigation">
         <DeploymentUnitOutlined
-          className="Navigation__logo"
+          className="navigation--logo"
           style={{ fontSize: "30px", color: "#ffffff" }}
         />
         <Menu theme="dark" mode="horizontal" selectedKeys={location.pathname}>
