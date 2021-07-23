@@ -30,9 +30,6 @@ function App() {
     </Switch>
       </main>
       </Suspense>
-      
-      
-    
       </>
   );
 }
