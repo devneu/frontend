@@ -3,19 +3,16 @@ import { connect } from 'react-redux';
 import CounterSelectors from '../../selectors/counter'
 import { InitialState } from '../../reducers/index';
 import { CounterActions } from '../../actions';
+import { OwnProps } from './ReduxExample';
 
-interface StateProps {
+export interface StateProps {
    value: number
 }
 
-interface DispatchProps {
+export interface DispatchProps {
    onIncrement: () => void;
    onDecrement: () => void;
 }
-
-interface OwnProps { }
-
-export type Props = StateProps & DispatchProps & OwnProps;
 
 const mapStateToProps = (state: InitialState) => {
    return {

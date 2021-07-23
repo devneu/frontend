@@ -1,6 +1,8 @@
 import { ReactElement } from 'react'
-import { Props } from './ReduxExampleContainer'
+import { StateProps, DispatchProps } from './ReduxExampleContainer';
 
+export interface OwnProps { }
+type Props = StateProps & DispatchProps & OwnProps;
 
 const ReduxExample = ({ value, onIncrement, onDecrement }: Props): ReactElement => {
    return (

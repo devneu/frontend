@@ -1,7 +1,7 @@
 import React, { ReactElement, lazy, Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom'
 import './App.scss';
-import ReduxExampleContainer from './components/ReduxExampleContainer'
+import ReduxExampleContainer from './components/ReduxExample'
 
 import Navigation from './components/Navigation'
 import Fallback from './components/Fallback/Fallback'
