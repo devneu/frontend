@@ -32,20 +32,20 @@ const SignIn = () => {
 
 
     return (
-        <div className="SignInWrapper">
-            <div className="SignInBlockFlex">
-                <div className="ImgBlock">
+        <div className="sign-in-wrapper">
+            <div className="sign-in-block-flex">
+                <div className="img-block">
                     <img src={logo}/>
                 </div>
-                <div className="FormBlock">
+                <div className="form-block">
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <h1>Hello !</h1>
 
                         <input type="text" placeholder="Enter your mail..." {...register("email", {required: true, maxLength: 50, pattern: avaibleSymb})}/>
-                        {errors.email && <span className="errorMassage"><i>This input is required , maximum length is 50 symbols and has such template as: expample.exam@gmail.com</i></span>}
+                        {errors.email && <span className="error-massage"><i>This input is required , maximum length is 50 symbols and has such template as: expample.exam@gmail.com</i></span>}
 
                         <input type="password" placeholder="Password" {...register("password", {required: true})}/>
-                        {errors.password && <span className="errorMassage"><i>This input is required</i></span>}
+                        {errors.password && <span className="error-massage"><i>This input is required</i></span>}
 
                         <label><input type="checkbox" {...register("checkBoxflag")}/>Remember me</label>
                         <input type="submit" value="login"/>
