@@ -1,0 +1,21 @@
+.page404_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    h1 {
+        font-size: 8rem;
+        margin-bottom: 0;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        opacity: .5;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
