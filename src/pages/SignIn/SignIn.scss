@@ -1,12 +1,12 @@
 $border-size: 5px 0px 0px 5px;
 $width: 100%;
 
-.SignInWrapper { // wrapper (parent tag)
+.sign-in-wrapper { // wrapper (parent tag)
   width: $width;
   padding: 20px 0px;
   background-color: #0050b3;
 
-  .ImgBlock { // block with img
+  .img-block { // block with img
     border-radius: $border-size;
     max-width: 500px;
 
@@ -20,7 +20,7 @@ $width: 100%;
     }
   }
 
-  .FormBlock { // // block with form
+  .form-block { // // block with form
     width: $width;
     max-width: 500px;
     background-color: white;
@@ -51,7 +51,7 @@ $width: 100%;
         border-radius: 20px;
       }
 
-      .errorMassage { // block with error massage (react-hook-form)
+      .error-message { // block with error massage (react-hook-form)
         color: white;
         padding: 2px 2px;
         margin: 5px;

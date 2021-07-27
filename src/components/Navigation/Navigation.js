@@ -33,6 +33,12 @@ export default function Navigation() {
           <Menu.Item key="/redux">
             <NavLink to="/redux">Redux</NavLink>
           </Menu.Item>
+          <Menu.Item key="/new-pass">
+            <NavLink to="/new-pass">Forgot Password</NavLink>
+          </Menu.Item>
+          <Menu.Item key="/create-acc">
+            <NavLink to="/create-acc">Create Account</NavLink>
+          </Menu.Item>
         </Menu>
       </nav>
     </Header>
