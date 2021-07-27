@@ -30,8 +30,8 @@ export default function Navigation() {
           <Menu.Item key="/signIn">
             <NavLink to="/signIn">Sign In</NavLink>
           </Menu.Item>
-          <Menu.Item key="/redux">
-            <NavLink to="/redux">Redux Example</NavLink>
+          <Menu.Item key="/redux-example">
+            <NavLink to="/redux-example">Redux Example</NavLink>
           </Menu.Item>
           <Menu.Item key="/forgot-password">
             <NavLink to="/forgot-password">Forgot Password</NavLink>

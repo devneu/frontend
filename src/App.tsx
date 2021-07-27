@@ -7,7 +7,7 @@ import Navigation from './components/Navigation'
 import Fallback from './components/Fallback/Fallback'
 import SignIn from "./pages/SignIn/SignIn";
 import SignOut from "./pages/SignOut/SignOut";
-import ForgotPassword from "./pages/ForgotPass/ForgotPass";
+import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 
 const Home = lazy(() => import('./pages/Home/Home' /*webpackChunkName: "HomePage" */))
 const Chat = lazy(() => import('./pages/Chat/Chat' /*webpackChunkName: "ChatPage" */))
@@ -33,7 +33,7 @@ function App(): ReactElement {
             <Route path='/signIn'>
               <SignIn />
             </Route>
-            <Route path='/redux'>
+            <Route path='/redux-example'>
               <ReduxExampleContainer />
             </Route>
             <Route path='/forgot-password'>
