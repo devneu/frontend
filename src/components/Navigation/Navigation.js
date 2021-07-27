@@ -11,7 +11,7 @@ export default function Navigation() {
   const location = useLocation();
 
   return (
-    <Header style={{ position: "fixed", zIndex: 1, width: "100%" }}>
+    <Header style={{ zIndex: 1, width: "100%" }}>
       <nav className="navigation">
         <DeploymentUnitOutlined
           className="navigation-logo"
@@ -26,6 +26,12 @@ export default function Navigation() {
           </Menu.Item>
           <Menu.Item key="/chat">
             <NavLink to="/chat">Chat</NavLink>
+          </Menu.Item>
+          <Menu.Item key="/signIn">
+            <NavLink to="/signIn">Sign In</NavLink>
+          </Menu.Item>
+          <Menu.Item key="/redux">
+            <NavLink to="/redux">Redux</NavLink>
           </Menu.Item>
         </Menu>
       </nav>

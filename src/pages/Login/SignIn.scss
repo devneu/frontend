@@ -1,0 +1,118 @@
+$border-size: 5px 0px 0px 5px;
+$width: 100%;
+
+.SignInWrapper { // wrapper (parent tag)
+  width: $width;
+  padding: 20px 0px;
+  background-color: #0050b3;
+
+  .ImgBlock { // block with img
+    border-radius: $border-size;
+    max-width: 500px;
+
+
+    img { // img tag
+      width: $width;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: $border-size;
+    }
+  }
+
+  .FormBlock { // // block with form
+    width: $width;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 0px 5px 5px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form { // from tag
+
+      .title-form { // h2 welcome back
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      input, button {
+        margin: 5px 0px;
+      }
+
+      .line {    // hr tag with className line
+        height: 0.1px;
+        background-color: lightgray;
+        border: none;
+      }
+
+
+      .ant-input-affix-wrapper, .ant-input{ // password and email inputs
+        border-radius: 20px;
+      }
+
+      .errorMassage { // block with error massage (react-hook-form)
+        color: white;
+        padding: 2px 2px;
+        margin: 5px;
+        font-size: 13px;
+        width: $width;
+        border-radius: 5px;
+        background-color: #f5222d;
+        text-align: center;
+      }
+
+      .ant-btn-round.ant-btn-lg { // login and google login buttons
+        font-size: 13px;
+      }
+
+      .ant-btn-dangerous { // google login button
+        background-color: #f5222d;
+        color: white;
+
+        &:hover {
+          background-color: #cf1322;
+        }
+      }
+
+      .my-facebook-button-class { // facebook button
+        background-color: #0050b3;
+        border: none;
+        height: 42px;
+        padding: 4px 16px;
+        font-size: 14px;
+        border-radius: 32px;
+        width: $width;
+        color: white;
+        transition: all .5s ease;
+        font-size: 13px;
+
+        &:hover {
+          background-color: #003a8c;
+          cursor: pointer;
+        }
+
+        i {
+          margin-right: 5px;
+        }
+      }
+
+      .footer-link { // link below form
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
