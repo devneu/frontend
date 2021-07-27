@@ -11,7 +11,7 @@ export default function Navigation() {
   const location = useLocation();
 
   return (
-    <Header style={{ zIndex: 1, width: "100%" }}>
+    <Header style={{position: "fixed", zIndex: 1, width: "100%" }}>
       <nav className="navigation">
         <DeploymentUnitOutlined
           className="navigation-logo"
@@ -31,13 +31,13 @@ export default function Navigation() {
             <NavLink to="/signIn">Sign In</NavLink>
           </Menu.Item>
           <Menu.Item key="/redux">
-            <NavLink to="/redux">Redux</NavLink>
+            <NavLink to="/redux">Redux Example</NavLink>
           </Menu.Item>
-          <Menu.Item key="/new-pass">
-            <NavLink to="/new-pass">Forgot Password</NavLink>
+          <Menu.Item key="/forgot-password">
+            <NavLink to="/forgot-password">Forgot Password</NavLink>
           </Menu.Item>
-          <Menu.Item key="/create-acc">
-            <NavLink to="/create-acc">Create Account</NavLink>
+          <Menu.Item key="/sign-out">
+            <NavLink to="/sign-out">Create Account</NavLink>
           </Menu.Item>
         </Menu>
       </nav>

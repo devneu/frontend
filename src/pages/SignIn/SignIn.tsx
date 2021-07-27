@@ -30,38 +30,36 @@ const SignIn = () => {
 
 
     return (
-        <div className="sign-in-wrapper">
+        <div className="sign-in">
             <Row justify="center">
 
-                {/*block with img begin*/}
+
                 <Col className="img-block" xs={0} sm={0} md={10} lg={10} xl={12}>
                     <img src="https://source.unsplash.com/K4mSJ7kc0As/600x800"/>
                 </Col>
-                {/*block with img end*/}
 
-                {/*block with form begin*/}
+
+
                 <Col className="form-block" xs={20} sm={22} md={10} lg={10} xl={12}>
                     <Col span = {18}>
 
-                        {/*Form begin*/}
+
                         <Form onFinish={handleSubmit(onSubmit)}>
 
-                            {/*Caption Form*/}
+
                             <Title className = "title-form" level={2}>Welcome Back!</Title>
 
-                            {/*Email input*/}
+
                             <Form.Item name="email">
                                 <Input className="email" placeholder="Email" {...register("email", {required: true, maxLength: 50, pattern: avaibleSymb})}></Input>
                                 {errors.email && <div className="error-message"><span>This input is required , maximum length is 50 symbols and has such template as: expample.exam@gmail.com</span></div>}
                             </Form.Item>
 
-                            {/*Email input*/}
                             <Form.Item name="password">
                                 <Input.Password className="password" placeholder="Password" {...register("password", {required: true})}></Input.Password>
                                 {errors.password && <div className="error-message"><span>This input is required</span></div>}
                             </Form.Item>
 
-                            {/*Checkbox*/}
                             <Controller
                                 control={control}
                                 name="remeberMe"
@@ -76,14 +74,12 @@ const SignIn = () => {
                                 )}
                             />
 
-                            {/*Button login*/}
                             <Form.Item>
-                                <Button block size = "large" type="primary" htmlType="submit" shape="round">login</Button>
+                                <Button block type="primary" htmlType="submit" shape="round">login</Button>
                             </Form.Item>
 
                             <hr className = "line"/>
 
-                            {/*Google button*/}
                             <Form.Item>
                                 <GoogleLogin
                                     clientId="459389646319-e4g64jlp1jfpi66h3kgv1uuek71la5b0.apps.googleusercontent.com"
@@ -92,13 +88,12 @@ const SignIn = () => {
                                     onFailure={responseGoogle}
                                     cookiePolicy={'single_host_origin'}
                                     render={renderProps => (
-                                        <Button onClick={renderProps.onClick} block danger size = "large" htmlType="submit"
+                                        <Button onClick={renderProps.onClick} block danger htmlType="submit"
                                                 shape="round"><GoogleOutlined/>Login with Google</Button>
                                     )}
                                 />
                             </Form.Item>
 
-                            {/*Facebook button*/}
                             <FacebookLogin
                                 appId="226836885848996"
                                 autoLoad={false}
@@ -110,25 +105,24 @@ const SignIn = () => {
 
                             <hr className = "line"/>
 
-                            {/*Block with links*/}
-                            <div className="footer-link">
+
+                            <div className="footer">
                                 <br/>
-                                <Link href="/new-pass" target="_blank">
+                                <Link href="/forgot-password">
                                     Forgot password ?
                                 </Link>
                                 <br/>
-                                <Link href="/create-acc" target="_blank">
+                                <Link href="/sign-out">
                                     Create an Account!
                                 </Link>
                             </div>
 
                         </Form>
 
-                        {/*Form end*/}
+
                     </Col>
                 </Col>
 
-                {/*block with form end*/}
             </Row>
         </div>
     );

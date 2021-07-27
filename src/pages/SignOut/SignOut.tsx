@@ -1,8 +1,8 @@
-const CreateAcc = () => {
+const SignOut = () => {
     return (
         <div>
             Create Account page
         </div>
     );
 }
-export default CreateAcc;
+export default SignOut;

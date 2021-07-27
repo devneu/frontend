@@ -1,17 +1,17 @@
 $border-size: 5px 0px 0px 5px;
 $width: 100%;
 
-.sign-in-wrapper { // wrapper (parent tag)
+.sign-in {
   width: $width;
   padding: 20px 0px;
   background-color: #0050b3;
 
-  .img-block { // block with img
+  .img-block {
     border-radius: $border-size;
     max-width: 500px;
 
 
-    img { // img tag
+    img {
       width: $width;
       height: 100%;
       object-fit: cover;
@@ -20,7 +20,7 @@ $width: 100%;
     }
   }
 
-  .form-block { // // block with form
+  .form-block {
     width: $width;
     max-width: 500px;
     background-color: white;
@@ -29,9 +29,9 @@ $width: 100%;
     justify-content: center;
     align-items: center;
 
-    form { // from tag
+    form {
 
-      .title-form { // h2 welcome back
+      .title-form {
         text-align: center;
         margin-top: 20px;
       }
@@ -40,18 +40,17 @@ $width: 100%;
         margin: 5px 0px;
       }
 
-      .line {    // hr tag with className line
+      .line {
         height: 0.1px;
         background-color: lightgray;
         border: none;
       }
 
-
-      .ant-input-affix-wrapper, .ant-input{ // password and email inputs
+      .email, .password {
         border-radius: 20px;
       }
 
-      .error-message { // block with error massage (react-hook-form)
+      .error-message {
         color: white;
         padding: 2px 2px;
         margin: 5px;
@@ -62,11 +61,11 @@ $width: 100%;
         text-align: center;
       }
 
-      .ant-btn-round.ant-btn-lg { // login and google login buttons
+      .ant-btn-round.ant-btn-lg {
         font-size: 13px;
       }
 
-      .ant-btn-dangerous { // google login button
+      .ant-btn-dangerous {
         background-color: #f5222d;
         color: white;
 
@@ -75,12 +74,11 @@ $width: 100%;
         }
       }
 
-      .my-facebook-button-class { // facebook button
+      .my-facebook-button-class {
         background-color: #0050b3;
         border: none;
-        height: 42px;
+        height: 32px;
         padding: 4px 16px;
-        font-size: 14px;
         border-radius: 32px;
         width: $width;
         color: white;
@@ -97,7 +95,7 @@ $width: 100%;
         }
       }
 
-      .footer-link { // link below form
+      .footer {
         text-align: center;
         margin-bottom: 20px;
       }
