@@ -24,7 +24,6 @@
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "check-types": "tsc --pretty ",
-    "check-format": "prettier --write src",
     "check-lint": "eslint . --ext ts --ext tsx ",
     "format": "prettier --write .",
     "check-all": "yarn run check-format && yarn run check-lint && yarn run check-types"

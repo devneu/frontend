@@ -4,34 +4,4 @@
 yarn test --watchAll=false
 
 
-#Check tsconfig standarts
-
-yarn run check-types ||
-{
-  echo 'Failed Type check.
-
-  Are you seriously trying'
-  false;
-}
-
-
-#Check prettier standarts
-
-yarn run check-format ||
-{
-  echo 'Failed Type check.
-
-  Are you seriously trying'
-  false;
-}
-
-#Check eslint standarts
-
-yarn run check-lint ||
-{
-  echo 'Failed Type check.
-
-  Are you seriously trying'
-  false;
-}
 
