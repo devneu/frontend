@@ -1,6 +1,6 @@
 import React from "react";
 import "./SignIn.scss";
-import {EMAIL_PATTERN} from "../../components/FormErrorMessage/FormErrorMassage";
+import {EMAIL_PATTERN} from "../../utils/formValidations";
 import FormErrorMessage from "../../components/FormErrorMessage/FormErrorMassage";
 import {Form, Input, Button, Checkbox, Row, Col, Typography} from 'antd';
 import {useForm, SubmitHandler, Controller} from "react-hook-form";
@@ -51,13 +51,13 @@ const SignIn = () => {
 
 
                             <Form.Item name="email">
-                                <Input className="email" placeholder="Email" {...register("email", {required: true, maxLength: 50, pattern: EMAIL_PATTERN})}></Input>
-                                <FormErrorMessage showError={errors.email}>This input is required , maximum length is 50 symbols and has such template as: expample.exam@gmail.com</FormErrorMessage>
+                                <Input className="email" placeholder="Email" {...register("email", {required: "This input is required , maximum length is 50 symbols and has such template as: expample.exam@gmail.com", maxLength: 50, pattern: EMAIL_PATTERN})}></Input>
+                                <FormErrorMessage message={errors.email?.message}/>
                             </Form.Item>
 
                             <Form.Item name="password">
-                                <Input.Password className="password" placeholder="Password" {...register("password", {required: true})}></Input.Password>
-                                <FormErrorMessage showError={errors.password}>This input is required</FormErrorMessage>
+                                <Input.Password className="password" placeholder="Password" {...register("password", {required: "This input is required"})}></Input.Password>
+                                <FormErrorMessage message={errors.password?.message}/>
                             </Form.Item>
 
                             <Controller
