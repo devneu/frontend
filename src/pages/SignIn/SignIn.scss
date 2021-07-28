@@ -2,13 +2,11 @@ $border-size: 5px 0px 0px 5px;
 $width: 100%;
 
 .sign-in {
-  width: $width;
   padding: 20px 0px;
   background-color: #0050b3;
 
   .img-block {
     border-radius: $border-size;
-    max-width: 500px;
 
 
     img {
@@ -21,8 +19,6 @@ $width: 100%;
   }
 
   .form-block {
-    width: $width;
-    max-width: 500px;
     background-color: white;
     border-radius: 0px 5px 5px 0px;
     display: flex;
