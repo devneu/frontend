@@ -30,7 +30,7 @@ function App(): ReactElement {
             <Route path='/weather'>
               <Weather />
             </Route>
-            <Route path='/signIn'>
+            <Route path='/sign-in'>
               <SignIn />
             </Route>
             <Route path='/redux-example'>

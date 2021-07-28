@@ -27,8 +27,8 @@ export default function Navigation() {
           <Menu.Item key="/chat">
             <NavLink to="/chat">Chat</NavLink>
           </Menu.Item>
-          <Menu.Item key="/signIn">
-            <NavLink to="/signIn">Sign In</NavLink>
+          <Menu.Item key="/sign-in">
+            <NavLink to="/sign-in">Sign In</NavLink>
           </Menu.Item>
           <Menu.Item key="/redux-example">
             <NavLink to="/redux-example">Redux Example</NavLink>

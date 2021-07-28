@@ -78,7 +78,7 @@ const SignIn = () => {
                                 <Button block type="primary" htmlType="submit" shape="round">login</Button>
                             </Form.Item>
 
-                            <hr className = "line"/>
+                            <hr className="line"/>
 
                             <Form.Item>
                                 <GoogleLogin
@@ -103,7 +103,7 @@ const SignIn = () => {
                                 icon="fa-facebook"
                             />
 
-                            <hr className = "line"/>
+                            <hr className="line"/>
 
 
                             <div className="footer">
