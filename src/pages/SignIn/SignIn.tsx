@@ -99,7 +99,7 @@ const SignIn = () => {
                                 autoLoad={false}
                                 fields="name,email,picture"
                                 callback={handleFacebookResponse}
-                                cssClass="my-facebook-button-class"
+                                cssClass="facebook-btn"
                                 icon="fa-facebook"
                             />
 
