@@ -11,7 +11,7 @@ export default function Navigation() {
   const location = useLocation();
 
   return (
-    <Header style={{ position: "fixed", zIndex: 1, width: "100%" }}>
+    <Header style={{position: "fixed", zIndex: 1, width: "100%" }}>
       <nav className="navigation">
         <DeploymentUnitOutlined
           className="navigation-logo"
@@ -26,6 +26,18 @@ export default function Navigation() {
           </Menu.Item>
           <Menu.Item key="/chat">
             <NavLink to="/chat">Chat</NavLink>
+          </Menu.Item>
+          <Menu.Item key="/sign-in">
+            <NavLink to="/sign-in">Sign In</NavLink>
+          </Menu.Item>
+          <Menu.Item key="/redux-example">
+            <NavLink to="/redux-example">Redux Example</NavLink>
+          </Menu.Item>
+          <Menu.Item key="/forgot-password">
+            <NavLink to="/forgot-password">Forgot Password</NavLink>
+          </Menu.Item>
+          <Menu.Item key="/sign-out">
+            <NavLink to="/sign-out">Create Account</NavLink>
           </Menu.Item>
         </Menu>
       </nav>
