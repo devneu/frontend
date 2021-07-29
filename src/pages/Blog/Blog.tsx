@@ -1,6 +1,6 @@
 import React from 'react';
 import BlogHeader from '../../components/BlogHeader';
-import './Blog.css';
+import './Blog.scss';
 
 const Blog = () => {
    return (

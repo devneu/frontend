@@ -1,14 +1,14 @@
 import React from 'react';
 import { Typography, PageHeader } from 'antd';
-import './BlogHeader.css'
+import './BlogHeader.scss'
 
 const { Title } = Typography;
 
-type Props = {
+interface BlogHeaderProps {
    title: string,
    subtitle: string
 }
-const BlogHeader = ({ title, subtitle }: Props) => {
+const BlogHeader = ({ title, subtitle }: BlogHeaderProps) => {
    return (
       <PageHeader
          className="blog-header">
