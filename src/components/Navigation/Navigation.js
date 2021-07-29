@@ -27,6 +27,9 @@ export default function Navigation() {
           <Menu.Item key="/chat">
             <NavLink to="/chat">Chat</NavLink>
           </Menu.Item>
+          <Menu.Item key="/blog">
+            <NavLink to="/blog">Blog</NavLink>
+          </Menu.Item>
         </Menu>
       </nav>
     </Header>
