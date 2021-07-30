@@ -26,13 +26,7 @@
     "check-types": "tsc --pretty ",
     "check-lint": "eslint . --ext ts --ext tsx ",
     "format": "prettier --write .",
-    "check-all": "yarn run check-format && yarn run check-lint && yarn run check-types"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "check-all": "yarn run format && yarn run check-lint && yarn run check-types"
   },
   "browserslist": {
     "production": [
