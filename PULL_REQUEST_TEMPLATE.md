@@ -13,5 +13,6 @@ Link to ticket:
 
 ## Checklist
 
-- [ ] Did you add tests?
 - [ ] Did you test it?
+- [ ] Did you add tests?
+- [ ] Did you add to the storybook?
