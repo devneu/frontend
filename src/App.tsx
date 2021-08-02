@@ -8,11 +8,13 @@ import Fallback from './components/Fallback/Fallback'
 import SignIn from "./pages/SignIn/SignIn";
 import SignOut from "./pages/SignOut/SignOut";
 import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
+import ComingSoon from "./pages/ComingSoon/ComingSoon";
 
 const Home = lazy(() => import('./pages/Home/Home' /*webpackChunkName: "HomePage" */))
 const Chat = lazy(() => import('./pages/Chat/Chat' /*webpackChunkName: "ChatPage" */))
 const Weather = lazy(() => import('./pages/Weather/Weather' /*webpackChunkName: "WeatherPage" */))
 const Blog = lazy(() => import('./pages/Blog' /*webpackChunkName: "BlogPage" */))
+
 
 function App(): ReactElement {
   return (
@@ -45,6 +47,9 @@ function App(): ReactElement {
             </Route>
             <Route path='/sign-out'>
               <SignOut />
+            </Route>
+            <Route path='/coming-soon'>
+              <ComingSoon />
             </Route>
           </Switch>
         </main>
