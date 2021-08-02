@@ -1,42 +1,53 @@
+body{
+  &:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #2a5555;
+    opacity: 0.7;
+    z-index: 1;
+  }
+}
 
-.ComingSoon{
- background-color: #2a5555;
+.bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 1920px;
+  min-height: 1080px;
+  z-index: 0;
 }
 
 .coming-soon-header {
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap ;
+  flex-wrap: wrap;
 }
 
-.right-block {
-  height: 100vh;
-  width: 28%;
-  //background: red;
-  justify-content: center;
-
-}
-
-
-.left-block {
+.form-block-coming-soon {
   height: 100vh;
   width: 70%;
   padding: 50px 40px;
   transform: skewX(-9deg);
   transform-origin: top right;
-
+  z-index: 1;
   background-color: darkblue;
-    h1 {
-        font-size: 3.5rem;
-        margin: 50px 40px;
-        color: #fff;
-      }
-      p {
-        margin: 0 40px 0 40px;
-        font-size: 1.2rem;
-        color: #fff;
-      }
+  opacity: 0.9;
+  h1 {
+    font-size: 3.5rem;
+    margin: 50px 40px;
+    color: #fff;
   }
+
+  p {
+    margin: 0 40px 0 40px;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+}
 
 .form {
   box-sizing: border-box;
@@ -44,36 +55,40 @@
   padding-left: 150px;
   padding-top: 150px;
 
-  Input {
+  input {
     padding: 15px;
+    width: 300px;
   }
 
-  Button {
+  button {
     height: 54px;
     margin-left: 20px;
     padding: 1rem;
   }
 }
 
-.form Input {
-  width: 300px;
-}
-
-.right-block{
+.social-links {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-right:20px ;
+  margin-right: 20px;
+  height: 100vh;
+  width: 28%;
+  justify-content: center;
+  z-index: 2;
 }
 
-.social{
+.social {
   height: 50px;
   width: 50px;
   border-radius: 100%;
   margin: 20px;
-  cursor:pointer ;
-  img{
+  cursor: pointer;
+
+  img {
     height: 50px;
     width: 50px;
+    z-index: 5;
+
   }
 }
