@@ -4,7 +4,7 @@ import './BlogHeader.scss'
 
 const { Title } = Typography;
 
-export interface BlogHeaderProps {
+interface BlogHeaderProps {
    title: string,
    subtitle: string
 }
@@ -20,6 +20,8 @@ const BlogHeader = ({ title, subtitle }: BlogHeaderProps) => {
             type="secondary"
             className="blog-header__subtitle">{subtitle}</Title>
       </PageHeader>
+
+
    )
 }
 
