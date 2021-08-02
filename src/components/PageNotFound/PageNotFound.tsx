@@ -1,10 +1,11 @@
 import React from "react";
-import { Empty, Typography } from "antd";
+import { Empty, Typography, Anchor } from "antd";
+import "antd/dist/antd.css";
 import "./PageNotFound.scss";
 import { ArrowLeftOutlined } from "@ant-design/icons";
-import { NavLink } from "react-router-dom";
 
 const { Title, Paragraph, Text } = Typography;
+const { Link } = Anchor;
 
 const PageNotFound = () => {
   return (
@@ -14,17 +15,19 @@ const PageNotFound = () => {
         description={false}
         className="page-not-found"
       >
-        <Title className="title">404</Title>
-        <Text className="text">Page Not Found</Text>
+        <Title level={1}>404</Title>
+        <Text type="secondary">Page Not Found</Text>
         <br />
         <br />
-        <Paragraph className="paragraph">
+        <Paragraph>
           It looks like you found a glitch in the matrix...
         </Paragraph>
-        <NavLink to="/" type="link" className="navLink">
-          <ArrowLeftOutlined className="arrow" />
-          Back to Home Page
-        </NavLink>
+        <div className="link-to-home-page">
+        <ArrowLeftOutlined style={{ color: "#1890FF"}}/>
+        <Anchor>
+          <Link href="/" title="Back to Home Page" />
+        </Anchor>
+          </div>
       </Empty>
     </Typography>
   );
