@@ -9,8 +9,6 @@ function itemRender(current: number, type: 'page' | 'next' | 'prev' | 'jump-prev
    if (type === 'next') {
       return <a>Older</a>;
    }
-   console.log(originalElement);
-
    return originalElement;
 }
 
