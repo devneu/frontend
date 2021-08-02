@@ -20,7 +20,6 @@ const ComingSoon = () => {
                             <Input type="large" placeholder="Enter Email address..."></Input>
                             <Button type="primary">NOTIFY ME!</Button>
                         </div>
-
                     </div>
                     <div className="social-links">
                         <div className="social"><a href="#"><img
