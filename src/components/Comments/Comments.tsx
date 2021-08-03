@@ -4,31 +4,61 @@ import './Comments.scss'
 
 const { TextArea } = Input;
 
-interface SingleCommentProps {
-   children?: ReactNode;
+interface comment {
+   postID: number,
+   commentID: number,
+   replyTo?: number | null,
+   replyes?: comment[] | null,
+   commentText: string,
+   commenterName: string,
+   commenterAvatar?: string | null,
 }
-const SingleComment = ({ children }: SingleCommentProps) => (
-   <Comment
-      actions={[<span key="comment-nested-reply-to">Reply to Commenter</span>]}
-      author={<span className="comments__commentor-name">Commenter Name</span>}
-      avatar={
-         <Avatar className="comments__commentor-avatar"
-            src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
-            alt="Commentor Name"
-         />
-      }
-      content={
-         <p>
-            We supply a series of design principles, practical patterns and high quality design
-            resources (Sketch and Axure).
-         </p>
-      }
-   >
-      {children}
-   </Comment>
-)
+interface SingleCommentProps {
+   comment: comment,
+   children?: ReactNode,
+}
 
-const Comments = () => {
+const SingleComment = ({ children, comment }: SingleCommentProps) => {
+   const { commentText, commenterName, commenterAvatar } = comment;
+   const commenterFirstName: string = commenterName.split(' ')[0];
+   return (
+      <Comment
+         actions={[<span key="comment-nested-reply-to">Reply to {commenterFirstName}</span>]}
+         author={<span className="comments__commentor-name">{commenterName}</span>}
+         avatar={
+            <Avatar className="comments__commentor-avatar"
+               src={commenterAvatar}
+               alt={commenterName}
+            />
+         }
+         content={
+            <p>{commentText}</p>
+         }
+      >
+         {children}
+      </Comment>
+   )
+}
+
+function showComments(commentsList: any) {
+   return commentsList.map((comment: comment) => {
+      const { replyes, commentID } = comment
+      if (Array.isArray(replyes)) {
+         return (
+            <SingleComment
+               key={commentID}
+               comment={comment}>
+               {showComments(comment.replyes)}
+            </SingleComment>
+         )
+      }
+      return <SingleComment
+         key={commentID}
+         comment={comment} />
+   })
+}
+
+const Comments = ({ commentsList }: any) => {
    return (
       <div className="comments">
          <Form className="comments__form">
@@ -43,16 +73,12 @@ const Comments = () => {
          </Form>
 
          <List className="comments__list">
-            <SingleComment>
-               <SingleComment />
-               <SingleComment />
-            </SingleComment>
-            <SingleComment />
+            {
+               showComments(commentsList)
+            }
          </List>
       </div>
    )
 }
-
-
 
 export default Comments
