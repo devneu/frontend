@@ -13,6 +13,7 @@ import ComingSoon from "./pages/ComingSoon/ComingSoon";
 const Home = lazy(() => import('./pages/Home/Home' /*webpackChunkName: "HomePage" */))
 const Chat = lazy(() => import('./pages/Chat/Chat' /*webpackChunkName: "ChatPage" */))
 const Weather = lazy(() => import('./pages/Weather/Weather' /*webpackChunkName: "WeatherPage" */))
+const Blog = lazy(() => import('./pages/Blog' /*webpackChunkName: "BlogPage" */))
 
 
 function App(): ReactElement {
@@ -31,6 +32,9 @@ function App(): ReactElement {
             </Route>
             <Route path='/weather'>
               <Weather />
+            </Route>
+            <Route path='/blog'>
+              <Blog />
             </Route>
             <Route path='/sign-in'>
               <SignIn />
