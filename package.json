@@ -13,7 +13,11 @@
     "@types/react": "^17.0.14",
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.1.8",
+<<<<<<< HEAD
     "@types/react-facebook-login": "^4.1.4",
+=======
+    "@types/react-test-renderer": "^17.0.1",
+>>>>>>> c780167a984dea201244bb1e17811cece0f89a72
     "antd": "^4.16.8",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
@@ -21,7 +25,10 @@
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+<<<<<<< HEAD
     "react-test-renderer": "^17.0.2",
+=======
+>>>>>>> c780167a984dea201244bb1e17811cece0f89a72
     "react-facebook-login": "^4.1.1",
     "react-google-login": "^5.2.2",
     "react-hook-form": "^7.11.1",
