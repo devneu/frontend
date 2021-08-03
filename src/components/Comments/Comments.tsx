@@ -40,25 +40,20 @@ const SingleComment = ({ children, comment }: SingleCommentProps) => {
    )
 }
 
-function showComments(commentsList: any) {
-   return commentsList.map((comment: comment) => {
-      const { replyes, commentID } = comment
-      if (Array.isArray(replyes)) {
-         return (
-            <SingleComment
-               key={commentID}
-               comment={comment}>
-               {showComments(comment.replyes)}
-            </SingleComment>
-         )
-      }
-      return <SingleComment
-         key={commentID}
-         comment={comment} />
-   })
+interface CommentsProps {
+   commentsList?: Array<comment> | null;
 }
 
-const Comments = ({ commentsList }: any) => {
+const Comments = ({ commentsList }: CommentsProps) => {
+
+   let commentsListHTML = <p>No comments yet. Be the first</p>;
+   if (commentsList) {
+      commentsListHTML = (
+         <List className="comments__list">
+            { showComments(commentsList)}
+         </List>
+      )
+   }
    return (
       <div className="comments">
          <Form className="comments__form">
@@ -72,13 +67,27 @@ const Comments = ({ commentsList }: any) => {
             </Form.Item>
          </Form>
 
-         <List className="comments__list">
-            {
-               showComments(commentsList)
-            }
-         </List>
+         {commentsListHTML}
       </div>
    )
+}
+
+function showComments(commentsList: Array<comment>) {
+   return commentsList.map((comment: comment) => {
+      const { replyes, commentID } = comment
+      if (Array.isArray(replyes)) {
+         return (
+            <SingleComment
+               key={commentID}
+               comment={comment}>
+               {showComments(replyes)}
+            </SingleComment>
+         )
+      }
+      return <SingleComment
+         key={commentID}
+         comment={comment} />
+   })
 }
 
 export default Comments
