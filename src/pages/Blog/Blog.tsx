@@ -1,15 +1,17 @@
 import Layout, { Content } from 'antd/lib/layout/layout';
 import BlogHeader from '../../components/BlogHeader';
-import BlogPagination from '../../components/BlogPagination';
+import Pagination from '../../components/Pagination';
 import './Blog.scss';
 
 const Blog = () => {
    return (
       <>
          <BlogHeader
-            title="Post Title"
-            subtitle="Post Subtitle" />
-         <BlogPagination />
+            title="Welcome to our blog"
+            subtitle="This is subtitle. Lorem ipsum dolor sit amet." />
+         <Pagination
+            defaultCurrentPage={1}
+            totalItems={50} />
       </>
    )
 }
