@@ -1,0 +1,305 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Comments Should successfully render 1`] = `
+<div
+  className="comments"
+>
+  <form
+    className="ant-form ant-form-horizontal comments__form"
+    onReset={[Function]}
+    onSubmit={[Function]}
+  >
+    <div
+      className="ant-row ant-form-item"
+      style={Object {}}
+    >
+      <div
+        className="ant-col ant-form-item-control"
+        style={Object {}}
+      >
+        <div
+          className="ant-form-item-control-input"
+        >
+          <div
+            className="ant-form-item-control-input-content"
+          >
+            <textarea
+              className="ant-input"
+              onChange={[Function]}
+              onCompositionEnd={[Function]}
+              onCompositionStart={[Function]}
+              onKeyDown={[Function]}
+              rows={4}
+              style={Object {}}
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+      style={Object {}}
+    >
+      <div
+        className="ant-col ant-form-item-control"
+        style={Object {}}
+      >
+        <div
+          className="ant-form-item-control-input"
+        >
+          <div
+            className="ant-form-item-control-input-content"
+          >
+            <button
+              className="ant-btn ant-btn-primary"
+              onClick={[Function]}
+              type="submit"
+            >
+              <span>
+                Add Comment
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div
+    className="ant-list ant-list-split comments__list"
+  >
+    <div
+      className="ant-spin-nested-loading"
+    >
+      <div
+        className="ant-spin-container"
+      >
+        <div
+          className="ant-comment"
+        >
+          <div
+            className="ant-comment-inner"
+          >
+            <div
+              className="ant-comment-avatar"
+            >
+              <span
+                className="ant-avatar ant-avatar-circle ant-avatar-image comments__commentor-avatar"
+                style={Object {}}
+              >
+                <img
+                  alt="Commentor Name"
+                  onError={[Function]}
+                  src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+                />
+              </span>
+            </div>
+            <div
+              className="ant-comment-content"
+            >
+              <div
+                className="ant-comment-content-author"
+              >
+                <span
+                  className="ant-comment-content-author-name"
+                >
+                  <span
+                    className="comments__commentor-name"
+                  >
+                    Commenter Name
+                  </span>
+                </span>
+              </div>
+              <div
+                className="ant-comment-content-detail"
+              >
+                <p>
+                  We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure).
+                </p>
+              </div>
+              <ul
+                className="ant-comment-actions"
+              >
+                <li>
+                  <span>
+                    Reply to Commenter
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            className="ant-comment-nested"
+          >
+            <div
+              className="ant-comment"
+            >
+              <div
+                className="ant-comment-inner"
+              >
+                <div
+                  className="ant-comment-avatar"
+                >
+                  <span
+                    className="ant-avatar ant-avatar-circle ant-avatar-image comments__commentor-avatar"
+                    style={Object {}}
+                  >
+                    <img
+                      alt="Commentor Name"
+                      onError={[Function]}
+                      src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+                    />
+                  </span>
+                </div>
+                <div
+                  className="ant-comment-content"
+                >
+                  <div
+                    className="ant-comment-content-author"
+                  >
+                    <span
+                      className="ant-comment-content-author-name"
+                    >
+                      <span
+                        className="comments__commentor-name"
+                      >
+                        Commenter Name
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    className="ant-comment-content-detail"
+                  >
+                    <p>
+                      We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure).
+                    </p>
+                  </div>
+                  <ul
+                    className="ant-comment-actions"
+                  >
+                    <li>
+                      <span>
+                        Reply to Commenter
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              className="ant-comment"
+            >
+              <div
+                className="ant-comment-inner"
+              >
+                <div
+                  className="ant-comment-avatar"
+                >
+                  <span
+                    className="ant-avatar ant-avatar-circle ant-avatar-image comments__commentor-avatar"
+                    style={Object {}}
+                  >
+                    <img
+                      alt="Commentor Name"
+                      onError={[Function]}
+                      src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+                    />
+                  </span>
+                </div>
+                <div
+                  className="ant-comment-content"
+                >
+                  <div
+                    className="ant-comment-content-author"
+                  >
+                    <span
+                      className="ant-comment-content-author-name"
+                    >
+                      <span
+                        className="comments__commentor-name"
+                      >
+                        Commenter Name
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    className="ant-comment-content-detail"
+                  >
+                    <p>
+                      We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure).
+                    </p>
+                  </div>
+                  <ul
+                    className="ant-comment-actions"
+                  >
+                    <li>
+                      <span>
+                        Reply to Commenter
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ant-comment"
+        >
+          <div
+            className="ant-comment-inner"
+          >
+            <div
+              className="ant-comment-avatar"
+            >
+              <span
+                className="ant-avatar ant-avatar-circle ant-avatar-image comments__commentor-avatar"
+                style={Object {}}
+              >
+                <img
+                  alt="Commentor Name"
+                  onError={[Function]}
+                  src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+                />
+              </span>
+            </div>
+            <div
+              className="ant-comment-content"
+            >
+              <div
+                className="ant-comment-content-author"
+              >
+                <span
+                  className="ant-comment-content-author-name"
+                >
+                  <span
+                    className="comments__commentor-name"
+                  >
+                    Commenter Name
+                  </span>
+                </span>
+              </div>
+              <div
+                className="ant-comment-content-detail"
+              >
+                <p>
+                  We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure).
+                </p>
+              </div>
+              <ul
+                className="ant-comment-actions"
+              >
+                <li>
+                  <span>
+                    Reply to Commenter
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
