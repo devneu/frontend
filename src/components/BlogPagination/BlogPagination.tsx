@@ -2,11 +2,7 @@ import React from 'react';
 import { Pagination } from 'antd';
 import './BlogPagination.scss'
 
-<<<<<<< HEAD
 function itemRender(current: number, type: 'page' | 'next' | 'prev' | 'jump-prev' | 'jump-next', originalElement: {}) {
-=======
-function itemRender(current: number, type: 'page' | 'next' | 'prev' | 'jump-prev' | 'jump-next', originalElement: any) {
->>>>>>> d32309b (DEV-39. Pagination added to Blog page)
    if (type === 'prev') {
       return <a>Newer</a>;
    }
