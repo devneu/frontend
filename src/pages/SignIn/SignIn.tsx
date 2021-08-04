@@ -1,7 +1,7 @@
 import React from "react";
 import "./SignIn.scss";
 import {EMAIL_PATTERN} from "../../utils/formValidations";
-import FormErrorMessage from "../../components/FormErrorMessage/FormErrorMassage";
+import FormErrorMessage from "../../components/FormErrorMessage/FormErrorMessage";
 import {Form, Input, Button, Checkbox, Row, Col, Typography} from 'antd';
 import {useForm, SubmitHandler, Controller} from "react-hook-form";
 import GoogleLogin from 'react-google-login';

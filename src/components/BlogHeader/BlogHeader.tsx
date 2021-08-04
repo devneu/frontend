@@ -20,8 +20,6 @@ const BlogHeader = ({ title, subtitle }: BlogHeaderProps) => {
             type="secondary"
             className="blog-header__subtitle">{subtitle}</Title>
       </PageHeader>
-
-
    )
 }
 
