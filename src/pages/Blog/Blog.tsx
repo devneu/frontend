@@ -1,4 +1,3 @@
-import Layout, { Content } from 'antd/lib/layout/layout';
 import BlogHeader from '../../components/BlogHeader';
 import Pagination from '../../components/Pagination';
 import './Blog.scss';
@@ -10,8 +9,10 @@ const Blog = () => {
             title="Welcome to our blog"
             subtitle="This is subtitle. Lorem ipsum dolor sit amet." />
          <Pagination
-            defaultCurrentPage={1}
-            totalItems={50} />
+            defaultCurrentPage={5}
+            totalItems={51}
+            currentPage={1}
+            pageSize={10} />
       </>
    )
 }
