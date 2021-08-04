@@ -10,6 +10,7 @@ export interface PaginationProps {
 }
 
 const Pagination = ({ defaultCurrentPage, totalItems, currentPage, pageSize }: PaginationProps) => {
+   currentPage = Math.trunc(currentPage);
    const neededPages = Math.ceil(totalItems / pageSize);
 
    if ((neededPages < currentPage) || (currentPage < 1)) {

@@ -11,7 +11,7 @@ const Blog = () => {
          <Pagination
             defaultCurrentPage={5}
             totalItems={51}
-            currentPage={1}
+            currentPage={1.2}
             pageSize={10} />
       </>
    )
