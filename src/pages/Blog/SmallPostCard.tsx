@@ -1,36 +1,35 @@
-import {Button, Card, Col, Typography} from "antd";
+import {Button, Card, Typography} from "antd";
 import {ArrowRightOutlined} from "@ant-design/icons";
 import React from "react";
+import "./SmallPostCard.scss";
 
-const { Title, Text } = Typography;
-const { Meta } = Card;
+const { Title, Paragraph} = Typography;
 
 interface SmallPostCard {
-    postImg: string,
-    postTitle: string,
-    postText: string,
-    sizeBlock: number
+    post: {
+        postImg: string,
+        postDate: string,
+        postTitle:string,
+        postText: string
+    }
 }
 
 
-const SmallPostCard = ({postImg, postTitle, postText, sizeBlock}: SmallPostCard) => {
+const SmallPostCard = ({post}: SmallPostCard) => {
 
     return (
-        <Col span={sizeBlock}>
             <Card
                 className="post-card"
                 cover={
                     <img alt="card-img"
-                         src={postImg}
+                         src={post.postImg}
                     />
                 }>
-                <Meta description="January 1, 2021"/>
-                <Title level={2}>{postTitle}</Title>
-                <Text className="post-text">{postText}</Text>
-                <br/>
-                <Button type="primary" className="button-card">Read more<ArrowRightOutlined /></Button>
+                <Card.Meta description={post.postDate}/>
+                <Title level={2}>{post.postTitle}</Title>
+                <Paragraph className="post-text">{post.postText}</Paragraph>
+                <Button type="link" href="#" className="button-card">Read more<ArrowRightOutlined /></Button>
             </Card>
-        </Col>
     );
 }
 
