@@ -1,11 +1,11 @@
 import React from "react";
 import "./FormErrorMessage.scss";
 
-interface FormErrorMessageProps {
+interface FormErrorMessage {
     message: string
 }
 
-const FormErrorMessage = ({message}: FormErrorMessageProps):any => {
+const FormErrorMessage = ({message}: FormErrorMessage):any => {
     return message ? <div className="error-message">{message}</div>: "";
 };
 

@@ -1,15 +1,10 @@
-window.matchMedia = window.matchMedia || function() {
-    return {
-        matches: false,
-        addListener: function() {},
-        removeListener: function() {}
-    };
-};
-
-jest.mock('react-facebook-login', () => () => 'FacebookLogin');
-
+import {matchMediaCaller} from "../../utils/setupjest";
 import renderer from 'react-test-renderer';
 import SignIn from './SignIn';
+
+matchMediaCaller();
+
+jest.mock('react-facebook-login', () => () => 'MockFacebookLogin');
 
 describe('SignIn', () => {
     it('Should successfully render', () => {

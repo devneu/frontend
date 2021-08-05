@@ -238,7 +238,7 @@ exports[`SignIn Should successfully render 1`] = `
               </div>
             </div>
           </div>
-          FacebookLogin
+          MockFacebookLogin
           <hr
             className="line"
           />
