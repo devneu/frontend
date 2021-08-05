@@ -78,7 +78,7 @@ exports[`ComingSoon Should successfully render 1`] = `
           href="#"
         >
           <img
-            alt="telgram"
+            alt="telegram"
             src="telegram.png"
           />
         </a>

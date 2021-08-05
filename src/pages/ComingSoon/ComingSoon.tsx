@@ -31,7 +31,7 @@ const ComingSoon = () => {
 
                         <div className="social-link"><a href="#"><img
                             src={telegram}
-                            alt="telgram"/></a></div>
+                            alt="telegram"/></a></div>
                     </div>
                 </header>
         </div>
