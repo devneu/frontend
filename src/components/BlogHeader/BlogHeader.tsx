@@ -4,7 +4,7 @@ import './BlogHeader.scss'
 
 const { Title } = Typography;
 
-interface BlogHeaderProps {
+export interface BlogHeaderProps {
    title: string,
    subtitle: string
 }
