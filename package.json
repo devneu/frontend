@@ -70,23 +70,6 @@
     "check-format": "prettier --write src --loglevel=error",
     "check-all": "yarn run format && yarn run check-lint && yarn run check-types"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "overrides": [
-      {
-        "files": [
-          "**/*.stories.*"
-        ],
-        "rules": {
-          "import/no-anonymous-default-export": "off"
-        }
-      }
-    ]
-  },
-
   "browserslist": {
     "production": [
       ">0.2%",
