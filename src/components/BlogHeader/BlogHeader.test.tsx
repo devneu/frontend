@@ -1,5 +1,6 @@
-import BlogHeader from './BlogHeader';
+import React from 'react';
 import renderer from 'react-test-renderer';
+import BlogHeader from './BlogHeader';
 
 describe('BlogHeader', () => {
   it('Should successfully render', () => {

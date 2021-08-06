@@ -1,12 +1,13 @@
 import React from 'react';
 import './SignIn.scss';
-import { EMAIL_PATTERN } from '../../utils/formValidations';
-import FormErrorMessage from '../../components/FormErrorMessage/FormErrorMassage';
 import { Form, Input, Button, Checkbox, Row, Col, Typography } from 'antd';
-import { useForm, SubmitHandler, Controller } from 'react-hook-form';
+import { useForm, Controller } from 'react-hook-form';
 import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
 import { GoogleOutlined } from '@ant-design/icons';
+import FormErrorMessage from '../../components/FormErrorMessage/FormErrorMassage';
+import { EMAIL_PATTERN } from '../../utils/formValidations';
+
 const { Title, Link } = Typography;
 
 const SignIn = () => {
@@ -17,12 +18,15 @@ const SignIn = () => {
     control,
   } = useForm();
 
+  // eslint-disable-next-line no-console
   const onSubmit = (data: any) => console.log('SignIn basic', data);
 
   const handleGoogleResponse = (response: any) => {
+    // eslint-disable-next-line no-console
     console.log('google profileInfo: ', response.profileObj);
   };
   const handleFacebookResponse = (response: any) => {
+    // eslint-disable-next-line no-console
     console.log('facebook profileInfo: ', response);
   };
 
@@ -30,7 +34,7 @@ const SignIn = () => {
     <div className="sign-in">
       <Row justify="center">
         <Col className="img-block" xs={0} sm={0} md={10} lg={10} xl={9} xxl={8}>
-          <img src="https://source.unsplash.com/K4mSJ7kc0As/600x800" />
+          <img src="https://source.unsplash.com/K4mSJ7kc0As/600x800" alt="Welcome on portal" />
         </Col>
 
         <Col className="form-block" xs={20} sm={22} md={10} lg={10} xl={9} xxl={8}>
@@ -50,7 +54,7 @@ const SignIn = () => {
                     maxLength: 50,
                     pattern: EMAIL_PATTERN,
                   })}
-                ></Input>
+                />
                 <FormErrorMessage message={errors.email?.message} />
               </Form.Item>
 
@@ -59,7 +63,7 @@ const SignIn = () => {
                   className="password"
                   placeholder="Password"
                   {...register('password', { required: 'This input is required' })}
-                ></Input.Password>
+                />
                 <FormErrorMessage message={errors.password?.message} />
               </Form.Item>
 
@@ -88,7 +92,7 @@ const SignIn = () => {
                   buttonText="Login"
                   onSuccess={handleGoogleResponse}
                   onFailure={handleGoogleResponse}
-                  cookiePolicy={'single_host_origin'}
+                  cookiePolicy="single_host_origin"
                   render={(renderProps) => (
                     <Button
                       onClick={renderProps.onClick}

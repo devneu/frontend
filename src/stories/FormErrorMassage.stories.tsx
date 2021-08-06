@@ -5,9 +5,7 @@ import FormErrorMessageProps from '../components/FormErrorMessage/FormErrorMassa
 export default {
   title: 'Form/FormErrorMessageProps',
   component: FormErrorMessageProps,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+  argTypes: { backgroundColor: { control: 'color' } },
 } as ComponentMeta<typeof FormErrorMessageProps>;
 
 const Template: ComponentStory<typeof FormErrorMessageProps> = (args) => (
@@ -15,6 +13,4 @@ const Template: ComponentStory<typeof FormErrorMessageProps> = (args) => (
 );
 
 export const Primary = Template.bind({});
-Primary.args = {
-  message: 'message',
-};
+Primary.args = { message: 'message' };

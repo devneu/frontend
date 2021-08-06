@@ -1,6 +1,6 @@
+import { combineReducers } from 'redux';
 import counterReducer from './counter';
 import todo from './todo';
-import { combineReducers } from 'redux';
 
 export interface InitialState {
   counter: {

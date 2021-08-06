@@ -17,7 +17,7 @@ export default function Navigation() {
           className="navigation-logo"
           style={{ fontSize: '30px', color: '#ffffff' }}
         />
-        <Menu theme="dark" mode="horizontal" selectedKeys={location.pathname}>
+        <Menu theme="dark" mode="horizontal" selectedKeys={[location.pathname]}>
           <Menu.Item key="/">
             <NavLink to="/">Home</NavLink>
           </Menu.Item>

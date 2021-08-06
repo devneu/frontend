@@ -9,10 +9,10 @@ import SignIn from './pages/SignIn/SignIn';
 import SignOut from './pages/SignOut/SignOut';
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 
-const Home = lazy(() => import('./pages/Home/Home' /*webpackChunkName: "HomePage" */));
-const Chat = lazy(() => import('./pages/Chat/Chat' /*webpackChunkName: "ChatPage" */));
-const Weather = lazy(() => import('./pages/Weather/Weather' /*webpackChunkName: "WeatherPage" */));
-const Blog = lazy(() => import('./pages/Blog' /*webpackChunkName: "BlogPage" */));
+const Home = lazy(() => import('./pages/Home/Home' /* webpackChunkName: "HomePage" */));
+const Chat = lazy(() => import('./pages/Chat/Chat' /* webpackChunkName: "ChatPage" */));
+const Weather = lazy(() => import('./pages/Weather/Weather' /* webpackChunkName: "WeatherPage" */));
+const Blog = lazy(() => import('./pages/Blog' /* webpackChunkName: "BlogPage" */));
 
 function App(): ReactElement {
   return (

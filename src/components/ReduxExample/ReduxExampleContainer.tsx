@@ -1,9 +1,8 @@
-import ReduxExample from './ReduxExample';
 import { connect } from 'react-redux';
+import ReduxExample, { OwnProps } from './ReduxExample';
 import CounterSelectors from '../../selectors/counter';
-import { InitialState } from '../../reducers/index';
-import { CounterActions } from '../../actions';
-import { OwnProps } from './ReduxExample';
+import { InitialState } from '../../reducers';
+import { CounterActions } from '../../actions/CounterActions';
 
 export interface StateProps {
   value: number;
@@ -14,11 +13,7 @@ export interface DispatchProps {
   onDecrement: () => void;
 }
 
-const mapStateToProps = (state: InitialState) => {
-  return {
-    value: CounterSelectors.valueSelector(state),
-  };
-};
+const mapStateToProps = (state: InitialState) => ({ value: CounterSelectors.valueSelector(state) });
 
 const mapDispatchToProps = {
   onIncrement: CounterActions.incrementValue,

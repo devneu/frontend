@@ -1,25 +1,6 @@
 #!/bin/sh
  "$(dirname "$0")/_/husky.sh"
 
-yarn run check-types ||
-{
-  echo 'Failed tsc!'
-  false;
-}
-
-yarn run check-format ||
-{
-  echo 'Failed prettier!'
-  false;
-}
-
-
-yarn run check-lint ||
-{
-  echo 'Failed eslint!'
-  false;
-}
-
-yarn test --watchAll=false --coverage
+npx lint-staged
 
 
