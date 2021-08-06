@@ -1,8 +1,6 @@
 #!/bin/sh
  "$(dirname "$0")/_/husky.sh"
 
-yarn test --watchAll=false
-
 yarn run check-types ||
 {
   echo 'Failed tsc!'
@@ -22,5 +20,6 @@ yarn run check-lint ||
   false;
 }
 
+yarn test --watchAll=false --coverage
 
 
