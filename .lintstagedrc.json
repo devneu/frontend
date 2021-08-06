@@ -3,7 +3,7 @@
     "tsc --pretty --jsx react --esModuleInterop --noEmit",
     "prettier --write",
     "eslint --fix",
-    "yarn run test --bail --watchAll=false"
+    "yarn run test --bail --watchAll=false --passWithNoTests"
   ]
 }
 
