@@ -3,5 +3,24 @@
 
 yarn test --watchAll=false
 
+yarn run check-types ||
+{
+  echo 'Failed tsc!'
+  false;
+}
+
+yarn run check-format ||
+{
+  echo 'Failed prettier!'
+  false;
+}
+
+
+yarn run check-lint ||
+{
+  echo 'Failed eslint!'
+  false;
+}
+
 
 

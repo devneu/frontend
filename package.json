@@ -24,8 +24,8 @@
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "check-types": "tsc --pretty ",
-    "check-lint": "eslint . --ext ts --ext tsx ",
-    "format": "prettier --write .",
+    "check-lint": "prettier . --ext ts --ext tsx ",
+    "check-format": "prettier --write src",
     "check-all": "yarn run format && yarn run check-lint && yarn run check-types"
   },
   "browserslist": {
