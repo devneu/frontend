@@ -1,3 +1,3 @@
-import BlogHeader from './BlogHeader'
+import BlogHeader from './BlogHeader';
 
 export default BlogHeader;
