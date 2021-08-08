@@ -2,7 +2,7 @@ import ReduxExample from './ReduxExample';
 import { connect } from 'react-redux';
 import CounterSelectors from '../../selectors/counter'
 import { InitialState } from '../../reducers/index';
-import { CounterActions } from '../../actions';
+import { CounterActions } from '../../actions/CounterActions';
 import { OwnProps } from './ReduxExample';
 
 export interface StateProps {

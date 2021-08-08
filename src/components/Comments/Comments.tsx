@@ -1,93 +1,81 @@
-import React, { ReactNode } from 'react';
-import { Comment, Avatar, Form, Button, List, Input } from 'antd';
+import { List } from 'antd';
+import { useState } from 'react';
+import { comment } from '../../types/blogTypes'
+import AddCommentForm from '../AddCommentForm';
+import Comment from './Comment';
 import './Comments.scss'
-
-const { TextArea } = Input;
-
-interface comment {
-   postID: number,
-   commentID: number,
-   replyTo?: number | null,
-   replyes?: comment[] | null,
-   commentText: string,
-   commenterName: string,
-   commenterAvatar?: string | null,
-}
-interface SingleCommentProps {
-   comment: comment,
-   children?: ReactNode,
-}
-
-const SingleComment = ({ children, comment }: SingleCommentProps) => {
-   const { commentText, commenterName, commenterAvatar } = comment;
-   const commenterFirstName: string = commenterName.split(' ')[0];
-   return (
-      <Comment
-         actions={[<span key="comment-nested-reply-to">Reply to {commenterFirstName}</span>]}
-         author={<span className="comments__commentor-name">{commenterName}</span>}
-         avatar={
-            <Avatar className="comments__commentor-avatar"
-               src={commenterAvatar}
-               alt={commenterName}
-            />
-         }
-         content={
-            <p>{commentText}</p>
-         }
-      >
-         {children}
-      </Comment>
-   )
-}
 
 interface CommentsProps {
    commentsList?: Array<comment> | null;
+   onCommentAdded: (value: string, parentId: number | null) => void;
 }
 
-const Comments = ({ commentsList }: CommentsProps) => {
-
+const Comments = ({ commentsList, onCommentAdded }: CommentsProps) => {
+   const [replyTo, setReplyTo] = useState(null);
+   const focus: boolean = replyTo ? true : false
    let commentsListHTML = <p>No comments yet. Be the first</p>;
-   if (commentsList) {
+   const nested = nestComments(commentsList);
+
+   if (commentsList && commentsList.length !== 0) {
       commentsListHTML = (
          <List className="comments__list">
-            { showComments(commentsList)}
+            {
+               nested.map((comment: comment) => {
+                  return (
+                     <Comment
+                        key={comment.commentId}
+                        comment={comment}
+                        onSelectReplyTo={(commentId: any) => setReplyTo(commentId)} />
+                  )
+               })
+            }
          </List>
       )
    }
    return (
       <div className="comments">
-         <Form className="comments__form">
-            <Form.Item>
-               <TextArea rows={4} />
-            </Form.Item>
-            <Form.Item>
-               <Button htmlType="submit" type="primary">
-                  Add Comment
-               </Button>
-            </Form.Item>
-         </Form>
-
+         <AddCommentForm
+            onSubmit={(value: string) => {
+               if (value.length !== 0) {
+                  onCommentAdded(value, replyTo);
+                  setReplyTo(null)
+               }
+            }}
+            focus={focus} />
          {commentsListHTML}
       </div>
    )
 }
 
-function showComments(commentsList: Array<comment>) {
-   return commentsList.map((comment: comment) => {
-      const { replyes, commentID } = comment
-      if (Array.isArray(replyes)) {
-         return (
-            <SingleComment
-               key={commentID}
-               comment={comment}>
-               {showComments(replyes)}
-            </SingleComment>
-         )
-      }
-      return <SingleComment
-         key={commentID}
-         comment={comment} />
-   })
-}
+function nestComments(commentsList: any) {
+   const commentMap: any = {};
 
+   // move all the comments into a map of id => comment
+   commentsList.forEach((comment: any) => {
+      commentMap[comment.commentId] = comment;
+   });
+
+   // iterate over the comments again and correctly nest the children
+   commentsList.forEach((comment: comment) => {
+
+      if (comment.parentId !== null) {
+         const parent = commentMap[comment.parentId];
+         let ifExist: boolean = false;
+         for (let child of parent.children) {
+            if (child.commentId === comment.commentId) {
+               ifExist = true;
+               return
+            }
+         }
+         if (!ifExist) {
+            parent.children.push(comment);
+         }
+      }
+   });
+
+   // filter the list to return a list of correctly nested comments
+   return commentsList.filter((comment: comment) => {
+      return comment.parentId === null;
+   });
+}
 export default Comments

@@ -1,5 +1,5 @@
 import { AnyAction } from 'redux';
-import { CounterActionTypes } from '../actions';
+import { CounterActionTypes } from '../actions/CounterActions';
 
 export interface CounterState {
    value: number

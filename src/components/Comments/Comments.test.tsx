@@ -10,13 +10,13 @@ window.matchMedia = window.matchMedia || function () {
 };
 const commentsList = [
    {
-      postID: 1,
-      commentID: 10,
+      postId: 1,
+      commentId: 10,
       replyTo: null,
       replyes: null,
       commentText: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum repellat corrupti praesentium aut dicta in illo. Obcaecati voluptas magni at.',
-      commenterName: 'John Newman',
-      commenterAvatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png'
+      userName: 'John Newman',
+      userAvatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png'
    }
 ]
 describe('Comments', () => {

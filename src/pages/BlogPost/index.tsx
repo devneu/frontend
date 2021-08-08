@@ -1,3 +1,3 @@
-import BlogPost from './BlogPost'
+import BlogPostContainer from './BlogPostContainer'
 
-export default BlogPost
+export default BlogPostContainer

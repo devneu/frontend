@@ -8,7 +8,7 @@ import Fallback from './components/Fallback/Fallback'
 import SignIn from "./pages/SignIn/SignIn";
 import SignOut from "./pages/SignOut/SignOut";
 import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
-import BlogPost from './pages/BlogPost';
+import BlogPostContainer from './pages/BlogPost';
 
 const Home = lazy(() => import('./pages/Home/Home' /*webpackChunkName: "HomePage" */))
 const Chat = lazy(() => import('./pages/Chat/Chat' /*webpackChunkName: "ChatPage" */))
@@ -36,7 +36,7 @@ function App(): ReactElement {
               <Blog />
             </Route>
             <Route path='/blog-post'>
-              <BlogPost />
+              <BlogPostContainer />
             </Route>
             <Route path='/sign-in'>
               <SignIn />

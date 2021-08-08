@@ -84,7 +84,7 @@ exports[`Comments Should successfully render 1`] = `
               className="ant-comment-avatar"
             >
               <span
-                className="ant-avatar ant-avatar-circle ant-avatar-image comments__commentor-avatar"
+                className="ant-avatar ant-avatar-circle ant-avatar-image comments__user-avatar"
                 style={Object {}}
               >
                 <img
@@ -104,7 +104,7 @@ exports[`Comments Should successfully render 1`] = `
                   className="ant-comment-content-author-name"
                 >
                   <span
-                    className="comments__commentor-name"
+                    className="comments__user-name"
                   >
                     John Newman
                   </span>
