@@ -1,3 +1,3 @@
-import ReduxExapleContainer from './ReduxExampleContainer'
+import ReduxExapleContainer from './ReduxExampleContainer';
 
-export default ReduxExapleContainer
+export default ReduxExapleContainer;

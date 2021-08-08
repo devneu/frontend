@@ -2,19 +2,13 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://devneu.github.io/frontend",
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
     "@reduxjs/toolkit": "^1.6.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "@types/jest": "^26.0.24",
-    "@types/node": "^16.3.3",
-    "@types/react": "^17.0.14",
-    "@types/react-dom": "^17.0.9",
-    "@types/react-facebook-login": "^4.1.4",
-    "@types/react-router-dom": "^5.1.8",
-    "@types/react-test-renderer": "^17.0.1",
     "antd": "^4.16.8",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
@@ -32,7 +26,40 @@
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
     "typescript": "^4.3.5",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "lint-staged": "^11.1.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.3.3",
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-facebook-login": "^4.1.4",
+    "@types/react-router-dom": "^5.1.8",
+    "@types/react-test-renderer": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "@storybook/addon-actions": "^6.3.6",
+    "@storybook/addon-essentials": "^6.3.6",
+    "@storybook/addon-links": "^6.3.6",
+    "@storybook/node-logger": "^6.3.6",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.3.6",
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-testing-library": "^4.10.1",
+    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-flowtype": "^5.9.0",
+    "husky": "^7.0.1",
+    "pinst": "^2.1.6",
+    "prettier": "^2.3.2",
+    "gh-pages": "^3.2.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,26 +67,13 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
-  },
-  "resolutions": {
-    "babel-loader": "8.1.0"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "overrides": [
-      {
-        "files": [
-          "**/*.stories.*"
-        ],
-        "rules": {
-          "import/no-anonymous-default-export": "off"
-        }
-      }
-    ]
+    "build-storybook": "build-storybook -s public",
+    "prepare": "husky install",
+    "check-lint": "eslint . --ext ts --ext tsx",
+    "check-format": "prettier --write src --loglevel=error",
+    "check-all": "yarn run format && yarn run check-lint && yarn run check-types",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -73,12 +87,7 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@storybook/addon-actions": "^6.4.0-alpha.24",
-    "@storybook/addon-essentials": "^6.4.0-alpha.24",
-    "@storybook/addon-links": "^6.4.0-alpha.24",
-    "@storybook/node-logger": "^6.4.0-alpha.24",
-    "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.4.0-alpha.24"
+  "resolutions": {
+    "babel-loader": "8.1.0"
   }
 }
