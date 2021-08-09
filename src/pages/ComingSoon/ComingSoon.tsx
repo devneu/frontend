@@ -9,13 +9,7 @@ const { Title } = Typography;
 
 const ComingSoon = () => (
   <div className="coming-soon-page">
-    <ReactPlayer
-      className="bg-video"
-      url="https://www.youtube.com/watch?v=sRE5iQCdRvE"
-      loop
-      muted
-      playing
-    />
+    <ReactPlayer className="bg-video" url="https://youtu.be/XGw3OgCBo_U" loop muted playing />
     <header className="coming-soon-header">
       <div className="subscribe-form">
         <Title level={1}>Our Website is Coming Soon</Title>
