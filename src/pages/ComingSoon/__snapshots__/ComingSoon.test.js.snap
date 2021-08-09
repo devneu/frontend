@@ -63,7 +63,7 @@ exports[`ComingSoon Should successfully render 1`] = `
         className="social-link"
       >
         <a
-          href="#twitters"
+          href="#twitter"
         >
           <img
             alt="twitter"
@@ -75,7 +75,7 @@ exports[`ComingSoon Should successfully render 1`] = `
         className="social-link"
       >
         <a
-          href="#telegrams"
+          href="#telegram"
         >
           <img
             alt="telegram"
