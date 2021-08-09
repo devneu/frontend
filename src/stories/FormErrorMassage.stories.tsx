@@ -1,20 +1,16 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import FormErrorMessage from "../components/FormErrorMessage/FormErrorMessage";
-
+import FormErrorMessageProps from '../components/FormErrorMessage/FormErrorMassage';
 
 export default {
-    title: 'Form/FormErrorMessageProps',
-    component: FormErrorMessage,
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
-} as ComponentMeta<typeof FormErrorMessage>;
+  title: 'Form/FormErrorMessageProps',
+  component: FormErrorMessageProps,
+  argTypes: { backgroundColor: { control: 'color' } },
+} as ComponentMeta<typeof FormErrorMessageProps>;
 
-const Template: ComponentStory<typeof FormErrorMessage> = (args) => <FormErrorMessage {...args} />;
+const Template: ComponentStory<typeof FormErrorMessageProps> = (args) => (
+  <FormErrorMessageProps {...args} />
+);
 
 export const Primary = Template.bind({});
-Primary.args = {
-    message: "message"
-};
-
+Primary.args = { message: 'message' };

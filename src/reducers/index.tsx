@@ -1,17 +1,16 @@
+import { combineReducers } from 'redux';
 import counterReducer from './counter';
 import todo from './todo';
-import { combineReducers } from 'redux';
-
 
 export interface InitialState {
-   counter: {
-      value: number,
-   },
+  counter: {
+    value: number;
+  };
 }
 
 const reducer = combineReducers({
-   counter: counterReducer,
-   todo
-})
+  counter: counterReducer,
+  todo,
+});
 
-export default reducer
+export default reducer;
