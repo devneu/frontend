@@ -7,7 +7,7 @@ import twitter from './images/twitter.png';
 
 const { Title } = Typography;
 
-const ComingSoon = () => {
+const ComingSoon = () => (
   <div className="coming-soon-page">
     <ReactPlayer
       className="bg-video"
@@ -31,19 +31,19 @@ const ComingSoon = () => {
       <div className="social-links">
         <div className="social-link">
           {/* eslint-disable spaced-comment */}
-          <a href="#twitters">
+          <a href="#twitter">
             <img src={String(twitter)} alt="twitter" />
           </a>
         </div>
         <div className="social-link">
           {/* eslint-disable spaced-comment */}
-          <a href="#telegrams">
+          <a href="#telegram">
             <img src={String(telegram)} alt="telegram" />
           </a>
         </div>
       </div>
     </header>
-  </div>;
-};
+  </div>
+);
 
 export default ComingSoon;

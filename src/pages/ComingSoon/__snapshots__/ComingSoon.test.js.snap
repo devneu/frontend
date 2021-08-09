@@ -30,7 +30,7 @@ exports[`ComingSoon Should successfully render 1`] = `
         Our Website is Coming Soon
       </h1>
       <p>
-        We're working hard to finish the development of the site.Sign up below to receive updates and to be noticed when we launch!
+        We apos; re working hard to finish the development of the site. Sign up below to receive updates and to be noticed when we launch!
       </p>
       <div
         className="row-input-mail"
@@ -63,7 +63,7 @@ exports[`ComingSoon Should successfully render 1`] = `
         className="social-link"
       >
         <a
-          href="#"
+          href="#twitters"
         >
           <img
             alt="twitter"
@@ -75,7 +75,7 @@ exports[`ComingSoon Should successfully render 1`] = `
         className="social-link"
       >
         <a
-          href="#"
+          href="#telegrams"
         >
           <img
             alt="telegram"
