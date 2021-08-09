@@ -5,7 +5,7 @@ import { useForm, Controller } from 'react-hook-form';
 import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
 import { GoogleOutlined } from '@ant-design/icons';
-import FormErrorMessage from '../../components/FormErrorMessage/FormErrorMassage';
+import FormErrorMessage from '../../components/FormErrorMessage/FormErrorMessage';
 import { EMAIL_PATTERN } from '../../utils/formValidations';
 
 const { Title, Link } = Typography;
@@ -18,15 +18,12 @@ const SignIn = () => {
     control,
   } = useForm();
 
-  // eslint-disable-next-line no-console
   const onSubmit = (data: any) => console.log('SignIn basic', data);
 
   const handleGoogleResponse = (response: any) => {
-    // eslint-disable-next-line no-console
     console.log('google profileInfo: ', response.profileObj);
   };
   const handleFacebookResponse = (response: any) => {
-    // eslint-disable-next-line no-console
     console.log('facebook profileInfo: ', response);
   };
 
@@ -44,7 +41,7 @@ const SignIn = () => {
                 Welcome Back!
               </Title>
 
-              <Form.Item name="email">
+              <Form.Item>
                 <Input
                   className="email"
                   placeholder="Email"
@@ -58,7 +55,7 @@ const SignIn = () => {
                 <FormErrorMessage message={errors.email?.message} />
               </Form.Item>
 
-              <Form.Item name="password">
+              <Form.Item>
                 <Input.Password
                   className="password"
                   placeholder="Password"

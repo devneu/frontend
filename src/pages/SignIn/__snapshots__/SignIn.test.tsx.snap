@@ -13,6 +13,7 @@ exports[`SignIn Should successfully render 1`] = `
       style={Object {}}
     >
       <img
+        alt="Welcome on portal"
         src="https://source.unsplash.com/K4mSJ7kc0As/600x800"
       />
     </div>
