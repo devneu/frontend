@@ -13,8 +13,8 @@
     "WeatherPage.js": "/frontend/static/js/WeatherPage.8a12fc68.chunk.js",
     "WeatherPage.js.map": "/frontend/static/js/WeatherPage.8a12fc68.chunk.js.map",
     "main.css": "/frontend/static/css/main.e633b268.chunk.css",
-    "main.js": "/frontend/static/js/main.aedee065.chunk.js",
-    "main.js.map": "/frontend/static/js/main.aedee065.chunk.js.map",
+    "main.js": "/frontend/static/js/main.f1f8daa8.chunk.js",
+    "main.js.map": "/frontend/static/js/main.f1f8daa8.chunk.js.map",
     "runtime-main.js": "/frontend/static/js/runtime-main.478fd3f5.js",
     "runtime-main.js.map": "/frontend/static/js/runtime-main.478fd3f5.js.map",
     "static/css/6.f4387aba.chunk.css": "/frontend/static/css/6.f4387aba.chunk.css",
@@ -38,6 +38,6 @@
     "static/css/6.f4387aba.chunk.css",
     "static/js/6.038dc659.chunk.js",
     "static/css/main.e633b268.chunk.css",
-    "static/js/main.aedee065.chunk.js"
+    "static/js/main.f1f8daa8.chunk.js"
   ]
 }
