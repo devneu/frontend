@@ -18,12 +18,15 @@ const SignIn = () => {
     control,
   } = useForm();
 
+  // eslint-disable-next-line no-console
   const onSubmit = (data: any) => console.log('SignIn basic', data);
 
   const handleGoogleResponse = (response: any) => {
+    // eslint-disable-next-line no-console
     console.log('google profileInfo: ', response.profileObj);
   };
   const handleFacebookResponse = (response: any) => {
+    // eslint-disable-next-line no-console
     console.log('facebook profileInfo: ', response);
   };
 
