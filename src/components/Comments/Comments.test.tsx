@@ -1,32 +1,33 @@
-import Comments from './Comments';
+import React from 'react';
 import renderer from 'react-test-renderer';
+import Comments from './Comments';
+import { comment } from '../../types/blogTypes';
 
-window.matchMedia = window.matchMedia || function () {
-   return {
-      matches: false,
-      addListener: function () { },
-      removeListener: function () { }
-   };
-};
-const commentsList = [
-   {
-      postId: 1,
-      commentId: 10,
-      replyTo: null,
-      replyes: null,
-      commentText: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum repellat corrupti praesentium aut dicta in illo. Obcaecati voluptas magni at.',
-      userName: 'John Newman',
-      userAvatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png'
-   }
-]
+const commentsList: comment[] = [
+  {
+    commentId: 3,
+    parentId: null,
+    children: [],
+    commentText:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum neque distinctio praesentium quisquam laudantium tempore? Illum fugit esse nihil obcaecati?',
+    userName: 'John Newman 3',
+    userAvatar: null,
+  },
+  {
+    commentId: 1,
+    parentId: 3,
+    children: [],
+    commentText:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum neque distinctio praesentium quisquam laudantium tempore? Illum fugit esse nihil obcaecati?',
+    userName: 'John Newman 3',
+    userAvatar: null,
+  },
+];
 describe('Comments', () => {
-
-   it('Should successfully render', () => {
-      const wrapper = renderer
-         .create(
-            <Comments commentsList={commentsList} />
-         )
-         .toJSON();
-      expect(wrapper).toMatchSnapshot();
-   });
+  it('Should successfully render', () => {
+    const wrapper = renderer
+      .create(<Comments commentsList={commentsList} onCommentAdded={() => console.log('added')} />)
+      .toJSON();
+    expect(wrapper).toMatchSnapshot();
+  });
 });

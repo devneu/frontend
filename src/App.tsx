@@ -1,19 +1,18 @@
 import React, { ReactElement, lazy, Suspense } from 'react';
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom';
 import './App.scss';
 import ReduxExampleContainer from './components/ReduxExample';
-
-import Navigation from './components/Navigation'
-import Fallback from './components/Fallback/Fallback'
-import SignIn from "./pages/SignIn/SignIn";
-import SignOut from "./pages/SignOut/SignOut";
-import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
+import Navigation from './components/Navigation';
+import Fallback from './components/Fallback/Fallback';
+import SignIn from './pages/SignIn/SignIn';
+import SignOut from './pages/SignOut/SignOut';
+import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 import BlogPostContainer from './pages/BlogPost';
 
-const Home = lazy(() => import('./pages/Home/Home' /*webpackChunkName: "HomePage" */))
-const Chat = lazy(() => import('./pages/Chat/Chat' /*webpackChunkName: "ChatPage" */))
-const Weather = lazy(() => import('./pages/Weather/Weather' /*webpackChunkName: "WeatherPage" */))
-const Blog = lazy(() => import('./pages/Blog' /*webpackChunkName: "BlogPage" */))
+const Home = lazy(() => import('./pages/Home/Home' /* webpackChunkName: "HomePage" */));
+const Chat = lazy(() => import('./pages/Chat/Chat' /* webpackChunkName: "ChatPage" */));
+const Weather = lazy(() => import('./pages/Weather/Weather' /* webpackChunkName: "WeatherPage" */));
+const Blog = lazy(() => import('./pages/Blog' /* webpackChunkName: "BlogPage" */));
 
 function App(): ReactElement {
   return (
@@ -21,33 +20,32 @@ function App(): ReactElement {
       <Navigation />
       <Suspense fallback={<Fallback />}>
         <main>
-
           <Switch>
-            <Route exact path='/'>
+            <Route exact path="/">
               <Home />
             </Route>
-            <Route path='/chat'>
+            <Route path="/chat">
               <Chat />
             </Route>
-            <Route path='/weather'>
+            <Route path="/weather">
               <Weather />
             </Route>
-            <Route path='/blog' exact>
+            <Route path="/blog" exact>
               <Blog />
             </Route>
-            <Route path='/blog-post'>
+            <Route path="/blog-post">
               <BlogPostContainer />
             </Route>
-            <Route path='/sign-in'>
+            <Route path="/sign-in">
               <SignIn />
             </Route>
-            <Route path='/redux-example'>
+            <Route path="/redux-example">
               <ReduxExampleContainer />
             </Route>
-            <Route path='/forgot-password'>
+            <Route path="/forgot-password">
               <ForgotPassword />
             </Route>
-            <Route path='/sign-out'>
+            <Route path="/sign-out">
               <SignOut />
             </Route>
           </Switch>

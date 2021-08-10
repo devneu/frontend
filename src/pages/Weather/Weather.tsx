@@ -1,5 +1,5 @@
-import React from "react";
-import "./Weather.scss";
+import React from 'react';
+import './Weather.scss';
 
 export default function Weather() {
   return (

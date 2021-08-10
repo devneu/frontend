@@ -53,6 +53,7 @@ exports[`Comments Should successfully render 1`] = `
           >
             <button
               className="ant-btn ant-btn-primary"
+              disabled={true}
               onClick={[Function]}
               type="submit"
             >
@@ -84,13 +85,18 @@ exports[`Comments Should successfully render 1`] = `
               className="ant-comment-avatar"
             >
               <span
-                className="ant-avatar ant-avatar-circle ant-avatar-image comments__user-avatar"
+                className="ant-avatar ant-avatar-circle comments__user-avatar"
                 style={Object {}}
               >
-                <img
-                  alt="John Newman"
-                  onError={[Function]}
-                  src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+                <span
+                  className="ant-avatar-string"
+                  style={
+                    Object {
+                      "WebkitTransform": "scale(1) translateX(-50%)",
+                      "msTransform": "scale(1) translateX(-50%)",
+                      "transform": "scale(1) translateX(-50%)",
+                    }
+                  }
                 />
               </span>
             </div>
@@ -106,7 +112,7 @@ exports[`Comments Should successfully render 1`] = `
                   <span
                     className="comments__user-name"
                   >
-                    John Newman
+                    John Newman 3
                   </span>
                 </span>
               </div>
@@ -114,19 +120,93 @@ exports[`Comments Should successfully render 1`] = `
                 className="ant-comment-content-detail"
               >
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum repellat corrupti praesentium aut dicta in illo. Obcaecati voluptas magni at.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum neque distinctio praesentium quisquam laudantium tempore? Illum fugit esse nihil obcaecati?
                 </p>
               </div>
               <ul
                 className="ant-comment-actions"
               >
                 <li>
-                  <span>
-                    Reply to 
-                    John
-                  </span>
+                  <button
+                    className="comments__reply-btn"
+                    onClick={[Function]}
+                    type="submit"
+                  >
+                    Reply to
+                  </button>
                 </li>
               </ul>
+            </div>
+          </div>
+          <div
+            className="ant-comment-nested"
+          >
+            <div
+              className="ant-comment"
+            >
+              <div
+                className="ant-comment-inner"
+              >
+                <div
+                  className="ant-comment-avatar"
+                >
+                  <span
+                    className="ant-avatar ant-avatar-circle comments__user-avatar"
+                    style={Object {}}
+                  >
+                    <span
+                      className="ant-avatar-string"
+                      style={
+                        Object {
+                          "WebkitTransform": "scale(1) translateX(-50%)",
+                          "msTransform": "scale(1) translateX(-50%)",
+                          "transform": "scale(1) translateX(-50%)",
+                        }
+                      }
+                    />
+                  </span>
+                </div>
+                <div
+                  className="ant-comment-content"
+                >
+                  <div
+                    className="ant-comment-content-author"
+                  >
+                    <span
+                      className="ant-comment-content-author-name"
+                    >
+                      <span
+                        className="comments__user-name"
+                      >
+                        John Newman 3
+                      </span>
+                    </span>
+                  </div>
+                  <div
+                    className="ant-comment-content-detail"
+                  >
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum neque distinctio praesentium quisquam laudantium tempore? Illum fugit esse nihil obcaecati?
+                    </p>
+                  </div>
+                  <ul
+                    className="ant-comment-actions"
+                  >
+                    <li>
+                      <button
+                        className="comments__reply-btn"
+                        onClick={[Function]}
+                        type="submit"
+                      >
+                        Reply to
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className="ant-comment-nested"
+              />
             </div>
           </div>
         </div>

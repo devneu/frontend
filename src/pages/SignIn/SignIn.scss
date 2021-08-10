@@ -8,7 +8,6 @@ $width: 100%;
   .img-block {
     border-radius: $border-size;
 
-
     img {
       width: $width;
       height: 100%;
@@ -26,13 +25,13 @@ $width: 100%;
     align-items: center;
 
     form {
-
       .title-form {
         text-align: center;
         margin-top: 20px;
       }
 
-      input, button {
+      input,
+      button {
         margin: 5px 0px;
       }
 
@@ -42,21 +41,10 @@ $width: 100%;
         border: none;
       }
 
-      .email, .password {
+      .email,
+      .password {
         border-radius: 20px;
       }
-
-      .error-message {
-        color: white;
-        padding: 2px 2px;
-        margin: 5px;
-        font-size: 13px;
-        width: $width;
-        border-radius: 5px;
-        background-color: #f5222d;
-        text-align: center;
-      }
-
 
       .ant-btn-dangerous {
         background-color: #f5222d;
@@ -75,7 +63,7 @@ $width: 100%;
         border-radius: 32px;
         width: $width;
         color: white;
-        transition: all .5s ease;
+        transition: all 0.5s ease;
         font-size: 13px;
 
         &:hover {
@@ -95,15 +83,3 @@ $width: 100%;
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
