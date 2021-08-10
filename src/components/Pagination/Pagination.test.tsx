@@ -1,17 +1,10 @@
-import Pagination from './Pagination';
+import React from 'react';
 import renderer from 'react-test-renderer';
+import Pagination from './Pagination';
 
 describe('Pagination', () => {
-   it('Should successfully render', () => {
-      const wrapper = renderer
-         .create(
-            <Pagination
-               defaultCurrentPage={3}
-               totalItems={500}
-               currentPage={152}
-               pageSize={141} />
-         )
-         .toJSON();
-      expect(wrapper).toMatchSnapshot();
-   });
+  it('Should successfully render', () => {
+    const wrapper = renderer.create(<Pagination totalItems={500} pageSize={141} />).toJSON();
+    expect(wrapper).toMatchSnapshot();
+  });
 });

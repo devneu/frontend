@@ -9,7 +9,7 @@ const Blog = () => (
       title="Welcome to our blog"
       subtitle="This is subtitle. Lorem ipsum dolor sit amet."
     />
-    <Pagination defaultCurrentPage={5} totalItems={51} currentPage={1.2} pageSize={10} />
+    <Pagination totalItems={51} pageSize={10} />
   </>
 );
 
