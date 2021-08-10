@@ -43,8 +43,7 @@ const SignIn = () => {
               <Title className="title-form" level={2}>
                 Welcome Back!
               </Title>
-
-              <Form.Item name="email">
+              <Form.Item>
                 <Input
                   className="email"
                   placeholder="Email"
@@ -57,8 +56,7 @@ const SignIn = () => {
                 />
                 <FormErrorMessage message={errors.email?.message} />
               </Form.Item>
-
-              <Form.Item name="password">
+              <Form.Item>
                 <Input.Password
                   className="password"
                   placeholder="Password"

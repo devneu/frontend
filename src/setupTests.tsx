@@ -19,7 +19,7 @@ Object.defineProperty(window, 'matchMedia', {
 });
 
 if (window) {
-  window.matchMedia = function f(query) {
+  window.matchMedia = function (query) {
     return {
       matches: false,
       media: query,
