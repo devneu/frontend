@@ -4,7 +4,7 @@ import Pagination from './Pagination';
 
 describe('Pagination', () => {
   it('Should successfully render', () => {
-    const wrapper = renderer.create(<Pagination totalItems={500} pageSize={141} />).toJSON();
+    const wrapper = renderer.create(<Pagination totalItems={500} pageSize={10} />).toJSON();
     expect(wrapper).toMatchSnapshot();
   });
 });
