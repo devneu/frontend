@@ -2,10 +2,10 @@ import React from 'react';
 import './ComingSoon.scss';
 import { Input, Button, Typography } from 'antd';
 import ReactPlayer from 'react-player';
-import telegram from './images/telegram.png';
-import twitter from './images/twitter.png';
+// import telegram from '../../images/telegram.png';
+// import twitter from '../../images/twitter.png';
 
-const { Title } = Typography;
+const { Title, Paragraph } = Typography;
 
 const ComingSoon = () => (
   <div className="coming-soon-page">
@@ -13,10 +13,10 @@ const ComingSoon = () => (
     <header className="coming-soon-header">
       <div className="subscribe-form">
         <Title level={1}>Our Website is Coming Soon</Title>
-        <p>
-          We apos; re working hard to finish the development of the site. Sign up below to receive
+        <Paragraph>
+          We&apos;re working hard to finish the development of the site. Sign up below to receive
           updates and to be noticed when we launch!
-        </p>
+        </Paragraph>
         <div className="row-input-mail">
           <Input type="large" placeholder="Enter Email address..." />
           <Button type="primary">NOTIFY ME!</Button>
@@ -26,13 +26,13 @@ const ComingSoon = () => (
         <div className="social-link">
           {/* eslint-disable spaced-comment */}
           <a href="#twitter">
-            <img src={String(twitter)} alt="twitter" />
+            <img src="/images/twitter.pmg" alt="twitter" />
           </a>
         </div>
         <div className="social-link">
           {/* eslint-disable spaced-comment */}
           <a href="#telegram">
-            <img src={String(telegram)} alt="telegram" />
+            <img src="/images/telegram.pmg" alt="telegram" />
           </a>
         </div>
       </div>

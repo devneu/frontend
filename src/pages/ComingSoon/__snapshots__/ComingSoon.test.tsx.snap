@@ -29,9 +29,16 @@ exports[`ComingSoon Should successfully render 1`] = `
       >
         Our Website is Coming Soon
       </h1>
-      <p>
-        We apos; re working hard to finish the development of the site. Sign up below to receive updates and to be noticed when we launch!
-      </p>
+      <div
+        className="ant-typography"
+        style={
+          Object {
+            "WebkitLineClamp": undefined,
+          }
+        }
+      >
+        We're working hard to finish the development of the site. Sign up below to receive updates and to be noticed when we launch!
+      </div>
       <div
         className="row-input-mail"
       >

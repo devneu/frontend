@@ -1,4 +1,3 @@
-
 .bg-video {
   position: fixed;
   right: 0;
@@ -7,74 +6,69 @@
   min-height: 1080px;
   z-index: 0;
 }
-.coming-soon-page{
+
+.coming-soon-page {
   .coming-soon-header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-}
 
-.subscribe-form {
-  height: 100vh;
-  width: 70%;
-  padding: 50px 40px;
-  transform: skewX(-9deg);
-  transform-origin: top right;
-  z-index: 1;
-  background-color: darkblue;
-  opacity: 0.9;
-  h1 {
-    font-size: 3.5rem;
-    margin: 50px 40px;
-    color: #fff;
+  .subscribe-form {
+    height: 100vh;
+    width: 70%;
+    padding: 50px 40px;
+    transform: skewX(-9deg);
+    transform-origin: top right;
+    background-color: darkblue;
+    opacity: 0.9;
+
+    h1.ant-typography, .ant-typography h1 {
+      font-size: 3.5rem;
+      margin: 50px 40px;
+      color: #fff;
+    }
+
+    div.ant-typography, .ant-typography p {
+      margin: 0 40px 0 40px;
+      font-size: 1.2rem;
+      color: #fff;
+    }
   }
 
-  p {
-    margin: 0 40px 0 40px;
-    font-size: 1.2rem;
-    color: #fff;
+  .row-input-mail {
+    box-sizing: border-box;
+    padding-left: 150px;
+    padding-top: 150px;
+
+    input {
+      padding: 15px;
+      width: 300px;
+    }
+
+    button {
+      height: 54px;
+      margin-left: 20px;
+      padding: 1rem;
+    }
   }
-}
 
-.row-input-mail {
-  box-sizing: border-box;
-  padding-left: 150px;
-  padding-top: 150px;
-  input {
-    padding: 15px;
-    width: 300px;
+  .social-links {
+    position: absolute;
+    right: 0;
+    top:350px
   }
 
-  button {
-    height: 54px;
-    margin-left: 20px;
-    padding: 1rem;
-  }
-}
-
-.social-links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-right: 20px;
-  height: 100vh;
-  width: 28%;
-  justify-content: center;
-  z-index: 2;
-}
-
-.social-link {
-  height: 50px;
-  width: 50px;
-  border-radius: 100%;
-  margin: 20px;
-  cursor: pointer;
-
-  img{
+  .social-link {
     height: 50px;
     width: 50px;
-    z-index: 5;
-    opacity: 0.8;
+    border-radius: 100%;
+    margin: 20px;
+    cursor: pointer;
+
+    img {
+      height: 50px;
+      width: 50px;
+    }
   }
 }
