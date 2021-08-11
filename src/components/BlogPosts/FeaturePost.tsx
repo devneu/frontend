@@ -11,11 +11,11 @@ interface FeaturePostProps {
 }
 
 const FeaturePost = ({ featurePost }: FeaturePostProps) => (
-  <Card className="post-card" cover={<img alt="card-img" src={featurePost.postImg} />}>
+  <Card className="post-feature-card" cover={<img alt="card-img" src={featurePost.postImg} />}>
     <Card.Meta description={featurePost.postDate} />
     <Title level={2}>{featurePost.postTitle}</Title>
     <Paragraph className="post-text">{featurePost.postText}</Paragraph>
-    <Button type="link" href="#" className="button-card">
+    <Button type="link" href="#" className="button-feature-card">
       Read more
       <ArrowRightOutlined />
     </Button>
