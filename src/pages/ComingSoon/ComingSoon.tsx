@@ -2,8 +2,8 @@ import React from 'react';
 import './ComingSoon.scss';
 import { Input, Button, Typography } from 'antd';
 import ReactPlayer from 'react-player';
-import telegram from '../images/telegram.png';
-import twitter from '../images/twitter.png';
+import telegram from './images/telegram.png';
+import twitter from './images/twitter.png';
 
 const { Title, Paragraph } = Typography;
 
