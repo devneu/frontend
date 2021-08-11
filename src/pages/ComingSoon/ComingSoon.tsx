@@ -2,8 +2,8 @@ import React from 'react';
 import './ComingSoon.scss';
 import { Input, Button, Typography } from 'antd';
 import ReactPlayer from 'react-player';
-// import telegram from '../../images/telegram.png';
-// import twitter from '../../images/twitter.png';
+import telegram from '../images/telegram.png';
+import twitter from '../images/twitter.png';
 
 const { Title, Paragraph } = Typography;
 
@@ -26,13 +26,13 @@ const ComingSoon = () => (
         <div className="social-link">
           {/* eslint-disable spaced-comment */}
           <a href="#twitter">
-            <img src="/images/twitter.pmg" alt="twitter" />
+            <img src={twitter} alt="twitter" />
           </a>
         </div>
         <div className="social-link">
           {/* eslint-disable spaced-comment */}
           <a href="#telegram">
-            <img src="/images/telegram.pmg" alt="telegram" />
+            <img src={telegram} alt="telegram" />
           </a>
         </div>
       </div>
