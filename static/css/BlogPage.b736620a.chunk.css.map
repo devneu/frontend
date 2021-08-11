@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/components/BlogHeader/BlogHeader.scss"],"names":[],"mappings":"AAAA,aACE,iBAAkB,CAClB,wBAAyB","file":"BlogPage.b736620a.chunk.css","sourcesContent":[".blog-header {\n  text-align: center;\n  background-color: #f8f9fa;\n}\n"]}

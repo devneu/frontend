@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/BlogHeader/BlogHeader.scss","webpack://src/components/Pagination/Pagination.scss"],"names":[],"mappings":"AAAA,aAEE,wBAAyB,CCF3B,yBDCE,iBCAmB","file":"BlogPage.67b69ddb.chunk.css","sourcesContent":[".blog-header {\n  text-align: center;\n  background-color: #f8f9fa;\n}\n",".pagination{\n   text-align: center;\n}"]}
