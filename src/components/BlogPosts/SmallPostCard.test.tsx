@@ -6,13 +6,14 @@ describe('SmallPostCard', () => {
   it('Should successfully render', () => {
     const wrapper = renderer
       .create(
-        // eslint-disable-next-line react/react-in-jsx-scope
         <SmallPostCard
           post={{
+            id: 1,
             postImg: 'post image',
             postDate: ' post date',
             postTitle: ' post title',
             postText: 'post text',
+            sizeBlock: 2,
           }}
         />,
       )

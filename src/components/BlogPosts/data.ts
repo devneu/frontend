@@ -1,4 +1,4 @@
-export const postInfo = [
+export const mockPosts = [
   {
     id: 0,
     postImg: 'https://dummyimage.com/850x350/dee2e6/6c757d.jpg',
