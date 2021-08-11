@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Pagination as AntdPagination } from 'antd';
 import './Pagination.scss';
 
 export interface PaginationProps {
   totalItems: number;
   pageSize: number;
+  currentPage: number;
+  onPageChange: (page: number) => void;
 }
 
-function Pagination({ totalItems, pageSize }: PaginationProps) {
-  const [current, setCurrent] = useState(1);
+function Pagination({ totalItems, pageSize, currentPage, onPageChange }: PaginationProps) {
   return (
     <AntdPagination
-      current={current}
-      onChange={(page) => setCurrent(page)}
+      current={currentPage}
+      onChange={(page) => onPageChange(page)}
       total={totalItems}
       pageSize={pageSize}
       showSizeChanger={false}

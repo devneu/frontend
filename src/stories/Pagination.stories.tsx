@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Pagination from '../components/Pagination/Pagination';
 
 export default {
-  title: 'Blog/Pagination',
+  title: 'Pagination',
   component: Pagination,
   argTypes: { backgroundColor: { control: 'color' } },
 } as ComponentMeta<typeof Pagination>;
