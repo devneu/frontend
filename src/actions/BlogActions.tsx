@@ -1,10 +1,10 @@
 enum BlogActionTypes {
-  COMMENT_ADDED = '[Blog]: Comment Added',
+  ADD_COMMENT = '[Blog]: Add Comment',
 }
 
 class BlogActions {
   static addComment = (payload: { value: string; postId: number; parentId: number | null }) => ({
-    type: BlogActionTypes.COMMENT_ADDED,
+    type: BlogActionTypes.ADD_COMMENT,
     payload,
   });
 }

@@ -51,7 +51,7 @@ const blogState: BlogState = {
 
 const blogReducer = (state: BlogState = blogState, action: AnyAction): BlogState => {
   switch (action.type) {
-    case BlogActionTypes.COMMENT_ADDED: {
+    case BlogActionTypes.ADD_COMMENT: {
       const { postId, value, parentId } = action.payload;
 
       const postIdx = state.posts.findIndex((post: Post) => post.postId === postId);
@@ -65,6 +65,7 @@ const blogReducer = (state: BlogState = blogState, action: AnyAction): BlogState
         userName: `Anonim ${comments.length + 1}`,
         userAvatar: null,
       };
+
       const newPost: Post = {
         postId,
         comments: [...state.posts[postIdx].comments, newComment],
