@@ -1,2 +1,0 @@
-(this.webpackJsonpfrontend=this.webpackJsonpfrontend||[]).push([[2],{251:function(n,t,e){},261:function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return r}));e(0),e(251);var c=e(6);function r(){return Object(c.jsx)("section",{children:Object(c.jsx)("h1",{children:"Home page"})})}}}]);
-//# sourceMappingURL=HomePage.b91df753.chunk.js.map

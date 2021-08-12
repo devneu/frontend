@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/Home/Home.tsx"],"names":["Home"],"mappings":"4HAAA,sEAGe,SAASA,IACtB,OACE,kCACE","file":"static/js/HomePage.b91df753.chunk.js","sourcesContent":["import React from 'react';\nimport './Home.scss';\n\nexport default function Home() {\n  return (\n    <section>\n      <h1>Home page</h1>\n    </section>\n  );\n}\n"],"sourceRoot":""}
