@@ -7,14 +7,14 @@ import { Post } from '../../types/Post.Interface';
 const { Title, Paragraph } = Typography;
 
 interface FeaturePostProps {
-  featurePost: Post;
+  post: Post;
 }
 
-const FeaturePost = ({ featurePost }: FeaturePostProps) => (
-  <Card className="post-feature-card" cover={<img alt="card-img" src={featurePost.postImg} />}>
-    <Card.Meta description={featurePost.postDate} />
-    <Title level={2}>{featurePost.postTitle}</Title>
-    <Paragraph className="post-text">{featurePost.postText}</Paragraph>
+const FeaturePost = ({ post }: FeaturePostProps) => (
+  <Card className="post-feature-card" cover={<img alt="card-img" src={post.postImg} />}>
+    <Card.Meta description={post.postDate} />
+    <Title level={2}>{post.postTitle}</Title>
+    <Paragraph className="post-text">{post.postText}</Paragraph>
     <Button type="link" href="#" className="button-feature-card">
       Read more
       <ArrowRightOutlined />

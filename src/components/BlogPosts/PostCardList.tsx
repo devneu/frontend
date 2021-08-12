@@ -12,7 +12,7 @@ interface PostsCardListProps {
 const PostsCardList = ({ posts, featurePost }: PostsCardListProps) => (
   <Row gutter={[24, 24]}>
     <Col span={24}>
-      <FeaturePost featurePost={featurePost} />
+      <FeaturePost post={featurePost} />
     </Col>
     {posts.map((post) => (
       <Col span={12}>
