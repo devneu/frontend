@@ -1,3 +1,4 @@
+import { Col, Row } from 'antd';
 import React, { useState } from 'react';
 import BlogHeader from '../../components/BlogHeader';
 import Pagination from '../../components/Pagination';
@@ -12,9 +13,20 @@ const Blog = () => {
   return (
     <>
       <BlogHeader title="Post Title" subtitle="Post Subtitle" />
-      <PostsCardList posts={posts} featurePost={featurePost} />
-      <SearchWidget />
-      <Pagination totalItems={51} pageSize={10} currentPage={page} onPageChange={onPageChange} />
+      <Row justify="center" gutter={24}>
+        <Col span={14}>
+          <PostsCardList posts={posts} featurePost={featurePost} />
+          <Pagination
+            totalItems={51}
+            pageSize={10}
+            currentPage={page}
+            onPageChange={onPageChange}
+          />
+        </Col>
+        <Col span={7}>
+          <SearchWidget />
+        </Col>
+      </Row>
     </>
   );
 };

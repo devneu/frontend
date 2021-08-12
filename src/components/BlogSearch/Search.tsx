@@ -10,24 +10,22 @@ const SearchWidget = () => {
   const onSubmit = (data: any) => console.log('Search result', data);
 
   return (
-    <>
-      <Card title="Search">
-        <Form onFinish={handleSubmit(onSubmit)} layout="inline">
-          <Form.Item name="searchInput">
-            <Input
-              className="input-search"
-              placeholder="Enter search term..."
-              {...register('search')}
-            />
-          </Form.Item>
-          <Form.Item>
-            <Button className="button-search" type="primary" htmlType="submit">
-              Go!
-            </Button>
-          </Form.Item>
-        </Form>
-      </Card>
-    </>
+    <Card title="Search">
+      <Form onFinish={handleSubmit(onSubmit)} layout="inline">
+        <Form.Item name="searchInput">
+          <Input
+            className="input-search"
+            placeholder="Enter search term..."
+            {...register('search')}
+          />
+        </Form.Item>
+        <Form.Item>
+          <Button className="button-search" type="primary" htmlType="submit">
+            Go!
+          </Button>
+        </Form.Item>
+      </Form>
+    </Card>
   );
 };
 
