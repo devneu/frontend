@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import SearchWidget from '../components/BlogSearch/Search';
+import SearchWidget from '../components/Search';
 
 export default {
   title: 'Search/SearchWidget',
