@@ -5,7 +5,7 @@ import { useForm, Controller } from 'react-hook-form';
 import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
 import { GoogleOutlined } from '@ant-design/icons';
-import FormErrorMessage from '../../components/FormErrorMessage/FormErrorMassage';
+import FormErrorMessage from '../../components/FormErrorMessage/FormErrorMessage';
 import { EMAIL_PATTERN } from '../../utils/formValidations';
 
 const { Title, Link } = Typography;

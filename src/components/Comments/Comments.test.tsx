@@ -1,9 +1,9 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Comments from './Comments';
-import { comment } from '../../types/blogTypes';
+import { Comment } from '../../types/blogTypes';
 
-const commentsList: comment[] = [
+const commentsList: Comment[] = [
   {
     commentId: 3,
     parentId: null,

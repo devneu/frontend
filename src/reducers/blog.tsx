@@ -1,7 +1,11 @@
 import { AnyAction } from 'redux';
 import { BlogActionTypes } from '../actions/BlogActions';
 
-import { BlogState, comment, Post } from '../types/blogTypes';
+import { Comment, Post } from '../types/blogTypes';
+
+export interface BlogState {
+  posts: Array<Post>;
+}
 
 const blogState: BlogState = {
   posts: [
@@ -11,7 +15,6 @@ const blogState: BlogState = {
         {
           commentId: 1,
           parentId: null,
-          children: [],
           commentText:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum neque distinctio praesentium quisquam laudantium tempore? Illum fugit esse nihil obcaecati?',
           userName: 'John Newman 1',
@@ -20,7 +23,6 @@ const blogState: BlogState = {
         {
           commentId: 2,
           parentId: 1,
-          children: [],
           commentText:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum neque distinctio praesentium quisquam laudantium tempore? Illum fugit esse nihil obcaecati?',
           userName: 'John Newman 2',
@@ -29,7 +31,6 @@ const blogState: BlogState = {
         {
           commentId: 3,
           parentId: 2,
-          children: [],
           commentText:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum neque distinctio praesentium quisquam laudantium tempore? Illum fugit esse nihil obcaecati?',
           userName: 'John Newman 3',
@@ -38,7 +39,6 @@ const blogState: BlogState = {
         {
           commentId: 4,
           parentId: null,
-          children: [],
           commentText:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum neque distinctio praesentium quisquam laudantium tempore? Illum fugit esse nihil obcaecati?',
           userName: 'John Newman 4',
@@ -57,7 +57,7 @@ const blogReducer = (state: BlogState = blogState, action: AnyAction): BlogState
       const postIdx = state.posts.findIndex((post: Post) => post.postId === postId);
       const { comments } = state.posts[postIdx];
 
-      const newComment: comment = {
+      const newComment: Comment = {
         commentId: comments.length + 1,
         parentId,
         children: [],

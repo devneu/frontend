@@ -25,6 +25,8 @@ exports[`Comments Should successfully render 1`] = `
           >
             <textarea
               className="ant-input"
+              name="commentText"
+              onBlur={[Function]}
               onChange={[Function]}
               onCompositionEnd={[Function]}
               onCompositionStart={[Function]}

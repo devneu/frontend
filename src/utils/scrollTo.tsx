@@ -1,6 +1,6 @@
 import { scroller } from 'react-scroll';
 
-function scrollToElement(className: string): void {
+function scrollTo(className: string): void {
   scroller.scrollTo(className, {
     duration: 300,
     delay: 0,
@@ -9,4 +9,4 @@ function scrollToElement(className: string): void {
   });
 }
 
-export default scrollToElement;
+export default scrollTo;

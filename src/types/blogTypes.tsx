@@ -1,7 +1,7 @@
-export interface comment {
+export interface Comment {
   commentId: number;
   parentId: number | null;
-  children: [];
+  children?: Comment[] | [] | null;
   commentText: string;
   userName: string;
   userAvatar?: string | null;
@@ -9,9 +9,5 @@ export interface comment {
 
 export interface Post {
   postId: number;
-  comments: comment[];
-}
-
-export interface BlogState {
-  posts: Array<Post>;
+  comments: Comment[];
 }

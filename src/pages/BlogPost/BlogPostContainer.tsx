@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import store from '../../store';
 import BlogPost, { OwnProps } from './BlogPost';
 import { InitialState } from '../../reducers';
 import BlogSelectors from '../../selectors/blog';
@@ -10,26 +9,27 @@ export interface StateProps {
   post?: Post | null;
 }
 export interface DispatchProps {
-  onCommentAdded: (value: string, parentId: number | null) => void;
+  addComment: (value: string, parentId: number | null) => void;
 }
+
+function selectPostById(state: InitialState, id: number) {
+  const posts = BlogSelectors.postsSelector(state);
+  return posts.find((post: Post) => post.postId === id);
+}
+
 const postId = 1;
 function mapStateToProps(state: InitialState) {
-  const posts = BlogSelectors.postsSelector(state);
   return {
-    post: posts.find((post: Post) => post.postId === postId),
+    post: selectPostById(state, postId),
   };
 }
-function mapDispatchToProps(dispatch: typeof store.dispatch) {
-  return {
-    onCommentAdded: (value: string, parentId: number | null) => dispatch(
-      BlogActions.addComment({
-        value,
-        postId,
-        parentId,
-      }),
-    ),
-  };
-}
+const mapDispatchToProps = {
+  addComment: (value: string, parentId: number | null) => BlogActions.addComment({
+    value,
+    postId,
+    parentId,
+  }),
+};
 
 export default connect<StateProps, DispatchProps, OwnProps, InitialState>(
   mapStateToProps,

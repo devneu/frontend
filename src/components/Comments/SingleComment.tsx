@@ -1,17 +1,17 @@
 import React from 'react';
 import { Comment as AntdComment, Avatar } from 'antd';
-import { comment } from '../../types/blogTypes';
-import scrollToElement from '../../utils/scrollToElement';
+import { Comment } from '../../types/blogTypes';
+import scrollToElement from '../../utils/scrollTo';
 
 interface CommentProps {
-  comment: comment;
+  comment: Comment;
   onSelectReplyTo: (commentId: number | null) => void;
 }
 
-function Comment({ comment: com, onSelectReplyTo }: CommentProps) {
+function SingleComment({ comment: com, onSelectReplyTo }: CommentProps) {
   const { commentText, userName, userAvatar, commentId } = com;
-  const childrenList = com.children.map((child: comment) => (
-    <Comment key={child.commentId} comment={child} onSelectReplyTo={onSelectReplyTo} />
+  const childrenList = com.children?.map((child: Comment) => (
+    <SingleComment key={child.commentId} comment={child} onSelectReplyTo={onSelectReplyTo} />
   ));
   return (
     <AntdComment
@@ -37,4 +37,4 @@ function Comment({ comment: com, onSelectReplyTo }: CommentProps) {
   );
 }
 
-export default Comment;
+export default SingleComment;
