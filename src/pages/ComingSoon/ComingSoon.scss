@@ -1,45 +1,34 @@
-.bg-video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 1920px;
-  min-height: 1080px;
-  z-index: 0;
-}
+.coming-soon {
+  position: relative;
+  height: calc(100vh - 64px);
 
-.coming-soon-page {
-  .coming-soon-header {
+  .content {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .subscribe-form {
-    height: 100vh;
+    flex-direction: column;
     width: 70%;
+    height: 100%;
     padding: 50px 40px;
     transform: skewX(-9deg);
     transform-origin: top right;
     background-color: darkblue;
     opacity: 0.9;
-
-    h1.ant-typography, .ant-typography h1 {
-      font-size: 3.5rem;
-      margin: 50px 40px;
-      color: #fff;
-    }
-
-    div.ant-typography, .ant-typography p {
-      margin: 0 40px 0 40px;
-      font-size: 1.2rem;
-      color: #fff;
-    }
   }
 
-  .row-input-mail {
+  .title {
+    font-size: 3.5rem;
+    margin: 50px 40px;
+    color: #fff;
+  }
+
+  .text {
+    margin: 0 40px 0 40px;
+    color: #fff;
+  }
+
+  .subscribe-form {
     box-sizing: border-box;
-    padding-left: 150px;
-    padding-top: 150px;
+    margin-left: 150px;
+    margin-top: 150px;
 
     input {
       padding: 15px;
@@ -56,19 +45,32 @@
   .social-links {
     position: absolute;
     right: 0;
-    top:350px
+    top: calc(50% - (70px / 2));
+    display: flex;
+    flex-direction: column;
   }
 
   .social-link {
-    height: 50px;
-    width: 50px;
+    display: inline-block;
     border-radius: 100%;
-    margin: 20px;
-    cursor: pointer;
+    margin-right: 20px;
+
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
 
     img {
       height: 50px;
       width: 50px;
     }
+  }
+
+  .bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 1920px;
+    min-height: 1080px;
+    z-index: 0;
   }
 }

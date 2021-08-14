@@ -10,7 +10,6 @@ import SignOut from './pages/SignOut/SignOut';
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 import ComingSoon from './pages/ComingSoon/ComingSoon';
 
-const Home = lazy(() => import('./pages/Home/Home' /* webpackChunkName: "HomePage" */));
 const Chat = lazy(() => import('./pages/Chat/Chat' /* webpackChunkName: "ChatPage" */));
 const Weather = lazy(() => import('./pages/Weather/Weather' /* webpackChunkName: "WeatherPage" */));
 const Blog = lazy(() => import('./pages/Blog' /* webpackChunkName: "BlogPage" */));
@@ -21,10 +20,10 @@ function App(): ReactElement {
       <Navigation />
       <Suspense fallback={<Fallback />}>
         <main>
-
           <Switch>
             <Route exact path="/">
-              <Home />
+              {/* <Home /> */}
+              <ComingSoon />
             </Route>
             <Route path="/chat">
               <Chat />
