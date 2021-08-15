@@ -65,7 +65,7 @@ exports[`SignIn Should successfully render 1`] = `
                     type="text"
                     value=""
                   />
-                  
+
                 </div>
               </div>
             </div>
@@ -132,7 +132,7 @@ exports[`SignIn Should successfully render 1`] = `
                       </span>
                     </span>
                   </span>
-                  
+
                 </div>
               </div>
             </div>
@@ -261,7 +261,7 @@ exports[`SignIn Should successfully render 1`] = `
             <br />
             <a
               className="ant-typography"
-              href="/sign-out"
+              href="/sign-in"
               style={
                 Object {
                   "WebkitLineClamp": undefined,
