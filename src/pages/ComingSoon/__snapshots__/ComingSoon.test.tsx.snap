@@ -2,7 +2,7 @@
 
 exports[`ComingSoon Should successfully render 1`] = `
 <div
-  className="coming-soon-page"
+  className="coming-soon"
 >
   <div
     className="bg-video"
@@ -13,84 +13,97 @@ exports[`ComingSoon Should successfully render 1`] = `
       }
     }
   />
-  <header
-    className="coming-soon-header"
+  <div
+    className="content"
   >
-    <div
-      className="subscribe-form"
+    <h1
+      className="ant-typography title"
+      style={
+        Object {
+          "WebkitLineClamp": undefined,
+        }
+      }
     >
-      <h1
-        className="ant-typography"
-        style={
-          Object {
-            "WebkitLineClamp": undefined,
-          }
-        }
-      >
-        Our Website is Coming Soon
-      </h1>
-      <div
-        className="ant-typography"
-        style={
-          Object {
-            "WebkitLineClamp": undefined,
-          }
-        }
-      >
-        We're working hard to finish the development of the site. Sign up below to receive updates and to be noticed when we launch!
-      </div>
-      <div
-        className="row-input-mail"
-      >
-        <input
-          className="ant-input"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          placeholder="Enter Email address..."
-          type="large"
-          value=""
-        />
-        <button
-          className="ant-btn ant-btn-primary"
-          onClick={[Function]}
-          type="button"
-        >
-          <span>
-            NOTIFY ME!
-          </span>
-        </button>
-      </div>
-    </div>
+      Our Website is Coming Soon
+    </h1>
     <div
-      className="social-links"
+      className="ant-typography text"
+      style={
+        Object {
+          "WebkitLineClamp": undefined,
+        }
+      }
+    >
+      We're working hard to finish the development of the site. Sign up below to receive updates and to be noticed when we launch!
+    </div>
+    <form
+      className="ant-form ant-form-horizontal"
+      onReset={[Function]}
+      onSubmit={[Function]}
     >
       <div
-        className="social-link"
+        className="ant-row ant-form-item subscribe-form"
+        style={Object {}}
       >
-        <a
-          href="#twitter"
+        <div
+          className="ant-col ant-form-item-control"
+          style={Object {}}
         >
-          <img
-            alt="twitter"
-            src="twitter.png"
-          />
-        </a>
+          <div
+            className="ant-form-item-control-input"
+          >
+            <div
+              className="ant-form-item-control-input-content"
+            >
+              <input
+                className="ant-input"
+                name="email"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Enter Email address..."
+                type="large"
+                value=""
+              />
+              <button
+                className="ant-btn ant-btn-primary"
+                onClick={[Function]}
+                type="submit"
+              >
+                <span>
+                  NOTIFY ME!
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div
-        className="social-link"
-      >
-        <a
-          href="#telegram"
-        >
-          <img
-            alt="telegram"
-            src="telegram.png"
-          />
-        </a>
-      </div>
-    </div>
-  </header>
+    </form>
+  </div>
+  <nav
+    className="social-links"
+  >
+    <a
+      className="social-link"
+      href="#twitter"
+    >
+      <img
+        alt="twitter"
+        className="social-icon"
+        src="/images/twitter.png"
+      />
+    </a>
+    <a
+      className="social-link"
+      href="#telegram"
+    >
+      <img
+        alt="telegram"
+        className="social-icon"
+        src="/images/telegram.png"
+      />
+    </a>
+  </nav>
 </div>
 `;
