@@ -6,7 +6,7 @@ import ReduxExampleContainer from './components/ReduxExample';
 import Navigation from './components/Navigation';
 import Fallback from './components/Fallback/Fallback';
 import SignIn from './pages/SignIn/SignIn';
-import SignOut from './pages/SignOut/SignOut';
+import SignOut from './pages/CreateAccount/CreateAccount';
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 
 const Home = lazy(() => import('./pages/Home/Home' /* webpackChunkName: "HomePage" */));
@@ -42,7 +42,7 @@ function App(): ReactElement {
             <Route path="/forgot-password">
               <ForgotPassword />
             </Route>
-            <Route path="/sign-out">
+            <Route path="/CreateAccount">
               <SignOut />
             </Route>
           </Switch>

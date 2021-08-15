@@ -1,18 +1,16 @@
 import React from 'react';
-import './SingOut.scss';
+import './CreateAccount.scss';
 import { Form, Input, Button, Row, Col, Typography } from 'antd';
 import { useForm } from 'react-hook-form';
 import GoogleLogin from 'react-google-login';
 import FacebookLogin from 'react-facebook-login';
 import { GoogleOutlined, EyeInvisibleOutlined } from '@ant-design/icons';
 import FormErrorMessage from '../../components/FormErrorMessage/FormErrorMessage';
-import { EMAIL_PATTERN } from '../../utils/formValidations';
 
 const { Title, Link } = Typography;
 
-const SingOut = () => {
+const CreateAccount = () => {
   const {
-    register,
     handleSubmit,
     formState: { errors },
   } = useForm();
@@ -24,13 +22,13 @@ const SingOut = () => {
     // eslint-disable-next-line no-console
     console.log('google profileInfo: ', response.profileObj);
   };
-  const handleFacebookResponse = (response: any) => {
-    // eslint-disable-next-line no-console
-    console.log('facebook profileInfo: ', response);
-  };
+  // const handleFacebookResponse = (response: any) => {
+  //   // eslint-disable-next-line no-console
+  //   console.log('facebook profileInfo: ', response);
+  // };
 
   return (
-    <div className="sign-out">
+    <div className="create-account">
       <Row justify="center">
         <Col className="img-block" xs={0} sm={0} md={10} lg={10} xl={9} xxl={8}>
           <img src="https://source.unsplash.com/Mv9hjnEUHR4/600x800" alt="Welcome on portal" />
@@ -45,18 +43,14 @@ const SingOut = () => {
               <Form.Item>
                 <Row gutter={8}>
                   <Col span={12}>
-                    <Form.Item
-                      name="captcha"
-                      noStyle
-                      rules={[{ required: true, message: 'Please input the captcha you got!' }]}
-                    >
+                    <Form.Item name="captchas" noStyle>
                       <Input className="email" placeholder="First Name" />
                       <FormErrorMessage message={errors.email?.message} />
                     </Form.Item>
                   </Col>
                   <Col span={12}>
                     <Form.Item
-                      name="captcha"
+                      name="LastName"
                       noStyle
                       rules={[
                         {
@@ -65,32 +59,22 @@ const SingOut = () => {
                         },
                       ]}
                     >
-                      <Input className="email" placeholder="Last Name" />
+                      <Input className="last-name" placeholder="Last Name" />
                     </Form.Item>
                   </Col>
                 </Row>
               </Form.Item>
-              <Form.Item>
-                <Input
-                  className="email"
-                  placeholder="Email"
-                  {...register('email', {
-                    required:
-                      'This input is required , maximum length is 50 symbols and has such template as: expample.exam@gmail.com',
-                    maxLength: 50,
-                    pattern: EMAIL_PATTERN,
-                  })}
-                />
-                <FormErrorMessage message={errors.email?.message} />
+              <Form.Item
+                name="username"
+                className="email-form"
+                rules={[{ required: true, message: 'Please input your username!' }]}
+              >
+                <Input placeholder="Email" className="email-input" />
               </Form.Item>
               <Form.Item>
                 <Row gutter={8}>
                   <Col span={12}>
-                    <Form.Item
-                      name="captcha"
-                      noStyle
-                      rules={[{ required: true, message: 'Please input the captcha you got!' }]}
-                    >
+                    <Form.Item>
                       <Input.Password
                         className="password"
                         placeholder="Password"
@@ -105,7 +89,7 @@ const SingOut = () => {
                       rules={[
                         {
                           required: true,
-                          message: 'This input is required ,has such template as: Your Name',
+                          message: 'This input is required ,has such template as: Your Password',
                         },
                       ]}
                     >
@@ -150,12 +134,21 @@ const SingOut = () => {
 
               <Form.Item>
                 <FacebookLogin
-                  appId="226836885848996"
-                  autoLoad={false}
-                  fields="name,email,picture"
-                  callback={handleFacebookResponse}
+                  appId="1088597931155576"
+                  autoLoad
                   cssClass="facebook-btn"
                   icon="fa-facebook"
+                  callback={(renderProps: any) => (
+                    <Button
+                      onClick={renderProps.onClick}
+                      block
+                      danger
+                      htmlType="submit"
+                      shape="round"
+                    >
+                      Register with Google
+                    </Button>
+                  )}
                 />
               </Form.Item>
               <hr className="line" />
@@ -171,4 +164,4 @@ const SingOut = () => {
     </div>
   );
 };
-export default SingOut;
+export default CreateAccount;

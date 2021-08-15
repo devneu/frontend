@@ -1,6 +1,6 @@
 $border-size: 5px 0px 0px 5px;
 $width: 100%;
-.sign-out {
+.create-account{
   padding: 32px 0px;
   background-color: #0050b3;
   height: 100vh;
@@ -41,14 +41,21 @@ $width: 100%;
         background-color: lightgray;
         border: none;
       }
-.email{
+.email,.last-name{
   height: 39px;
 }
       .email,
-      .password {
+      .password,.last-name {
         border-radius: 20px;
       }
 
+      .email-input{
+        height: 39px;
+        border-radius: 20px;
+      }
+.email-form{
+  margin-bottom: 25px;
+}
       .ant-btn-dangerous {
         background-color: #f5222d;
         color: white;
@@ -84,8 +91,6 @@ $width: 100%;
 
 
       .footer {
-
-
         a{
       display: block;
       text-align: center;
@@ -95,7 +100,6 @@ $width: 100%;
         margin-bottom: 10px;
           }
         }
-
       }
     }
   }
