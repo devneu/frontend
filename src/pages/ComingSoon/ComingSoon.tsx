@@ -10,7 +10,7 @@ const { Title, Paragraph } = Typography;
 const ComingSoon = () => {
   const { register, handleSubmit } = useForm();
   // eslint-disable-next-line no-console
-  const onSubmit = (data: any) => console.log('ComingSoon', data);
+  const notifyMe = (data: any) => console.log('ComingSoon', data);
   return (
     <div className="coming-soon">
       <ReactPlayer className="bg-video" url="https://youtu.be/XGw3OgCBo_U" loop muted playing />
@@ -20,8 +20,8 @@ const ComingSoon = () => {
           We&apos;re working hard to finish the development of the site. Sign up below to receive
           updates and to be noticed when we launch!
         </Paragraph>
-        <Form onFinish={handleSubmit(onSubmit)}>
-          <Form.Item className="subscribe-form">
+        <Form onFinish={handleSubmit(notifyMe)} className="subscribe-form">
+          <Form.Item>
             <Input
               type="large"
               placeholder="Enter Email address..."

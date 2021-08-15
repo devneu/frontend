@@ -37,12 +37,12 @@ exports[`ComingSoon Should successfully render 1`] = `
       We're working hard to finish the development of the site. Sign up below to receive updates and to be noticed when we launch!
     </div>
     <form
-      className="ant-form ant-form-horizontal"
+      className="ant-form ant-form-horizontal subscribe-form"
       onReset={[Function]}
       onSubmit={[Function]}
     >
       <div
-        className="ant-row ant-form-item subscribe-form"
+        className="ant-row ant-form-item"
         style={Object {}}
       >
         <div
