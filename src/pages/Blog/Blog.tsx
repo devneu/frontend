@@ -13,8 +13,8 @@ const Blog = () => {
     <>
       <BlogHeader title="Post Title" subtitle="Post Subtitle" />
       <PostsCardList posts={posts} featurePost={featurePost} />
-      <Pagination totalItems={51} pageSize={10} currentPage={page} onPageChange={onPageChange} />
       <CategoriesWidget />
+      <Pagination totalItems={51} pageSize={10} currentPage={page} onPageChange={onPageChange} />
     </>
   );
 };
