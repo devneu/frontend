@@ -4,6 +4,7 @@ import Pagination from '../../components/Pagination';
 import './Blog.scss';
 import PostsCardList from '../../components/BlogPosts/PostCardList';
 import { mockPosts } from '../../components/BlogPosts/data';
+import CategoriesWidget from '../../components/Categories/Categories';
 
 const Blog = () => {
   const [featurePost, ...posts] = mockPosts;
@@ -13,6 +14,7 @@ const Blog = () => {
       <BlogHeader title="Post Title" subtitle="Post Subtitle" />
       <PostsCardList posts={posts} featurePost={featurePost} />
       <Pagination totalItems={51} pageSize={10} currentPage={page} onPageChange={onPageChange} />
+      <CategoriesWidget />
     </>
   );
 };
