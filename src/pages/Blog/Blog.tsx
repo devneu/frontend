@@ -13,7 +13,7 @@ const Blog = () => {
   return (
     <>
       <BlogHeader title="Post Title" subtitle="Post Subtitle" />
-      <Row justify="center" className="container">
+      <Row className="container" justify="center">
         <Col span={14}>
           <PostsCardList posts={posts} featurePost={featurePost} />
           <Pagination
