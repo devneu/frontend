@@ -2,7 +2,7 @@
 
 exports[`SearchWidget Should successfully render 1`] = `
 <div
-  className="ant-card ant-card-bordered search-widget-card"
+  className="ant-card ant-card-bordered"
 >
   <div
     className="ant-card-head"
