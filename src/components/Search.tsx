@@ -10,7 +10,7 @@ const SearchWidget = () => {
   const onSubmit = (data: any) => console.log('Search result', data);
 
   return (
-    <Card title="Search">
+    <Card title="Search" className="search-widget-card">
       <Form onFinish={handleSubmit(onSubmit)} layout="inline">
         <Form.Item name="searchInput">
           <Input
