@@ -1,0 +1,75 @@
+.coming-soon {
+  position: relative;
+  height: calc(100vh - 64px);
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    padding: 50px 40px;
+    transform: skewX(-9deg);
+    transform-origin: top right;
+    background-color: darkblue;
+    opacity: 0.9;
+  }
+
+  .title {
+    font-size: 3.5rem;
+    margin: 50px 40px;
+    color: #fff;
+  }
+
+  .text {
+    margin: 0 40px 0 40px;
+    color: #fff;
+  }
+
+  .subscribe-form {
+    box-sizing: border-box;
+    margin-left: 150px;
+    margin-top: 150px;
+
+    input {
+      padding: 15px;
+      width: 300px;
+    }
+
+    button {
+      height: 54px;
+      margin-left: 20px;
+      padding: 1rem;
+    }
+  }
+
+  .social-links {
+    position: absolute;
+    right: 0;
+    top: calc(50% - (70px / 2));
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-link {
+    display: inline-block;
+    margin-right: 20px;
+
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  .bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 1920px;
+    min-height: 1080px;
+    z-index: 0;
+  }
+}
