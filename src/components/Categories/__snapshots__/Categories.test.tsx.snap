@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoriesWidget Should successfully render 1`] = `
+<div
+  className="ant-card ant-card-bordered categories-widget-card"
+>
+  <div
+    className="ant-card-head"
+    style={Object {}}
+  >
+    <div
+      className="ant-card-head-wrapper"
+    >
+      <div
+        className="ant-card-head-title"
+      >
+        Categories
+      </div>
+    </div>
+  </div>
+  <div
+    className="ant-card-body"
+    style={Object {}}
+  >
+    <div
+      className="ant-row ant-row-start"
+      style={
+        Object {
+          "marginBottom": -4,
+          "marginLeft": -4,
+          "marginRight": -4,
+          "marginTop": -4,
+        }
+      }
+    >
+      <div
+        className="ant-col ant-col-12"
+        style={
+          Object {
+            "paddingBottom": 4,
+            "paddingLeft": 4,
+            "paddingRight": 4,
+            "paddingTop": 4,
+          }
+        }
+      >
+        <a
+          className="ant-btn ant-btn-link"
+          href="#"
+          onClick={[Function]}
+        >
+          <span>
+            Web Design
+          </span>
+        </a>
+      </div>
+      <div
+        className="ant-col ant-col-12"
+        style={
+          Object {
+            "paddingBottom": 4,
+            "paddingLeft": 4,
+            "paddingRight": 4,
+            "paddingTop": 4,
+          }
+        }
+      >
+        <a
+          className="ant-btn ant-btn-link"
+          href="#"
+          onClick={[Function]}
+        >
+          <span>
+            HTML
+          </span>
+        </a>
+      </div>
+      <div
+        className="ant-col ant-col-12"
+        style={
+          Object {
+            "paddingBottom": 4,
+            "paddingLeft": 4,
+            "paddingRight": 4,
+            "paddingTop": 4,
+          }
+        }
+      >
+        <a
+          className="ant-btn ant-btn-link"
+          href="#"
+          onClick={[Function]}
+        >
+          <span>
+            Freebies
+          </span>
+        </a>
+      </div>
+      <div
+        className="ant-col ant-col-12"
+        style={
+          Object {
+            "paddingBottom": 4,
+            "paddingLeft": 4,
+            "paddingRight": 4,
+            "paddingTop": 4,
+          }
+        }
+      >
+        <a
+          className="ant-btn ant-btn-link"
+          href="#"
+          onClick={[Function]}
+        >
+          <span>
+            JavaScript
+          </span>
+        </a>
+      </div>
+      <div
+        className="ant-col ant-col-12"
+        style={
+          Object {
+            "paddingBottom": 4,
+            "paddingLeft": 4,
+            "paddingRight": 4,
+            "paddingTop": 4,
+          }
+        }
+      >
+        <a
+          className="ant-btn ant-btn-link"
+          href="#"
+          onClick={[Function]}
+        >
+          <span>
+            CSS
+          </span>
+        </a>
+      </div>
+      <div
+        className="ant-col ant-col-12"
+        style={
+          Object {
+            "paddingBottom": 4,
+            "paddingLeft": 4,
+            "paddingRight": 4,
+            "paddingTop": 4,
+          }
+        }
+      >
+        <a
+          className="ant-btn ant-btn-link"
+          href="#"
+          onClick={[Function]}
+        >
+          <span>
+            Tutorials
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
