@@ -1,0 +1,2 @@
+(this.webpackJsonpfrontend=this.webpackJsonpfrontend||[]).push([[2],{281:function(n,t,e){},294:function(n,t,e){"use strict";e.r(t),e.d(t,"default",(function(){return r}));e(0),e(281);var c=e(4);function r(){return Object(c.jsx)("section",{children:Object(c.jsx)("h1",{children:"Weather Page"})})}}}]);
+//# sourceMappingURL=WeatherPage.9a0d7c4a.chunk.js.map

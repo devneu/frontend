@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/Weather/Weather.tsx"],"names":["Weather"],"mappings":"4HAAA,sEAGe,SAASA,IACtB,OACE,kCACE","file":"static/js/WeatherPage.cc3a2ae4.chunk.js","sourcesContent":["import React from 'react';\nimport './Weather.scss';\n\nexport default function Weather() {\n  return (\n    <section>\n      <h1>Weather Page</h1>\n    </section>\n  );\n}\n"],"sourceRoot":""}
