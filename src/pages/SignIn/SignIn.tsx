@@ -48,6 +48,7 @@ const SignIn = () => {
                 <Input
                   className="email"
                   placeholder="Email"
+                  style={{ height: '45px' }}
                   {...register('email', {
                     required:
                       'This input is required , maximum length is 50 symbols and has such template as: expample.exam@gmail.com',
@@ -72,7 +73,7 @@ const SignIn = () => {
                 name="remeberMe"
                 defaultValue={false}
                 render={({ field: { onChange, value } }) => (
-                  <Checkbox onChange={onChange} checked={value}>
+                  <Checkbox className="checkbox" onChange={onChange} checked={value}>
                     Remember Me
                   </Checkbox>
                 )}
@@ -121,9 +122,17 @@ const SignIn = () => {
 
               <div className="footer">
                 <br />
-                <Link href="/forgot-password">Forgot password ?</Link>
+                <Link href="/forgot-password">
+                  <Button className="_forgot-password-button" block type="primary" shape="round">
+                    Forgot password ?
+                  </Button>
+                </Link>
                 <br />
-                <Link href="/sign-out">Create an Account!</Link>
+                <Link href="/sign-out">
+                  <Button className="_sign-out-button" block type="primary" shape="round">
+                    Create an Account!
+                  </Button>
+                </Link>
               </div>
             </Form>
           </Col>
