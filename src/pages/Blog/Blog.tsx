@@ -4,8 +4,9 @@ import BlogHeader from '../../components/BlogHeader';
 import Pagination from '../../components/Pagination';
 import './Blog.scss';
 import PostsCardList from '../../components/BlogPosts/PostCardList';
+import SearchWidget from '../../components/Search/Search';
 import { mockPosts } from '../../components/BlogPosts/data';
-import SearchWidget from '../../components/Search';
+import CategoriesWidget from '../../components/Categories/Categories';
 
 const Blog = () => {
   const [featurePost, ...posts] = mockPosts;
@@ -25,6 +26,7 @@ const Blog = () => {
         </Col>
         <Col span={6} className="sidebar-blog-post">
           <SearchWidget />
+          <CategoriesWidget />
         </Col>
       </Row>
     </>
