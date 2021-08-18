@@ -4,8 +4,8 @@ import BlogHeader from '../../components/BlogHeader';
 import Pagination from '../../components/Pagination';
 import './Blog.scss';
 import PostsCardList from '../../components/BlogPosts/PostCardList';
-import { mockPosts } from '../../components/BlogPosts/data';
 import SearchWidget from '../../components/Search';
+import { mockPosts } from '../../components/BlogPosts/data';
 
 const Blog = () => {
   const [featurePost, ...posts] = mockPosts;
