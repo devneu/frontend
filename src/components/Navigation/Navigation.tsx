@@ -39,8 +39,8 @@ export default function Navigation() {
           <Menu.Item key="/forgot-password">
             <NavLink to="/forgot-password">Forgot Password</NavLink>
           </Menu.Item>
-          <Menu.Item key="/CreateAccount">
-            <NavLink to="/CreateAccount">Create Account</NavLink>
+          <Menu.Item key="/sign-up">
+            <NavLink to="/sign-up">Create Account</NavLink>
           </Menu.Item>
         </Menu>
       </nav>
