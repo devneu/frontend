@@ -15,7 +15,7 @@ const SmallPostCard = ({ post }: SmallPostCardProps) => (
     <Card.Meta description={post.postDate} />
     <Title level={2}>{post.postTitle}</Title>
     <Paragraph className="post-text">{post.postText}</Paragraph>
-    <Button type="link" href="#" className="button-card">
+    <Button type="link" href="/blog-post:1" className="button-card">
       Read more
       <ArrowRightOutlined />
     </Button>

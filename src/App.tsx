@@ -9,12 +9,15 @@ import SignIn from './pages/SignIn/SignIn';
 import SignOut from './pages/SignOut/SignOut';
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 import ComingSoon from './pages/ComingSoon/ComingSoon';
+import BlogPost from './pages/BlogPost/BlogPost';
 
 const Chat = lazy(() => import('./pages/Chat/Chat' /* webpackChunkName: "ChatPage" */));
 const Weather = lazy(() => import('./pages/Weather/Weather' /* webpackChunkName: "WeatherPage" */));
 const Blog = lazy(() => import('./pages/Blog' /* webpackChunkName: "BlogPage" */));
 
 function App(): ReactElement {
+  const ID_SINGLE_POST = 1;
+
   return (
     <>
       <Navigation />
@@ -48,6 +51,9 @@ function App(): ReactElement {
             </Route>
             <Route path="/coming-soon">
               <ComingSoon />
+            </Route>
+            <Route path={`/blog-post:${ID_SINGLE_POST}`}>
+              <BlogPost />
             </Route>
           </Switch>
         </main>
