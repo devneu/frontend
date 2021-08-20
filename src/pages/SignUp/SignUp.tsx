@@ -3,7 +3,7 @@ import './SignUp.scss';
 import { Form, Input, Button, Row, Col, Typography } from 'antd';
 import { useForm } from 'react-hook-form';
 import GoogleLogin from 'react-google-login';
-// import FacebookLogin from 'react-facebook-login';
+// import FacebookLogin from 'react-facebook-login';  TODO:{https://bsalo.atlassian.net/jira/software/projects/DEV/boards/2?selectedIssue=DEV-60}
 import { GoogleOutlined, EyeInvisibleOutlined } from '@ant-design/icons';
 import FormErrorMessage from '../../components/FormErrorMessage/FormErrorMessage';
 import { EMAIL_PATTERN } from '../../utils/formValidations';
@@ -47,8 +47,7 @@ const SignUp = () => {
                       className="first-name"
                       placeholder="First Name"
                       {...register('firstname', {
-                        required:
-                          'This input is required , maximum length is 50 symbols and has such template as: expample.exam@gmail.com',
+                        required: 'This input is required ,has such template as: Yor First Name',
                       })}
                     />
                     <FormErrorMessage message={errors.firstname?.message} />
@@ -60,8 +59,7 @@ const SignUp = () => {
                       className="last-name"
                       placeholder="Last Name"
                       {...register('lastname', {
-                        required:
-                          'This input is required , maximum length is 50 symbols and has such template as: expample.exam@gmail.com',
+                        required: 'This input is required ,has such template as: Yor Last Name',
                       })}
                     />
                     <FormErrorMessage message={errors.lastname?.message} />
@@ -80,35 +78,34 @@ const SignUp = () => {
                   pattern: EMAIL_PATTERN,
                 })}
               />
+              <FormErrorMessage message={errors.email?.message} />
             </Form.Item>
             <Form.Item>
               <Row gutter={8}>
                 <Col span={12}>
                   <Form.Item>
                     <Input.Password
-                      className="password1"
-                      placeholder="Password1"
+                      className="password"
+                      placeholder="Password"
                       iconRender={(visible) => (visible ? <EyeInvisibleOutlined /> : false)}
-                      {...register('password1', {
-                        required:
-                          'This input is required , maximum length is 50 symbols and has such template as: expample.exam@gmail.com',
+                      {...register('password', {
+                        required: 'This input is password',
                       })}
                     />
-                    <FormErrorMessage message={errors.password1?.message} />
+                    <FormErrorMessage message={errors.password?.message} />
                   </Form.Item>
                 </Col>
                 <Col span={12}>
                   <Form.Item>
                     <Input.Password
-                      className="password2"
-                      placeholder="Password2"
+                      className="password-repeat"
+                      placeholder="Password"
                       iconRender={(visible) => (visible ? <EyeInvisibleOutlined /> : false)}
-                      {...register('password2', {
-                        required:
-                          'This input is required , maximum length is 50 symbols and has such template as: expample.exam@gmail.com',
+                      {...register('passwordrepeat', {
+                        required: 'This input is password',
                       })}
                     />
-                    <FormErrorMessage message={errors.password2?.message} />
+                    <FormErrorMessage message={errors.passwordrepeat?.message} />
                   </Form.Item>
                 </Col>
               </Row>
@@ -142,18 +139,17 @@ const SignUp = () => {
                 )}
               />
             </Form.Item>
-            {
-              /* TODO:{https://bsalo.atlassian.net/jira/software/projects/DEV/boards/2?selectedIssue=DEV-60} */
-              //  <Form.Item>
-              // <FacebookLogin
-              // appId="226836885848996"
-              // autoLoad={false}
-              // fields="name,email,picture"
-              // callback={handleFacebookResponse}
-              // cssClass="facebook-btn"
-              // icon="fa-facebook"
-              // >}
-              /* <Button
+            {/*
+                <Form.Item>
+               <FacebookLogin
+               appId="226836885848996"
+               autoLoad={false}
+               fields="name,email,picture"
+               callback={handleFacebookResponse}
+               cssClass="facebook-btn"
+               icon="fa-facebook"
+               >}
+              <Button
                 block
                 danger
                 htmlType="submit"
@@ -164,14 +160,16 @@ const SignUp = () => {
                 Register with Facebook
               </Button>
               </Form.Item>
-              */
-            }
+              */}
 
             <hr className="line" />
-
             <div className="footer">
-              <Link href="/forgot-password">Forgot password?</Link>
-              <Link href="/sign-in">Already have an account? Login!</Link>
+              <Link className="forgot-password" href="/forgot-password">
+                Forgot password?
+              </Link>
+              <Link className="sign-in" href="/sign-in">
+                Already have an account? Login!
+              </Link>
             </div>
           </Form>
         </Col>

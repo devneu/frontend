@@ -1,25 +1,25 @@
 $border-size: 5px 0px 0px 5px;
 $width: 100%;
-.create-account{
+
+.create-account {
   padding: 32px 0px;
   background-color: #0050b3;
   height: 100vh;
+
   .img-block {
     border-radius: $border-size;
-background-image: url('https://source.unsplash.com/Mv9hjnEUHR4/600x800');
-background-position: 25% 100%;
-background-repeat: no-repeat;
-    img {
-      width: $width;
-      height: 100%;
+    background-image: url('https://source.unsplash.com/Mv9hjnEUHR4/600x800');
+    background-position: 25% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
       object-fit: cover;
       object-position: center;
-      border-radius: $border-size;
-    }
   }
-  h1.ant-typography, .ant-typography h1{
+
+  h1.title-form {
     font-size: 24px;
   }
+
   .form-block {
     background-color: white;
     border-radius: 0px 5px 5px 0px;
@@ -43,25 +43,33 @@ background-repeat: no-repeat;
         background-color: lightgray;
         border: none;
       }
-      .first-name{
+
+      .first-name {
         height: 39px;
-        border-radius: 20px;
-      }
-      .email,.last-name{
-        height: 39px;
-      }
-      .email,
-      .password,.last-name {
         border-radius: 20px;
       }
 
-      .email-input{
+      .email,
+      .last-name {
+        height: 39px;
+      }
+
+      .email,
+      .password,
+      .last-name,
+      .password-repeat {
+        border-radius: 20px;
+      }
+
+      .email-input {
         height: 39px;
         border-radius: 20px;
       }
-      .email-form{
+
+      .email-form {
         margin-bottom: 25px;
       }
+
       .ant-btn-dangerous {
         background-color: #f5222d;
         color: white;
@@ -70,43 +78,47 @@ background-repeat: no-repeat;
           background-color: #cf1322;
         }
       }
-      .ant-btn-round{
+
+      .ant-btn-round {
         height: 39px;
       }
 
-      .facebook-btn {
-        background-color: #0050b3;
-        border: none;
-        height: 39px;
-        padding: 4px 16px;
-        border-radius: 32px;
-        width: $width;
-        color: white;
-        transition: all 0.5s ease;
-        font-size: 13px;
+      // .facebook-btn {
+      //   background-color: #0050b3;
+      //   border: none;
+      //   height: 39px;
+      //   padding: 4px 16px;
+      //   border-radius: 32px;
+      //   width: $width;
+      //   color: white;
+      //   transition: all 0.5s ease;
+      //   font-size: 13px;
 
-        &:hover {
-          background-color: #003a8c;
-          cursor: pointer;
-        }
+      //   &:hover {
+      //     background-color: #003a8c;
+      //     cursor: pointer;
+      //   }
 
-        i {
-          margin-right: 5px;
-        }
-        svg{
-          font-size: 14px;
-        }
-      }
+      //   i {
+      //     margin-right: 5px;
+      //   }
+
+      //   svg {
+      //     font-size: 14px;
+      //   }
+      // }
 
 
       .footer {
-        a{
-      display: block;
-      text-align: center;
-      margin-bottom: 5px;
-      color: #4e73df;
-          &:last-child{
-        margin-bottom: 10px;
+        .forgot-password,
+        .sign-in{
+          display: block;
+          text-align: center;
+          margin-bottom: 5px;
+          color: #4e73df;
+
+          &:last-child {
+            margin-bottom: 10px;
           }
         }
       }
