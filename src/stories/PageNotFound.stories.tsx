@@ -5,7 +5,6 @@ import PageNotFound from '../components/PageNotFound/PageNotFound';
 export default {
   title: 'Pages/NotFound',
   component: PageNotFound,
-  argTypes: { backgroundColor: { control: 'color' } },
 } as ComponentMeta<typeof PageNotFound>;
 
 const Template: ComponentStory<typeof PageNotFound> = () => <PageNotFound />;
