@@ -18,6 +18,7 @@ const SignIn = () => {
     control,
   } = useForm();
 
+  console.log(errors);
   // eslint-disable-next-line no-console
   const onSubmit = (data: any) => console.log('SignIn basic', data);
 

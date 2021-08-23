@@ -9,6 +9,7 @@ import SignIn from './pages/SignIn/SignIn';
 import SignOut from './pages/SignOut/SignOut';
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 import ComingSoon from './pages/ComingSoon/ComingSoon';
+import PostPage from './pages/BlogPost/BlogPost';
 
 const Chat = lazy(() => import('./pages/Chat/Chat' /* webpackChunkName: "ChatPage" */));
 const Weather = lazy(() => import('./pages/Weather/Weather' /* webpackChunkName: "WeatherPage" */));
@@ -21,8 +22,7 @@ function App(): ReactElement {
       <Suspense fallback={<Fallback />}>
         <main>
           <Switch>
-            <Route exact path="/">
-              {/* <Home /> */}
+            <Route path="/" exact>
               <ComingSoon />
             </Route>
             <Route path="/chat">
@@ -31,8 +31,14 @@ function App(): ReactElement {
             <Route path="/weather">
               <Weather />
             </Route>
-            <Route path="/blog">
+            <Route path="/blog" exact>
               <Blog />
+            </Route>
+            <Route path="/blog/:postId" exact>
+              <PostPage />
+            </Route>
+            <Route path="/blog/:postId/:id" exact>
+              <PostPage />
             </Route>
             <Route path="/sign-in">
               <SignIn />
