@@ -39,7 +39,7 @@ const SignUp = () => {
             <Title className="title-form" level={1}>
               Create an Account!
             </Title>
-            <Form.Item>
+            <Form.Item className="from-bottom">
               <Row gutter={8}>
                 <Col span={12}>
                   <Form.Item>
@@ -80,7 +80,7 @@ const SignUp = () => {
               />
               <FormErrorMessage message={errors.email?.message} />
             </Form.Item>
-            <Form.Item>
+            <Form.Item className="from-bottom">
               <Row gutter={8}>
                 <Col span={12}>
                   <Form.Item>
@@ -127,6 +127,7 @@ const SignUp = () => {
                 cookiePolicy="single_host_origin"
                 render={(renderProps) => (
                   <Button
+                    className="google-account"
                     onClick={renderProps.onClick}
                     block
                     danger

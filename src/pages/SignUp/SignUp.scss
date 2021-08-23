@@ -11,11 +11,12 @@ $width: 100%;
     background-image: url('https://source.unsplash.com/Mv9hjnEUHR4/600x800');
     background-position: 25% 100%;
     background-repeat: no-repeat;
-    height: 100%;
-      object-fit: cover;
-      object-position: center;
+    object-fit: cover;
+    object-position: center;
   }
-
+  .from-bottom {
+    margin-bottom: 0px;
+  }
   h1.title-form {
     font-size: 24px;
   }
@@ -70,7 +71,7 @@ $width: 100%;
         margin-bottom: 25px;
       }
 
-      .ant-btn-dangerous {
+      .google-account {
         background-color: #f5222d;
         color: white;
 
@@ -79,9 +80,9 @@ $width: 100%;
         }
       }
 
-      .ant-btn-round {
-        height: 39px;
-      }
+      // .ant-btn-round {
+      //   height: 39px;
+      // }
 
       // .facebook-btn {
       //   background-color: #0050b3;
@@ -108,14 +109,14 @@ $width: 100%;
       //   }
       // }
 
-
       .footer {
         .forgot-password,
-        .sign-in{
+        .sign-in {
           display: block;
           text-align: center;
           margin-bottom: 5px;
           color: #4e73df;
+          background: #fff;
 
           &:last-child {
             margin-bottom: 10px;
