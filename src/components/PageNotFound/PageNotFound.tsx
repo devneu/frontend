@@ -12,7 +12,7 @@ const PageNotFound = () => (
     <Text type="secondary">Page Not Found</Text>
     <Paragraph>It looks like you found a glitch in the matrix...</Paragraph>
     <div className="link-to-home-page">
-      <Button icon={<ArrowLeftOutlined />} type="link">
+      <Button icon={<ArrowLeftOutlined />} type="link" href="/">
         Back to home Page
       </Button>
     </div>
