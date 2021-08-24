@@ -16,7 +16,6 @@ const Template: ComponentStory<typeof SmallPostCard> = () => (
       postDate: ' post date',
       postTitle: ' post title',
       postText: 'post text',
-      sizeBlock: 2,
     }}
   />
 );

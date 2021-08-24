@@ -17,7 +17,6 @@ const Template: ComponentStory<typeof PostCardList> = () => (
         postDate: ' post date',
         postTitle: ' post title',
         postText: 'post text',
-        sizeBlock: 2,
       },
     ]}
     featurePost={{
@@ -26,7 +25,6 @@ const Template: ComponentStory<typeof PostCardList> = () => (
       postDate: ' post date',
       postTitle: ' post title',
       postText: 'post text',
-      sizeBlock: 2,
     }}
   />
 );

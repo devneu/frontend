@@ -10,7 +10,7 @@ import SignOut from './pages/SignOut/SignOut';
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 import ComingSoon from './pages/ComingSoon/ComingSoon';
 import PageNotFound from './components/PageNotFound/PageNotFound';
-import PostPage from './pages/BlogPost/BlogPost';
+import PostPage from './pages/PostPage/PostPage';
 
 const Chat = lazy(() => import('./pages/Chat/Chat' /* webpackChunkName: "ChatPage" */));
 const Weather = lazy(() => import('./pages/Weather/Weather' /* webpackChunkName: "WeatherPage" */));
@@ -24,7 +24,6 @@ function App(): ReactElement {
         <main>
           <Switch>
             <Route exact path="/">
-              {/* <Home /> */}
               <ComingSoon />
             </Route>
             <Route path="/chat">
@@ -33,7 +32,7 @@ function App(): ReactElement {
             <Route path="/weather">
               <Weather />
             </Route>
-            <Route path="/blog">
+            <Route path="/blog" exact>
               <Blog />
             </Route>
             <Route path="/blog/:postId">

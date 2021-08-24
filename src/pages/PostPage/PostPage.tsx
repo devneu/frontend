@@ -1,11 +1,11 @@
 import React from 'react';
-import './BlogPost.scss';
+import './PostPage.scss';
 import { Col, Row } from 'antd';
-import SinglePost from '../../components/SinglePost/SinglePost';
+import SinglePost from '../../components/Post/Post';
 import SearchWidget from '../../components/Search/Search';
 import CategoriesWidget from '../../components/Categories/Categories';
 
-const BlogPost = () => (
+const PostPage = () => (
   <>
     <Row className="container" justify="center">
       <Col span={14}>
@@ -19,4 +19,4 @@ const BlogPost = () => (
   </>
 );
 
-export default BlogPost;
+export default PostPage;

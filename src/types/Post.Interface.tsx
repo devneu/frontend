@@ -4,5 +4,4 @@ export interface Post {
   postTitle: string;
   postText: string;
   postDate: string;
-  sizeBlock: number;
 }
