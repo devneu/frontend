@@ -121,12 +121,8 @@ const SignIn = () => {
               <hr className="line" />
 
               <div className="footer">
-                <div className="link">
-                  <Link href="/forgot-password">Forgot password ?</Link>
-                </div>
-                <div className="link">
-                  <Link href="/sign-out">Create an Account!</Link>
-                </div>
+                <Link href="/forgot-password">Forgot password ?</Link>
+                <Link href="/sign-out">Create an Account!</Link>
               </div>
             </Form>
           </Col>
