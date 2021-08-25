@@ -3,7 +3,7 @@ import React from 'react';
 import './SmallPostCard.scss';
 import { ArrowRightOutlined } from '@ant-design/icons';
 import { NavLink } from 'react-router-dom';
-import { Post } from '../../types/Post.Interface';
+import { Post } from '../../types/Post.interface';
 
 const { Title, Paragraph } = Typography;
 

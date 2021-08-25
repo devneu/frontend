@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Row } from 'antd';
 import SmallPostCard from './SmallPostCard';
-import { Post } from '../../types/Post.Interface';
+import { Post } from '../../types/Post.interface';
 import FeaturePost from './FeaturePost';
 
 interface PostsCardListProps {
