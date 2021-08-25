@@ -1,13 +1,17 @@
-.tag-post {
-  color: white;
-  font-weight: 1000;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-.img-post {
-  border-radius: 5px;
-  padding-bottom: 10px;
-}
-.text-post {
-  font-size: 20px;
+.single-post {
+  .tag-post {
+    color: white;
+    font-weight: 1000;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .img-post {
+    border-radius: 5px;
+    padding-bottom: 10px;
+  }
+
+  .text-post {
+    font-size: 20px;
+  }
 }

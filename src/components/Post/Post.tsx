@@ -10,17 +10,15 @@ const Post = () => {
   const { postId } = useParams<any>();
   const currentPost = mockPosts.find((el) => el.id === +postId);
   return (
-    <>
-      {Number.isNaN(+postId) ? (
-        <Redirect to="/page-not-found" />
-      ) : (
+    <div className="single-post">
+      {typeof +postId === 'number' && +postId < mockPosts.length ? (
         <>
           <PageHeader>
             <Title>Welcome to Blog Post!</Title>
             <Text type="secondary" italic>
               {currentPost?.postDate}
             </Text>
-            <div className="block-tags-post">
+            <div>
               {currentPost?.postTag.map((tag) => (
                 <Tag className="tag-post" color="#6c757d">
                   {tag}
@@ -37,8 +35,10 @@ const Post = () => {
             </>
           ))}
         </>
+      ) : (
+        <Redirect to="/page-not-found" />
       )}
-    </>
+    </div>
   );
 };
 

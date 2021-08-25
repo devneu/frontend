@@ -16,6 +16,9 @@ const Template: ComponentStory<typeof FeaturePost> = () => (
       postDate: ' post date',
       postTitle: ' post title',
       postText: 'post text',
+      postArticleCaption: ['string'],
+      postArticleText: ['string'],
+      postTag: ['string'],
     }}
   />
 );

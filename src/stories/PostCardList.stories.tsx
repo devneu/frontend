@@ -13,18 +13,24 @@ const Template: ComponentStory<typeof PostCardList> = () => (
     posts={[
       {
         id: 1,
-        postImg: 'https://dummyimage.com/700x350/dee2e6/6c757d.jpg',
+        postImg: 'https://dummyimage.com/850x350/dee2e6/6c757d.jpg',
         postDate: ' post date',
         postTitle: ' post title',
         postText: 'post text',
+        postArticleCaption: ['string'],
+        postArticleText: ['string'],
+        postTag: ['string'],
       },
     ]}
     featurePost={{
       id: 1,
-      postImg: 'https://dummyimage.com/700x350/dee2e6/6c757d.jpg',
+      postImg: 'https://dummyimage.com/850x350/dee2e6/6c757d.jpg',
       postDate: ' post date',
       postTitle: ' post title',
       postText: 'post text',
+      postArticleCaption: ['string'],
+      postArticleText: ['string'],
+      postTag: ['string'],
     }}
   />
 );

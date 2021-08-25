@@ -1,7 +1,8 @@
-import { Card, Typography } from 'antd';
+import { Button, Card, Typography } from 'antd';
 import React from 'react';
 import './FeaturePost.scss';
-import { Link } from 'react-router-dom';
+import { ArrowRightOutlined } from '@ant-design/icons';
+import { NavLink } from 'react-router-dom';
 import { Post } from '../../types/Post.Interface';
 
 const { Title, Paragraph } = Typography;
@@ -15,7 +16,12 @@ const FeaturePost = ({ post }: FeaturePostProps) => (
     <Card.Meta description={post.postDate} />
     <Title level={2}>{post.postTitle}</Title>
     <Paragraph className="post-text">{post.postText}</Paragraph>
-    <Link to={`/blog/${post.id}`}>Read more</Link>
+    <NavLink to={`/blog/${post.id}`}>
+      <Button type="link" className="button-feature-card">
+        Read more
+        <ArrowRightOutlined />
+      </Button>
+    </NavLink>
   </Card>
 );
 

@@ -49,10 +49,12 @@ const SignIn = () => {
                   className="email"
                   placeholder="Email"
                   {...register('email', {
-                    required:
-                      'This input is required , maximum length is 50 symbols and has such template as: expample.exam@gmail.com',
-                    maxLength: 50,
-                    pattern: EMAIL_PATTERN,
+                    required: 'This input is required',
+                    maxLength: { value: 50, message: 'Maximum length is 50 symbols' },
+                    pattern: {
+                      value: EMAIL_PATTERN,
+                      message: 'This input has such template as: expample.exam@gmail.com',
+                    },
                   })}
                 />
                 <FormErrorMessage message={errors.email?.message} />
