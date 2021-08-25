@@ -26,8 +26,7 @@ const ForgotPassword = () => {
           <Col span={18}>
             <div className="text-wrapper">
               <Title className="title" level={3}>
-                <Text className="primary-text">Forgot Your Password?</Text>
-                <br />
+                Forgot Your Password?
               </Title>
               <Text type="secondary" className="secondary-text">
                 We get it, stuff hapens. Just enter your email address below and we`ll send you a
@@ -59,14 +58,8 @@ const ForgotPassword = () => {
               <hr className="line" />
 
               <div className="footer">
-                <br />
-                <div className="link">
-                  <Link href="/sign-out">Create an Account</Link>
-                </div>
-                <br />
-                <div className="link">
-                  <Link href="/sign-in">Already have an account? Login!</Link>
-                </div>
+                <Link href="/sign-out">Create an Account</Link>
+                <Link href="/sign-in">Already have an account? Login!</Link>
               </div>
             </Form>
           </Col>
