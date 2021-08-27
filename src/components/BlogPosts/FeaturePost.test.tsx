@@ -11,12 +11,16 @@ describe('FeaturePost', () => {
           <FeaturePost
             post={{
               id: 1,
-              postImg: 'post image',
-              postDate: ' post date',
-              postTitle: ' post title',
-              postText: 'post text',
+              img: 'https://dummyimage.com/700x350/dee2e6/6c757d.jpg',
+              date: 'January 21, 2011',
+              title: 'DEV-17.com',
+              text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.',
+              articleCaption: ['hello', 'deb-17'],
+              articleText: ['lorem', 'ipsum'],
+              tag: ['web', 'js'],
             }}
           />
+          ,
         </BrowserRouter>,
       )
       .toJSON();

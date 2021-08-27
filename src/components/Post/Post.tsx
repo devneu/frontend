@@ -1,42 +1,50 @@
 import React from 'react';
 import './Post.scss';
 import { PageHeader, Typography, Tag, Image } from 'antd';
-import { Redirect, useParams } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 import { mockPosts } from '../BlogPosts/data';
+import PageNotFound from '../PageNotFound/PageNotFound';
 
 const { Title, Text, Paragraph } = Typography;
 
 const Post = () => {
+  const history = useHistory();
   const { postId } = useParams<any>();
   const currentPost = mockPosts.find((el) => el.id === +postId);
+
+  const handleRedirect = () => {
+    history.push('/page-not-found');
+  };
   return (
-    <div className="single-post">
-      {typeof +postId === 'number' && +postId < mockPosts.length ? (
+    <div className="post">
+      {!currentPost ? (
+        <div onLoad={handleRedirect}>
+          <PageNotFound />
+        </div>
+      ) : (
         <>
           <PageHeader>
             <Title>Welcome to Blog Post!</Title>
             <Text type="secondary" italic>
-              {currentPost?.postDate}
+              {currentPost?.date}
             </Text>
             <div>
-              {currentPost?.postTag.map((tag) => (
+              {currentPost?.tag.map((tag) => (
                 <Tag className="tag-post" color="#6c757d">
                   {tag}
                 </Tag>
               ))}
             </div>
           </PageHeader>
-          <Image height={400} src={currentPost?.postImg} className="img-post" />
-          <Paragraph className="text-post">{currentPost?.postText}</Paragraph>
-          {currentPost?.postArticleCaption.map((element, index) => (
+          <Image height={400} src={currentPost?.img} className="img-post" />
+          <Paragraph className="text-post">{currentPost?.text}</Paragraph>
+          {currentPost?.articleCaption.map((element, index) => (
             <>
               <Title>{element}</Title>
-              <Paragraph className="text-post">{currentPost.postArticleText[index]}</Paragraph>
+              <Paragraph className="text-post">{currentPost.articleText[index]}</Paragraph>
             </>
           ))}
         </>
-      ) : (
-        <Redirect to="/page-not-found" />
       )}
     </div>
   );

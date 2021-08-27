@@ -12,10 +12,10 @@ interface SmallPostCardProps {
 }
 
 const SmallPostCard = ({ post }: SmallPostCardProps) => (
-  <Card className="post-card" cover={<img alt="card-img" src={post.postImg} />}>
-    <Card.Meta description={post.postDate} />
-    <Title level={2}>{post.postTitle}</Title>
-    <Paragraph className="post-text">{post.postText}</Paragraph>
+  <Card className="post-card" cover={<img alt="card-img" src={post.img} />}>
+    <Card.Meta description={post.date} />
+    <Title level={2}>{post.title}</Title>
+    <Paragraph className="post-text">{post.text}</Paragraph>
     <NavLink to={`/blog/${post.id}`}>
       <Button type="link" className="button-card">
         Read more

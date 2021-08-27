@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
 import renderer from 'react-test-renderer';
+import { BrowserRouter } from 'react-router-dom';
 import SmallPostCard from './SmallPostCard';
 
 describe('SmallPostCard', () => {
@@ -11,12 +11,16 @@ describe('SmallPostCard', () => {
           <SmallPostCard
             post={{
               id: 1,
-              postImg: 'post image',
-              postDate: ' post date',
-              postTitle: ' post title',
-              postText: 'post text',
+              img: 'https://dummyimage.com/700x350/dee2e6/6c757d.jpg',
+              date: 'January 21, 2011',
+              title: 'DEV-17.com',
+              text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.',
+              articleCaption: ['hello', 'deb-17'],
+              articleText: ['lorem', 'ipsum'],
+              tag: ['web', 'js'],
             }}
           />
+          ,
         </BrowserRouter>,
       )
       .toJSON();
