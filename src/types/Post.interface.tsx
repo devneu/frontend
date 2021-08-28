@@ -4,7 +4,6 @@ export interface Post {
   title: string;
   text: string;
   date: string;
-  articleCaption: string[];
-  articleText: string[];
+  articleText: string;
   tag: string[];
 }
