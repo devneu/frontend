@@ -1,22 +1,22 @@
 import React from 'react';
 import './PostPage.scss';
-import { Col, Row } from 'antd';
-import SinglePost from '../../components/Post/Post';
+import { Col, Layout, Row } from 'antd';
+import Post from '../../components/Post/Post';
 import SearchWidget from '../../components/Search/Search';
 import CategoriesWidget from '../../components/Categories/Categories';
 
 const PostPage = () => (
-  <div className="post-page container">
+  <Layout className="post-page container">
     <Row justify="center">
       <Col span={14}>
-        <SinglePost />
+        <Post />
       </Col>
       <Col span={6} className="sidebar">
         <SearchWidget />
         <CategoriesWidget />
       </Col>
     </Row>
-  </div>
+  </Layout>
 );
 
 export default PostPage;

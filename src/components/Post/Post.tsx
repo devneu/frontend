@@ -14,27 +14,27 @@ const Post = () => {
 
   if (!currentPost) {
     history.push('/page-not-found');
+    return null;
   }
+
   return (
     <div className="post">
-      <>
-        <PageHeader>
-          <Title>Welcome to Blog Post!</Title>
-          <Text type="secondary" italic>
-            {currentPost?.date}
-          </Text>
-          <div>
-            {currentPost?.tag.map((tag) => (
-              <Tag className="tag-post" color="#6c757d">
-                {tag}
-              </Tag>
-            ))}
-          </div>
-        </PageHeader>
-        <Image className="img-post" src={currentPost?.img} />
-        <Paragraph className="text-post">{currentPost?.text}</Paragraph>
-        <Editor defaultValue={currentPost?.articleText} readOnly className="text-post" />
-      </>
+      <PageHeader>
+        <Title>Welcome to Blog Post!</Title>
+        <Text type="secondary" italic>
+          {currentPost.date}
+        </Text>
+        <div>
+          {currentPost.tag.map((tag) => (
+            <Tag className="tag-post" color="#6c757d">
+              {tag}
+            </Tag>
+          ))}
+        </div>
+      </PageHeader>
+      <Image className="img-post" src={currentPost.img} />
+      <Paragraph className="text-post">{currentPost.text}</Paragraph>
+      <Editor defaultValue={currentPost.articleText} readOnly className="text-post" />
     </div>
   );
 };
