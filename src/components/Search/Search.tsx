@@ -1,7 +1,7 @@
 import React from 'react';
-import './Search.scss';
 import { Button, Card, Form, Input } from 'antd';
 import { useForm } from 'react-hook-form';
+import './Search.scss';
 
 const SearchWidget = () => {
   const { register, handleSubmit } = useForm();
@@ -10,7 +10,7 @@ const SearchWidget = () => {
   const onSubmit = (data: any) => console.log('Search result', data);
 
   return (
-    <Card title="Search" className="search-widget-card">
+    <Card className="search-widget-card" title="Search">
       <Form onFinish={handleSubmit(onSubmit)} layout="inline">
         <Form.Item name="searchInput">
           <Input

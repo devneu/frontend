@@ -1,8 +1,8 @@
 import React from 'react';
 import { Col, Row } from 'antd';
-import SmallPostCard from './SmallPostCard';
+import SmallPostCard from '../SmallPostCard/SmallPostCard';
 import { Post } from '../../types/Post.interface';
-import FeaturePost from './FeaturePost';
+import FeaturePost from '../FeaturePost/FeaturePost';
 
 interface PostsCardListProps {
   posts: Post[];
@@ -15,8 +15,8 @@ const PostsCardList = ({ posts, featurePost }: PostsCardListProps) => (
       <FeaturePost post={featurePost} />
     </Col>
     {posts.map((post) => (
-      <Col span={12}>
-        <SmallPostCard key={post.id} post={post} />
+      <Col span={12} key={post.id}>
+        <SmallPostCard post={post} />
       </Col>
     ))}
   </Row>

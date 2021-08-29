@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import FeaturePost from '../components/BlogPosts/FeaturePost';
-import { mockTestPost } from '../components/BlogPosts/TestMockPost/mockTestPost';
+import FeaturePost from '../components/FeaturePost/FeaturePost';
+import { createMockPost } from '../mock/mockPost';
 
 export default {
   title: 'MainPost/FeaturePost',
@@ -9,6 +9,6 @@ export default {
   argTypes: { backgroundColor: { control: 'color' } },
 } as ComponentMeta<typeof FeaturePost>;
 
-const Template: ComponentStory<typeof FeaturePost> = () => <FeaturePost post={mockTestPost()} />;
+const Template: ComponentStory<typeof FeaturePost> = () => <FeaturePost post={createMockPost()} />;
 
 export const Primary = Template.bind({});

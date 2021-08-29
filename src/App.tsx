@@ -1,6 +1,5 @@
 import React, { ReactElement, lazy, Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import './App.scss';
 import ReduxExampleContainer from './components/ReduxExample';
 
 import Navigation from './components/Navigation';
@@ -9,8 +8,10 @@ import SignIn from './pages/SignIn/SignIn';
 import SignOut from './pages/SignOut/SignOut';
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 import ComingSoon from './pages/ComingSoon/ComingSoon';
-import PageNotFound from './components/PageNotFound/PageNotFound';
+import PageNotFound from './pages/PageNotFound/PageNotFound';
 import PostPage from './pages/PostPage/PostPage';
+
+import './App.scss';
 
 const Chat = lazy(() => import('./pages/Chat/Chat' /* webpackChunkName: "ChatPage" */));
 const Weather = lazy(() => import('./pages/Weather/Weather' /* webpackChunkName: "WeatherPage" */));

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import SmallPostCard from '../components/BlogPosts/SmallPostCard';
-import { mockTestPost } from '../components/BlogPosts/TestMockPost/mockTestPost';
+import SmallPostCard from '../components/SmallPostCard/SmallPostCard';
+import { createMockPost } from '../mock/mockPost';
 
 export default {
   title: 'ChildPosts/SmallPostCard',
@@ -10,7 +10,7 @@ export default {
 } as ComponentMeta<typeof SmallPostCard>;
 
 const Template: ComponentStory<typeof SmallPostCard> = () => (
-  <SmallPostCard post={mockTestPost()} />
+  <SmallPostCard post={createMockPost()} />
 );
 
 export const Primary = Template.bind({});

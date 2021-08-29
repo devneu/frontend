@@ -1,16 +1,15 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
-import SmallPostCard from './SmallPostCard';
-import { mockTestPost } from './TestMockPost/mockTestPost';
+import PostCardList from './PostCardList';
+import { createMockPost, createMockPosts } from '../../mock/mockPost';
 
-describe('SmallPostCard', () => {
+describe('PostCardList', () => {
   it('Should successfully render', () => {
     const wrapper = renderer
       .create(
         <BrowserRouter>
-          <SmallPostCard post={mockTestPost()} />
-          ,
+          <PostCardList posts={createMockPosts()} featurePost={createMockPost()} />
         </BrowserRouter>,
       )
       .toJSON();

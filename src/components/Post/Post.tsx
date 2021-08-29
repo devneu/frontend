@@ -1,16 +1,16 @@
 import React from 'react';
-import './Post.scss';
 import { PageHeader, Typography, Tag, Image } from 'antd';
 import { useHistory, useParams } from 'react-router-dom';
 import Editor from 'rich-markdown-editor';
-import { mockPosts } from '../BlogPosts/data';
+import { createMockPosts } from '../../mock/mockPost';
+import './Post.scss';
 
 const { Title, Text, Paragraph } = Typography;
 
 const Post = () => {
   const history = useHistory();
   const { postId } = useParams<any>();
-  const currentPost = mockPosts.find((el) => el.id === +postId);
+  const currentPost = createMockPosts().find((el) => el.id === +postId);
 
   if (!currentPost) {
     history.push('/page-not-found');
