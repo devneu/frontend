@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Weather from '../pages/Weather/Weather';
 
 export default {
-  title: 'Pages/ComingSoon',
+  title: 'Pages/Weather',
   component: Weather,
   argTypes: { backgroundColor: { control: 'color' } },
 } as ComponentMeta<typeof Weather>;
