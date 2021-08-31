@@ -45,6 +45,9 @@ export default function Navigation() {
           <Menu.Item key="/sign-out">
             <NavLink to="/sign-out">Create Account</NavLink>
           </Menu.Item>
+          <Menu.Item key="/coming-soon">
+            <NavLink to="/coming-soon">Coming Soon</NavLink>
+          </Menu.Item>
         </Menu>
       </nav>
     </Header>

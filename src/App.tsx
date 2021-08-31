@@ -7,9 +7,9 @@ import Fallback from './components/Fallback/Fallback';
 import SignIn from './pages/SignIn/SignIn';
 import SignOut from './pages/SignOut/SignOut';
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
-import BlogPostContainer from './pages/BlogPost';
+import ComingSoon from './pages/ComingSoon/ComingSoon';
+import PageNotFound from './components/PageNotFound/PageNotFound';
 
-const Home = lazy(() => import('./pages/Home/Home' /* webpackChunkName: "HomePage" */));
 const Chat = lazy(() => import('./pages/Chat/Chat' /* webpackChunkName: "ChatPage" */));
 const Weather = lazy(() => import('./pages/Weather/Weather' /* webpackChunkName: "WeatherPage" */));
 const Blog = lazy(() => import('./pages/Blog' /* webpackChunkName: "BlogPage" */));
@@ -22,7 +22,8 @@ function App(): ReactElement {
         <main>
           <Switch>
             <Route exact path="/">
-              <Home />
+              {/* <Home /> */}
+              <ComingSoon />
             </Route>
             <Route path="/chat">
               <Chat />
@@ -30,11 +31,8 @@ function App(): ReactElement {
             <Route path="/weather">
               <Weather />
             </Route>
-            <Route path="/blog" exact>
+            <Route path="/blog">
               <Blog />
-            </Route>
-            <Route path="/blog-post">
-              <BlogPostContainer />
             </Route>
             <Route path="/sign-in">
               <SignIn />
@@ -47,6 +45,12 @@ function App(): ReactElement {
             </Route>
             <Route path="/sign-out">
               <SignOut />
+            </Route>
+            <Route path="/coming-soon">
+              <ComingSoon />
+            </Route>
+            <Route path="/page-not-found">
+              <PageNotFound />
             </Route>
           </Switch>
         </main>
