@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import BlogPost, { OwnProps } from './BlogPost';
+import PostPage, { OwnProps } from './PostPage';
 import { InitialState } from '../../reducers';
 import BlogSelectors from '../../selectors/blog';
 import { Post } from '../../types/blogTypes';
@@ -34,4 +34,4 @@ const mapDispatchToProps = {
 export default connect<StateProps, DispatchProps, OwnProps, InitialState>(
   mapStateToProps,
   mapDispatchToProps,
-)(BlogPost);
+)(PostPage);

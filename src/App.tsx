@@ -9,7 +9,7 @@ import SignOut from './pages/SignOut/SignOut';
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 import ComingSoon from './pages/ComingSoon/ComingSoon';
 import PageNotFound from './components/PageNotFound/PageNotFound';
-import BlogPostContainer from './pages/PostPage/BlogPostContainer';
+import BlogPostContainer from './pages/PostPage/PostPageContainer';
 
 const Chat = lazy(() => import('./pages/Chat/Chat' /* webpackChunkName: "ChatPage" */));
 const Weather = lazy(() => import('./pages/Weather/Weather' /* webpackChunkName: "WeatherPage" */));
