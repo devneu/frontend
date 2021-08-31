@@ -88,12 +88,12 @@ const Weather = () => {
                   className="forecast-icon"
                 />
                 <div className="forecast-temp">
-                  NIGHT-
+                  NIGHT:&nbsp;
                   {Math.round(day.temp.night)}
                   °c
                 </div>
                 <div className="forecast-temp">
-                  DAY-
+                  DAY:&nbsp;
                   {Math.round(day.temp.day)}
                   °c
                 </div>
