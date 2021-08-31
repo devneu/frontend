@@ -1,10 +1,11 @@
 import React from 'react';
 import './ForgotPassword.scss';
+import { NavLink } from 'react-router-dom';
 import { Form, Input, Button, Row, Col, Typography } from 'antd';
 import { useForm } from 'react-hook-form';
 import FormErrorMessage from '../../components/FormErrorMessage/FormErrorMessage';
 
-const { Title, Link, Text } = Typography;
+const { Title, Text } = Typography;
 
 const ForgotPassword = () => {
   const {
@@ -24,23 +25,21 @@ const ForgotPassword = () => {
 
         <Col className="form-block" xs={24} sm={24} md={10} lg={8} xl={8} xxl={6}>
           <Col span={18}>
-            <div className="text-wrapper">
-              <Title className="title" level={3}>
-                Forgot Your Password?
-              </Title>
-              <Text type="secondary" className="secondary-text">
-                We get it, stuff hapens. Just enter your email address below and we`ll send you a
-                link to reset your password!
-              </Text>
-            </div>
+            <Title className="title" level={3}>
+              Forgot Your Password?
+            </Title>
+            <Text type="secondary" className="secondary-text">
+              We get it, stuff hapens. Just enter your email address below and we`ll send you a link
+              to reset your password!
+            </Text>
             <Form onFinish={handleSubmit(onSubmit)}>
               <Form.Item>
-                <Input.Password
-                  className="password"
-                  placeholder="Password"
-                  {...register('password', { required: 'This input is required' })}
+                <Input
+                  className="email"
+                  placeholder="Enter Email Address..."
+                  {...register('email', { required: 'This input is required' })}
                 />
-                <FormErrorMessage message={errors.password?.message} />
+                <FormErrorMessage message={errors.email?.message} />
               </Form.Item>
 
               <Form.Item>
@@ -58,8 +57,8 @@ const ForgotPassword = () => {
               <hr className="line" />
 
               <div className="footer">
-                <Link href="/sign-out">Create an Account</Link>
-                <Link href="/sign-in">Already have an account? Login!</Link>
+                <NavLink to="/sign-out">Create an Account</NavLink>
+                <NavLink to="/sign-in">Already have an account? Login!</NavLink>
               </div>
             </Form>
           </Col>
