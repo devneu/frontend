@@ -9,6 +9,7 @@ import SignOut from './pages/SignOut/SignOut';
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 import ComingSoon from './pages/ComingSoon/ComingSoon';
 import PageNotFound from './components/PageNotFound/PageNotFound';
+import BlogPostContainer from './pages/PostPage/BlogPostContainer';
 
 const Chat = lazy(() => import('./pages/Chat/Chat' /* webpackChunkName: "ChatPage" */));
 const Weather = lazy(() => import('./pages/Weather/Weather' /* webpackChunkName: "WeatherPage" */));
@@ -33,6 +34,9 @@ function App(): ReactElement {
             </Route>
             <Route path="/blog">
               <Blog />
+            </Route>
+            <Route path="/blog-post">
+              <BlogPostContainer />
             </Route>
             <Route path="/sign-in">
               <SignIn />
