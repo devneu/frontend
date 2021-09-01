@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import SideWidget from './Side';
+import SideWidget from './SideWidget';
 
 describe('SideWidget', () => {
   it('Should successfully render', () => {
