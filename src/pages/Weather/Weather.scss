@@ -1,4 +1,4 @@
-.weather-components {
+.weather-component {
   background: #DCDCDC;
   width: 100%;
   height: calc(100vh - 64px);
@@ -11,38 +11,37 @@
     padding: 10px;
   }
 
-  .center-input {
+  .search-bar {
     margin: 0 auto;
-    text-align: center;
     padding: 10px;
     width: 25%;
   }
 
-  .weather-block {
+  .weather-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    border: 3px solid yellow;
-    border-radius: 20%;
     height: 240px;
     max-width: 178px;
     padding: 15px;
     margin: 0 auto;
+    border: 3px solid;
+    border-radius: 20%;
 
-    .weather-temp {
+    .weather-temperature {
       font-size: 31px;
     }
 
   }
 
   .forecast {
+    display: flex;
+    flex-direction: row;
     height: 200px;
     width: 1135px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
 
     .forecast-item {
       display: flex;
@@ -51,14 +50,12 @@
       justify-content: center;
       width: 122px;
       margin: 10px;
-      border: 1px solid whitesmoke;
       padding: 10px;
+      border: 2px solid whitesmoke;
       border-radius: 10%;
-    }
-
-    .forecast-font {
       font-size: 16px;
     }
+
   }
 
 }

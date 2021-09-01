@@ -2,7 +2,7 @@
 
 exports[`Weather Should successfully render 1`] = `
 <div
-  className="weather-components"
+  className="weather-component"
 >
   <div
     className="ant-spin ant-spin-lg ant-spin-spinning loader"

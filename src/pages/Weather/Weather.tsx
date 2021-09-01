@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import './Weather.scss';
 import { Input, Spin } from 'antd';
-import moment from 'moment';
 import weatherServiceInstance from './WeatherService';
 
 const Weather = () => {
@@ -27,16 +26,17 @@ const Weather = () => {
     weatherServiceInstance.getWeatherForecast().then((data) => {
       setForecastWeather(data);
     });
-    // .finally(() => setIsLoading(false));
   }
 
   useEffect(() => {
     getWeather(city);
+  }, [city]);
+  useEffect(() => {
     getWeatherForecast();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [city]);
+  }, []);
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const inputValue = (event: any) => {
+  const handleInputChange = (event: any) => {
     const { value } = event.target;
     // eslint-disable-next-line no-console
     console.log(value);
@@ -55,17 +55,17 @@ const Weather = () => {
     };
   };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const optimisedVersion = useCallback(debounce(inputValue), []);
+  const delayedHandleInputChange = useCallback(debounce(handleInputChange), []);
   return (
-    <div className="weather-components">
+    <div className="weather-component">
       {isLoading ? (
         <Spin className="loader" size="large" spinning={isLoading} />
       ) : (
         <>
-          <div className="center-input">
-            <Input type="text" onChange={optimisedVersion} />
+          <div className="search-bar">
+            <Input type="text" onChange={delayedHandleInputChange} />
           </div>
-          <div className="weather-block">
+          <div className="weather-card ">
             <div className="weather-city">{weatherData.name}</div>
             <div className="weather-description">{weatherData.weather[0].description}</div>
             <img
@@ -73,26 +73,28 @@ const Weather = () => {
               src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
               alt="icon"
             />
-            <div className="weather-temp">
+            <div className="weather-temperature">
               {Math.round(weatherData.main.temp)}
               °c
             </div>
           </div>
           <div className="forecast">
             {forecastData?.daily.map((day: any) => (
-              <div className="forecast-item forecast-font" key={day.dt}>
-                <div className="forecast-day">{moment(day.dt * 1000).format('dddd')}</div>
+              <div className="forecast-item" key={day.dt}>
+                <div className="forecast-day">
+                  {new Intl.DateTimeFormat('en-GB', { weekday: 'short' }).format(day.dt * 1000)}
+                </div>
                 <img
                   src={`https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`}
                   alt="weather icon"
                   className="forecast-icon"
                 />
-                <div className="forecast-temp">
+                <div className="forecast-temperature">
                   NIGHT:&nbsp;
                   {Math.round(day.temp.night)}
                   °c
                 </div>
-                <div className="forecast-temp">
+                <div className="forecast-temperature">
                   DAY:&nbsp;
                   {Math.round(day.temp.day)}
                   °c

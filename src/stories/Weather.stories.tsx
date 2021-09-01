@@ -5,7 +5,6 @@ import Weather from '../pages/Weather/Weather';
 export default {
   title: 'Pages/Weather',
   component: Weather,
-  argTypes: { backgroundColor: { control: 'color' } },
 } as ComponentMeta<typeof Weather>;
 
 const Template: ComponentStory<typeof Weather> = () => <Weather />;
