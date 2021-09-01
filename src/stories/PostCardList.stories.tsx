@@ -6,7 +6,6 @@ import { createMockPost, createMockPosts } from '../mock/mockPost';
 export default {
   title: 'PostCardList/PostCardList',
   component: PostCardList,
-  argTypes: { backgroundColor: { control: 'color' } },
 } as ComponentMeta<typeof PostCardList>;
 
 const Template: ComponentStory<typeof PostCardList> = () => (

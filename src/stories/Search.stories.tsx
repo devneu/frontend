@@ -5,7 +5,6 @@ import SearchWidget from '../components/Search/Search';
 export default {
   title: 'Search/SearchWidget',
   component: SearchWidget,
-  argTypes: { backgroundColor: { control: 'color' } },
 } as ComponentMeta<typeof SearchWidget>;
 
 const Template: ComponentStory<typeof SearchWidget> = () => <SearchWidget />;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import SmallPostCard from '../components/SmallPostCard/SmallPostCard';
+import SmallPostCard from '../components/Posts/SmallPostCard';
 import { createMockPost } from '../mock/mockPost';
 
 export default {

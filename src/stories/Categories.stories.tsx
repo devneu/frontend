@@ -5,7 +5,6 @@ import Categories from '../components/Categories/Categories';
 export default {
   title: 'Categories/CategoriesWidget',
   component: Categories,
-  argTypes: { backgroundColor: { control: 'color' } },
 } as ComponentMeta<typeof Categories>;
 
 const Template: ComponentStory<typeof Categories> = () => <Categories />;
