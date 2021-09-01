@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import SideWidget from '../components/SideWidget/SideWidget';
 
 export default {
-  title: 'Blog/SideWidget',
+  title: 'Widget/SideWidget',
   component: SideWidget,
 } as ComponentMeta<typeof SideWidget>;
 
