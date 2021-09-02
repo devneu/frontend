@@ -10,19 +10,16 @@ const Weather = () => {
   const [forecastData, setForecastWeather] = useState<any>(null);
 
   // eslint-disable-next-line @typescript-eslint/no-shadow
-  async function getWeather(city: string) {
+  function getWeather(city: string) {
     weatherServiceInstance
       .getWeather(city)
       .then((data) => {
-        // handle success
-        // eslint-disable-next-line no-console
-        console.log(data);
         setWeather(data);
       })
       .finally(() => setIsLoading(false));
   }
 
-  async function getWeatherForecast() {
+  function getWeatherForecast() {
     weatherServiceInstance.getWeatherForecast().then((data) => {
       setForecastWeather(data);
     });
@@ -38,8 +35,6 @@ const Weather = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleInputChange = (event: any) => {
     const { value } = event.target;
-    // eslint-disable-next-line no-console
-    console.log(value);
     setCity(value);
   };
   const debounce = (func: any) => {
