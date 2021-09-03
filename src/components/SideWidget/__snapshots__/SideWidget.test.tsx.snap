@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideWidget Should successfully render 1`] = `
+<div
+  className="ant-card ant-card-bordered side-widget"
+>
+  <div
+    className="ant-card-head"
+    style={Object {}}
+  >
+    <div
+      className="ant-card-head-wrapper"
+    >
+      <div
+        className="ant-card-head-title"
+      >
+        Side Widget
+      </div>
+    </div>
+  </div>
+  <div
+    className="ant-card-body"
+    style={Object {}}
+  >
+    You can put anything you want inside 
+    of these side widgets. They are easy to use, 
+    and feature the Bootstrap 5 card component!
+  </div>
+</div>
+`;
