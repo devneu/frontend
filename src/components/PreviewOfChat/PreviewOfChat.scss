@@ -1,0 +1,53 @@
+.previewofchat {
+  width: 400px;
+  height: calc(100vh - 64px);
+  background: grey;
+  float: right;
+
+  hr {
+    background: white;
+    margin: 0 20px;
+  }
+
+  .attachments {
+    padding: 10px 0;
+  }
+
+  .show-all {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background: none;
+
+    span {
+      color: white;
+      text-decoration: underline;
+    }
+
+  }
+
+  .media-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 5px;
+
+    img {
+      padding: 10px;
+      flex: 0 0 33.33333333%;
+    }
+  }
+
+  .document-list {
+    display: flex;
+    flex-direction: column;
+    .file-item{
+      display: flex;
+      flex-direction: row;
+    }
+    img {
+      padding: 10px;
+      //flex: 0 0 33.33333333%;
+    }
+  }
+}
