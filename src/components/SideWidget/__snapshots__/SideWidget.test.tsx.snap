@@ -22,9 +22,7 @@ exports[`SideWidget Should successfully render 1`] = `
     className="ant-card-body"
     style={Object {}}
   >
-    You can put anything you want inside
-    of these side widgets. They are easy to use,
-    and feature the Bootstrap 5 card component!
+    You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!
   </div>
 </div>
 `;
