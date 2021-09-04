@@ -3,10 +3,10 @@ import BlogHeader from '../../components/BlogHeader';
 import Pagination from '../../components/Pagination';
 import PostsCardList from '../../components/PostsCardList/PostCardList';
 import SearchWidget from '../../components/Search/Search';
+import SideWidget from '../../components/SideWidget/SideWidget';
 import CategoriesWidget from '../../components/Categories/Categories';
 import { createMockPosts } from '../../mock/mockPost';
 import LayoutPage from '../../components/LayoutPage/LayoutPage';
-import SideWidget from '../../components/SideWidget/SideWidget';
 import './Blog.scss';
 
 const Blog = () => {
