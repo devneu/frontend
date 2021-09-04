@@ -6,6 +6,7 @@ import SearchWidget from '../../components/Search/Search';
 import CategoriesWidget from '../../components/Categories/Categories';
 import { createMockPosts } from '../../mock/mockPost';
 import LayoutPage from '../../components/LayoutPage/LayoutPage';
+import SideWidget from '../../components/SideWidget/SideWidget';
 import './Blog.scss';
 
 const Blog = () => {
@@ -30,6 +31,7 @@ const Blog = () => {
           <>
             <SearchWidget />
             <CategoriesWidget />
+            <SideWidget />
           </>
         )}
       />

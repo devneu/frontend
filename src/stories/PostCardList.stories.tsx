@@ -4,7 +4,7 @@ import PostCardList from '../components/PostsCardList/PostCardList';
 import { createMockPost, createMockPosts } from '../mock/mockPost';
 
 export default {
-  title: 'PostCardList/PostCardList',
+  title: 'Posts/PostCardList',
   component: PostCardList,
 } as ComponentMeta<typeof PostCardList>;
 

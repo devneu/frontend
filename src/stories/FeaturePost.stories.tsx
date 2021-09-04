@@ -1,10 +1,10 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import FeaturePost from '../components/Posts/FeaturePost';
 import { createMockPost } from '../mock/mockPost';
+import FeaturePost from '../components/FeaturePost/FeaturePost';
 
 export default {
-  title: 'MainPost/FeaturePost',
+  title: 'Posts/FeaturePost',
   component: FeaturePost,
 } as ComponentMeta<typeof FeaturePost>;
 

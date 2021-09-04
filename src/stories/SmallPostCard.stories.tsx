@@ -1,10 +1,10 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import SmallPostCard from '../components/Posts/SmallPostCard';
+import SmallPostCard from '../components/SmallPostCard/SmallPostCard';
 import { createMockPost } from '../mock/mockPost';
 
 export default {
-  title: 'ChildPosts/SmallPostCard',
+  title: 'Posts/SmallPostCard',
   component: SmallPostCard,
   argTypes: { backgroundColor: { control: 'color' } },
 } as ComponentMeta<typeof SmallPostCard>;
