@@ -2,8 +2,7 @@
   "src/**/*.{js,jsx,ts,tsx}": [
     "tsc --pretty --jsx react --esModuleInterop --noEmit",
     "prettier --write",
-    "eslint --fix",
-    "yarn run test --bail --watchAll=false --passWithNoTests"
+    "eslint --fix"
   ]
 }
 
