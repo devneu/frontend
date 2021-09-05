@@ -5,7 +5,6 @@ import ComingSoon from '../pages/ComingSoon/ComingSoon';
 export default {
   title: 'Pages/ComingSoon',
   component: ComingSoon,
-  argTypes: { backgroundColor: { control: 'color' } },
 } as ComponentMeta<typeof ComingSoon>;
 
 const Template: ComponentStory<typeof ComingSoon> = () => <ComingSoon />;
