@@ -1,0 +1,17 @@
+.attachments{
+  padding: 10px 0;
+  .document-list {
+    display: flex;
+    flex-direction: column;
+
+    .file-item {
+      display: flex;
+      flex-direction: row;
+    }
+
+    img {
+      padding: 10px;
+
+    }
+  }
+}
