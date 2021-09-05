@@ -1,6 +1,6 @@
 import React from 'react';
-import './SideWidget.scss';
 import { Card } from 'antd';
+import './SideWidget.scss';
 
 const SideWidget = () => (
   <Card className="side-widget" title="Side Widget">

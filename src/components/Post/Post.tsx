@@ -1,11 +1,11 @@
 import React from 'react';
-import { PageHeader, Typography, Tag, Image } from 'antd';
+import { PageHeader, Typography, Tag, Image, Descriptions } from 'antd';
 import { useHistory, useParams } from 'react-router-dom';
 import Editor from 'rich-markdown-editor';
 import { createMockPosts } from '../../mock/mockPost';
 import './Post.scss';
 
-const { Title, Text, Paragraph } = Typography;
+const { Text, Paragraph } = Typography;
 
 const Post = () => {
   const history = useHistory();
@@ -19,19 +19,20 @@ const Post = () => {
 
   return (
     <div className="post">
-      <PageHeader>
-        <Title>Welcome to Blog Post!</Title>
+      <PageHeader title="Welcome to Blog Post!">
+        <Descriptions.Item>
+          <Text type="secondary" italic>
+            {currentPost.date}
+          </Text>
+          <div>
+            {currentPost.tag.map((tag) => (
+              <Tag className="tag-post" color="#6c757d">
+                {tag}
+              </Tag>
+            ))}
+          </div>
+        </Descriptions.Item>
       </PageHeader>
-      <Text type="secondary" italic>
-        {currentPost.date}
-      </Text>
-      <div>
-        {currentPost.tag.map((tag) => (
-          <Tag className="tag-post" color="#6c757d">
-            {tag}
-          </Tag>
-        ))}
-      </div>
       <Image className="img-post" src={currentPost.img} />
       <Paragraph className="text-post">{currentPost.text}</Paragraph>
       <Editor defaultValue={currentPost.articleText} readOnly className="text-post" />
