@@ -27,7 +27,7 @@ const AddCommentForm = ({ onSubmit, focus }: AddCommentFormProps) => {
   let disabled: boolean = true;
   const textAreaValue = watch('commentText');
 
-  if (textAreaValue && textAreaValue.length !== 0) disabled = false;
+  if (textAreaValue?.length) disabled = false;
   return (
     <Form
       className="comments__form"
