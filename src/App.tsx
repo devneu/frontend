@@ -9,6 +9,7 @@ import SignIn from './pages/SignIn/SignIn';
 import SignOut from './pages/SignOut/SignOut';
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 import ComingSoon from './pages/ComingSoon/ComingSoon';
+import PageNotFound from './components/PageNotFound/PageNotFound';
 
 const Chat = lazy(() => import('./pages/Chat/Chat' /* webpackChunkName: "ChatPage" */));
 const Weather = lazy(() => import('./pages/Weather/Weather' /* webpackChunkName: "WeatherPage" */));
@@ -48,6 +49,9 @@ function App(): ReactElement {
             </Route>
             <Route path="/coming-soon">
               <ComingSoon />
+            </Route>
+            <Route path="/page-not-found">
+              <PageNotFound />
             </Route>
           </Switch>
         </main>
