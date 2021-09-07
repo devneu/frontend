@@ -3,12 +3,15 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import Pagination from '../components/Pagination/Pagination';
 
 export default {
-  title: 'Pagination/PaginationComponent',
+  title: 'Pagination',
   component: Pagination,
-  argTypes: { backgroundColor: { control: 'color' } },
 } as ComponentMeta<typeof Pagination>;
 
 const Template: ComponentStory<typeof Pagination> = (args) => <Pagination {...args} />;
 
 export const Primary = Template.bind({});
-Primary.args = {};
+Primary.args = {
+  totalItems: 10,
+  pageSize: 10,
+  currentPage: 1,
+};

@@ -8,8 +8,10 @@ import './PostPage.scss';
 
 const PostPage = () => (
   <LayoutPage
+    customClass="post-page"
+    container
     content={<Post />}
-    sider={(
+    side={(
       <>
         <SearchWidget />
         <CategoriesWidget />

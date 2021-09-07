@@ -33,7 +33,7 @@ export const createMockPosts = () => [
 For me, the most fascinating interface is Twitter. I have odd cosmic thoughts every day and I realized I could hold them to myself or share them with people who might be interested.
 
 Venus has a runaway greenhouse effect. I kind of want to know what happened there because we're twirling knobs here on Earth without knowing the consequences of it. Mars once had running water. It's bone dry today. Something bad happened there as well.
-`,
+    `,
     tag: ['Web Design', 'Freebies'],
   },
   {
@@ -51,7 +51,7 @@ Venus has a runaway greenhouse effect. I kind of want to know what happened ther
 For me, the most fascinating interface is Twitter. I have odd cosmic thoughts every day and I realized I could hold them to myself or share them with people who might be interested.
 
 Venus has a runaway greenhouse effect. I kind of want to know what happened there because we're twirling knobs here on Earth without knowing the consequences of it. Mars once had running water. It's bone dry today. Something bad happened there as well.
-`,
+    `,
     tag: ['Web Design', 'Freebies'],
   },
   {
@@ -69,7 +69,7 @@ Venus has a runaway greenhouse effect. I kind of want to know what happened ther
 For me, the most fascinating interface is Twitter. I have odd cosmic thoughts every day and I realized I could hold them to myself or share them with people who might be interested.
 
 Venus has a runaway greenhouse effect. I kind of want to know what happened there because we're twirling knobs here on Earth without knowing the consequences of it. Mars once had running water. It's bone dry today. Something bad happened there as well.
-`,
+    `,
     tag: ['Web Design', 'Freebies'],
   },
   {
@@ -87,7 +87,7 @@ Venus has a runaway greenhouse effect. I kind of want to know what happened ther
 For me, the most fascinating interface is Twitter. I have odd cosmic thoughts every day and I realized I could hold them to myself or share them with people who might be interested.
 
 Venus has a runaway greenhouse effect. I kind of want to know what happened there because we're twirling knobs here on Earth without knowing the consequences of it. Mars once had running water. It's bone dry today. Something bad happened there as well.
-`,
+    `,
     tag: ['Web Design', 'Freebies'],
   },
   {
@@ -105,7 +105,7 @@ Venus has a runaway greenhouse effect. I kind of want to know what happened ther
 For me, the most fascinating interface is Twitter. I have odd cosmic thoughts every day and I realized I could hold them to myself or share them with people who might be interested.
 
 Venus has a runaway greenhouse effect. I kind of want to know what happened there because we're twirling knobs here on Earth without knowing the consequences of it. Mars once had running water. It's bone dry today. Something bad happened there as well.
-`,
+    `,
     tag: ['Web Design', 'Freebies'],
   },
 ];

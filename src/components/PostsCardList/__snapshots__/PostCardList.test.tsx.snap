@@ -80,7 +80,7 @@ exports[`PostCardList Should successfully render 1`] = `
           onClick={[Function]}
         >
           <button
-            className="ant-btn ant-btn-link button-feature-card"
+            className="ant-btn ant-btn-primary"
             onClick={[Function]}
             type="button"
           >
@@ -179,7 +179,7 @@ exports[`PostCardList Should successfully render 1`] = `
           onClick={[Function]}
         >
           <button
-            className="ant-btn ant-btn-link button-card"
+            className="ant-btn ant-btn-primary"
             onClick={[Function]}
             type="button"
           >
@@ -278,7 +278,7 @@ exports[`PostCardList Should successfully render 1`] = `
           onClick={[Function]}
         >
           <button
-            className="ant-btn ant-btn-link button-card"
+            className="ant-btn ant-btn-primary"
             onClick={[Function]}
             type="button"
           >
@@ -377,7 +377,7 @@ exports[`PostCardList Should successfully render 1`] = `
           onClick={[Function]}
         >
           <button
-            className="ant-btn ant-btn-link button-card"
+            className="ant-btn ant-btn-primary"
             onClick={[Function]}
             type="button"
           >
@@ -476,7 +476,7 @@ exports[`PostCardList Should successfully render 1`] = `
           onClick={[Function]}
         >
           <button
-            className="ant-btn ant-btn-link button-card"
+            className="ant-btn ant-btn-primary"
             onClick={[Function]}
             type="button"
           >
@@ -575,7 +575,7 @@ exports[`PostCardList Should successfully render 1`] = `
           onClick={[Function]}
         >
           <button
-            className="ant-btn ant-btn-link button-card"
+            className="ant-btn ant-btn-primary"
             onClick={[Function]}
             type="button"
           >

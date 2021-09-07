@@ -1,23 +1,21 @@
 import { Button, Card, Typography } from 'antd';
 import React from 'react';
-import './SmallPostCard.scss';
 import { ArrowRightOutlined } from '@ant-design/icons';
 import { NavLink } from 'react-router-dom';
 import { Post } from '../../types/Post.interface';
-
-const { Title, Paragraph } = Typography;
+import './SmallPostCard.scss';
 
 interface SmallPostCardProps {
-  post: Post;
+    post: Post;
 }
 
 const SmallPostCard = ({ post }: SmallPostCardProps) => (
   <Card className="post-card" cover={<img alt="card-img" src={post.img} />}>
     <Card.Meta description={post.date} />
-    <Title level={2}>{post.title}</Title>
-    <Paragraph className="post-text">{post.text}</Paragraph>
+    <Typography.Title level={2}>{post.title}</Typography.Title>
+    <Typography.Paragraph className="post-text">{post.text}</Typography.Paragraph>
     <NavLink to={`/blog/${post.id}`}>
-      <Button type="link" className="button-card">
+      <Button type="primary">
         Read more
         <ArrowRightOutlined />
       </Button>

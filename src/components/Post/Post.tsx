@@ -1,7 +1,7 @@
 import React from 'react';
 import { PageHeader, Typography, Tag, Image, Descriptions } from 'antd';
 import { useHistory, useParams } from 'react-router-dom';
-import Editor from 'rich-markdown-editor';
+import ReactMarkdown from 'react-markdown';
 import { createMockPosts } from '../../mock/mockPost';
 import './Post.scss';
 
@@ -24,6 +24,8 @@ const Post = () => {
           <Text type="secondary" italic>
             {currentPost.date}
           </Text>
+        </Descriptions.Item>
+        <Descriptions.Item>
           <div>
             {currentPost.tag.map((tag) => (
               <Tag className="tag-post" color="#6c757d">
@@ -35,7 +37,9 @@ const Post = () => {
       </PageHeader>
       <Image className="img-post" src={currentPost.img} />
       <Paragraph className="text-post">{currentPost.text}</Paragraph>
-      <Editor defaultValue={currentPost.articleText} readOnly className="text-post" />
+      <ReactMarkdown className="text-post">
+        {currentPost.articleText}
+      </ReactMarkdown>
     </div>
   );
 };

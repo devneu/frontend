@@ -16,6 +16,8 @@ const Blog = () => {
     <>
       <BlogHeader title="Post Title" subtitle="Post Subtitle" />
       <LayoutPage
+        customClass="blog-page"
+        container
         content={(
           <>
             <PostsCardList posts={posts} featurePost={featurePost} />
@@ -27,7 +29,7 @@ const Blog = () => {
             />
           </>
         )}
-        sider={(
+        side={(
           <>
             <SearchWidget />
             <CategoriesWidget />
