@@ -1,16 +1,16 @@
 import { Layout } from 'antd';
-import classNames from 'classnames';
+import cn from 'classnames';
 import React, { ReactElement } from 'react';
 
 interface LayoutPageProps {
-  content: ReactElement,
-  side: ReactElement,
-  container: boolean,
-  customClass: string
+  content: ReactElement;
+  side: ReactElement;
+  container?: boolean;
+  className?: string;
 }
 
-const LayoutPage = ({ content, side, customClass, container }: LayoutPageProps) => (
-  <div className={classNames(`${customClass}`, { container: !!container })}>
+const LayoutPage = ({ content, side, className, container }: LayoutPageProps) => (
+  <div className={cn(className, { container })}>
     <Layout className="layout">
       <Layout.Content className="content">{content}</Layout.Content>
       <Layout.Sider className="sidebar" theme="light" width={400}>

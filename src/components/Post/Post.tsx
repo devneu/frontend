@@ -10,7 +10,8 @@ const { Text, Paragraph } = Typography;
 const Post = () => {
   const history = useHistory();
   const { postId } = useParams<any>();
-  const currentPost = createMockPosts().find((el) => el.id === +postId);
+  const currentPostId = +postId;
+  const currentPost = createMockPosts().find((el) => el.id === currentPostId);
 
   if (!currentPost) {
     history.push('/page-not-found');

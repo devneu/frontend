@@ -16,7 +16,7 @@ const Blog = () => {
     <>
       <BlogHeader title="Post Title" subtitle="Post Subtitle" />
       <LayoutPage
-        customClass="blog-page"
+        className="blog-page"
         container
         content={(
           <>

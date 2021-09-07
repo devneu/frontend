@@ -8,7 +8,7 @@ import './PostPage.scss';
 
 const PostPage = () => (
   <LayoutPage
-    customClass="post-page"
+    className="post-page"
     container
     content={<Post />}
     side={(
