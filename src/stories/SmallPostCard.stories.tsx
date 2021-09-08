@@ -1,5 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { BrowserRouter } from 'react-router-dom';
 import SmallPostCard from '../components/SmallPostCard/SmallPostCard';
 import { createMockPost } from '../mock/mockPost';
 
@@ -10,7 +11,9 @@ export default {
 } as ComponentMeta<typeof SmallPostCard>;
 
 const Template: ComponentStory<typeof SmallPostCard> = () => (
-  <SmallPostCard post={createMockPost()} />
+  <BrowserRouter>
+    <SmallPostCard post={createMockPost()} />
+  </BrowserRouter>
 );
 
 export const Primary = Template.bind({});

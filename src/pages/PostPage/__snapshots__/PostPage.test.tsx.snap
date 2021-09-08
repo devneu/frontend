@@ -1,0 +1,302 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostPage Should successfully render 1`] = `
+<div
+  className="post-page container"
+>
+  <section
+    className="ant-layout ant-layout-has-sider layout"
+  >
+    <main
+      className="ant-layout-content content"
+    />
+    <aside
+      className="ant-layout-sider ant-layout-sider-light sidebar"
+      style={
+        Object {
+          "flex": "0 0 400px",
+          "maxWidth": "400px",
+          "minWidth": "400px",
+          "width": "400px",
+        }
+      }
+    >
+      <div
+        className="ant-layout-sider-children"
+      >
+        <div
+          className="ant-card ant-card-bordered search-widget-card"
+        >
+          <div
+            className="ant-card-head"
+            style={Object {}}
+          >
+            <div
+              className="ant-card-head-wrapper"
+            >
+              <div
+                className="ant-card-head-title"
+              >
+                Search
+              </div>
+            </div>
+          </div>
+          <div
+            className="ant-card-body"
+            style={Object {}}
+          >
+            <form
+              className="ant-form ant-form-inline"
+              onReset={[Function]}
+              onSubmit={[Function]}
+            >
+              <div
+                className="ant-row ant-form-item"
+                style={Object {}}
+              >
+                <div
+                  className="ant-col ant-form-item-control"
+                  style={Object {}}
+                >
+                  <div
+                    className="ant-form-item-control-input"
+                  >
+                    <div
+                      className="ant-form-item-control-input-content"
+                    >
+                      <input
+                        className="ant-input input-search"
+                        id="searchInput"
+                        name="search"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        placeholder="Enter search term..."
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="ant-row ant-form-item"
+                style={Object {}}
+              >
+                <div
+                  className="ant-col ant-form-item-control"
+                  style={Object {}}
+                >
+                  <div
+                    className="ant-form-item-control-input"
+                  >
+                    <div
+                      className="ant-form-item-control-input-content"
+                    >
+                      <button
+                        className="ant-btn ant-btn-primary button-search"
+                        onClick={[Function]}
+                        type="submit"
+                      >
+                        <span>
+                          Go!
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div
+          className="ant-card ant-card-bordered categories-widget-card"
+        >
+          <div
+            className="ant-card-head"
+            style={Object {}}
+          >
+            <div
+              className="ant-card-head-wrapper"
+            >
+              <div
+                className="ant-card-head-title"
+              >
+                Categories
+              </div>
+            </div>
+          </div>
+          <div
+            className="ant-card-body"
+            style={Object {}}
+          >
+            <div
+              className="ant-row ant-row-start"
+              style={
+                Object {
+                  "marginBottom": -4,
+                  "marginLeft": -4,
+                  "marginRight": -4,
+                  "marginTop": -4,
+                }
+              }
+            >
+              <div
+                className="ant-col ant-col-12"
+                style={
+                  Object {
+                    "paddingBottom": 4,
+                    "paddingLeft": 4,
+                    "paddingRight": 4,
+                    "paddingTop": 4,
+                  }
+                }
+              >
+                <a
+                  className="ant-btn ant-btn-link"
+                  href="#"
+                  onClick={[Function]}
+                >
+                  <span>
+                    Web Design
+                  </span>
+                </a>
+              </div>
+              <div
+                className="ant-col ant-col-12"
+                style={
+                  Object {
+                    "paddingBottom": 4,
+                    "paddingLeft": 4,
+                    "paddingRight": 4,
+                    "paddingTop": 4,
+                  }
+                }
+              >
+                <a
+                  className="ant-btn ant-btn-link"
+                  href="#"
+                  onClick={[Function]}
+                >
+                  <span>
+                    HTML
+                  </span>
+                </a>
+              </div>
+              <div
+                className="ant-col ant-col-12"
+                style={
+                  Object {
+                    "paddingBottom": 4,
+                    "paddingLeft": 4,
+                    "paddingRight": 4,
+                    "paddingTop": 4,
+                  }
+                }
+              >
+                <a
+                  className="ant-btn ant-btn-link"
+                  href="#"
+                  onClick={[Function]}
+                >
+                  <span>
+                    Freebies
+                  </span>
+                </a>
+              </div>
+              <div
+                className="ant-col ant-col-12"
+                style={
+                  Object {
+                    "paddingBottom": 4,
+                    "paddingLeft": 4,
+                    "paddingRight": 4,
+                    "paddingTop": 4,
+                  }
+                }
+              >
+                <a
+                  className="ant-btn ant-btn-link"
+                  href="#"
+                  onClick={[Function]}
+                >
+                  <span>
+                    JavaScript
+                  </span>
+                </a>
+              </div>
+              <div
+                className="ant-col ant-col-12"
+                style={
+                  Object {
+                    "paddingBottom": 4,
+                    "paddingLeft": 4,
+                    "paddingRight": 4,
+                    "paddingTop": 4,
+                  }
+                }
+              >
+                <a
+                  className="ant-btn ant-btn-link"
+                  href="#"
+                  onClick={[Function]}
+                >
+                  <span>
+                    CSS
+                  </span>
+                </a>
+              </div>
+              <div
+                className="ant-col ant-col-12"
+                style={
+                  Object {
+                    "paddingBottom": 4,
+                    "paddingLeft": 4,
+                    "paddingRight": 4,
+                    "paddingTop": 4,
+                  }
+                }
+              >
+                <a
+                  className="ant-btn ant-btn-link"
+                  href="#"
+                  onClick={[Function]}
+                >
+                  <span>
+                    Tutorials
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ant-card ant-card-bordered side-widget"
+        >
+          <div
+            className="ant-card-head"
+            style={Object {}}
+          >
+            <div
+              className="ant-card-head-wrapper"
+            >
+              <div
+                className="ant-card-head-title"
+              >
+                Side Widget
+              </div>
+            </div>
+          </div>
+          <div
+            className="ant-card-body"
+            style={Object {}}
+          >
+            You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+</div>
+`;

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LayoutPage Should successfully render 1`] = `
+<div
+  className="post-page container"
+>
+  <section
+    className="ant-layout layout"
+  >
+    <main
+      className="ant-layout-content content"
+    >
+      <div>
+        Content
+      </div>
+    </main>
+    <aside
+      className="ant-layout-sider ant-layout-sider-light sidebar"
+      style={
+        Object {
+          "flex": "0 0 400px",
+          "maxWidth": "400px",
+          "minWidth": "400px",
+          "width": "400px",
+        }
+      }
+    >
+      <div
+        className="ant-layout-sider-children"
+      >
+        <div>
+          Side
+        </div>
+      </div>
+    </aside>
+  </section>
+</div>
+`;

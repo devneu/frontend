@@ -29,7 +29,7 @@ const Post = () => {
         <Descriptions.Item>
           <div>
             {currentPost.tag.map((tag) => (
-              <Tag className="tag-post" color="#6c757d">
+              <Tag className="tag-post" color="#6c757d" key={currentPost.id}>
                 {tag}
               </Tag>
             ))}

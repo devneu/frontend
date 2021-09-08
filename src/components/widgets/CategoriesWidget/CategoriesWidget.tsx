@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Card, Col, Row } from 'antd';
-import './Categories.scss';
+import './CategoriesWidget.scss';
 
 const CategoriesWidget = () => (
   <Card title="Categories" className="categories-widget-card">

@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import SearchWidget from './Search';
+import CategoriesWidget from './CategoriesWidget';
 
-describe('SearchWidget', () => {
+describe('CategoriesWidget', () => {
   it('Should successfully render', () => {
-    const wrapper = renderer.create(<SearchWidget />).toJSON();
+    const wrapper = renderer.create(<CategoriesWidget />).toJSON();
     expect(wrapper).toMatchSnapshot();
   });
 });

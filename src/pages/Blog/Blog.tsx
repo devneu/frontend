@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import BlogHeader from '../../components/BlogHeader';
 import Pagination from '../../components/Pagination';
 import PostsCardList from '../../components/PostsCardList/PostCardList';
-import SearchWidget from '../../components/Search/Search';
-import SideWidget from '../../components/SideWidget/SideWidget';
-import CategoriesWidget from '../../components/Categories/Categories';
 import { createMockPosts } from '../../mock/mockPost';
 import LayoutPage from '../../components/LayoutPage/LayoutPage';
 import './Blog.scss';
+import SearchWidget from '../../components/widgets/SearchWidget/SearchWidget';
+import CategoriesWidget from '../../components/widgets/CategoriesWidget/CategoriesWidget';
+import SideWidget from '../../components/widgets/SideWidget/SideWidget';
 
 const Blog = () => {
   const [featurePost, ...posts] = createMockPosts();
