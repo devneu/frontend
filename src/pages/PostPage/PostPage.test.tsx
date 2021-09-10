@@ -11,7 +11,7 @@ describe('PostPage', () => {
   let useHistorySpy: jest.SpyInstance;
 
   beforeEach(() => {
-    useParamsSpy = jest.spyOn(ReactRouter, 'useParams').mockReturnValue({});
+    useParamsSpy = jest.spyOn(ReactRouter, 'useParams').mockReturnValue({ postId: '1' });
     useHistorySpy = jest.spyOn(ReactRouter, 'useHistory').mockReturnValue({ push: jest.fn() } as any);
   });
 
