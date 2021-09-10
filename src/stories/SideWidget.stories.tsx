@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import SideWidget from '../components/SideWidget/SideWidget';
+import SideWidget from '../components/widgets/SideWidget/SideWidget';
 
 export default {
   title: 'Widgets/SideWidget',

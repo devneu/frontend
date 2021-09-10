@@ -1,34 +1,18 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import PostCardList from '../components/BlogPosts/PostCardList';
+import { BrowserRouter } from 'react-router-dom';
+import PostCardList from '../components/PostsCardList/PostCardList';
+import { createMockPost, createMockPosts } from '../mock/mockPost';
 
 export default {
-  title: 'PostCardList/PostCardList',
+  title: 'Posts/PostCardList',
   component: PostCardList,
-  argTypes: { backgroundColor: { control: 'color' } },
 } as ComponentMeta<typeof PostCardList>;
 
 const Template: ComponentStory<typeof PostCardList> = () => (
-  <PostCardList
-    posts={[
-      {
-        id: 1,
-        postImg: 'https://dummyimage.com/700x350/dee2e6/6c757d.jpg',
-        postDate: ' post date',
-        postTitle: ' post title',
-        postText: 'post text',
-        sizeBlock: 2,
-      },
-    ]}
-    featurePost={{
-      id: 1,
-      postImg: 'https://dummyimage.com/700x350/dee2e6/6c757d.jpg',
-      postDate: ' post date',
-      postTitle: ' post title',
-      postText: 'post text',
-      sizeBlock: 2,
-    }}
-  />
+  <BrowserRouter>
+    <PostCardList posts={createMockPosts()} featurePost={createMockPost()} />
+  </BrowserRouter>
 );
 
 export const Primary = Template.bind({});
