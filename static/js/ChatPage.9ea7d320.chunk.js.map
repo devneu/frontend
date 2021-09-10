@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/Chat/Chat.tsx"],"names":["Chat"],"mappings":"4HAAA,sEAGe,SAASA,IACtB,OACE,kCACE","file":"static/js/ChatPage.9ea7d320.chunk.js","sourcesContent":["import React from 'react';\nimport './Chat.scss';\n\nexport default function Chat() {\n  return (\n    <section>\n      <h1>Chat page</h1>\n    </section>\n  );\n}\n"],"sourceRoot":""}
