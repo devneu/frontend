@@ -1,0 +1,511 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostCardList Should successfully render 1`] = `
+<div
+  className="ant-row"
+  style={
+    Object {
+      "marginBottom": -12,
+      "marginLeft": -12,
+      "marginRight": -12,
+      "marginTop": -12,
+    }
+  }
+>
+  <div
+    className="ant-col ant-col-24"
+    style={
+      Object {
+        "paddingBottom": 12,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 12,
+      }
+    }
+  >
+    <div
+      className="ant-card ant-card-bordered post-feature-card"
+    >
+      <div
+        className="ant-card-cover"
+      >
+        <img
+          alt="card-img"
+          src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg"
+        />
+      </div>
+      <div
+        className="ant-card-body"
+        style={Object {}}
+      >
+        <div
+          className="ant-card-meta"
+        >
+          <div
+            className="ant-card-meta-detail"
+          >
+            <div
+              className="ant-card-meta-description"
+            >
+              September 23, 2010
+            </div>
+          </div>
+        </div>
+        <h2
+          className="ant-typography"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+            }
+          }
+        >
+          DEV-17.com
+        </h2>
+        <div
+          className="ant-typography post-text"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+            }
+          }
+        >
+          Science is an enterprise that should be cherished as an activity of the free human mind. 
+    Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. 
+    The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that. 
+    If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.
+        </div>
+        <a
+          aria-current={null}
+          href="/blog/999"
+          onClick={[Function]}
+        >
+          <button
+            className="ant-btn ant-btn-primary"
+            onClick={[Function]}
+            type="button"
+          >
+            <span>
+              Read more
+            </span>
+            <span
+              aria-label="arrow-right"
+              className="anticon anticon-arrow-right"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="arrow-right"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 000-48.4z"
+                />
+              </svg>
+            </span>
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="ant-col ant-col-12"
+    style={
+      Object {
+        "paddingBottom": 12,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 12,
+      }
+    }
+  >
+    <div
+      className="ant-card ant-card-bordered post-card"
+    >
+      <div
+        className="ant-card-cover"
+      >
+        <img
+          alt="card-img"
+          src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg"
+        />
+      </div>
+      <div
+        className="ant-card-body"
+        style={Object {}}
+      >
+        <div
+          className="ant-card-meta"
+        >
+          <div
+            className="ant-card-meta-detail"
+          >
+            <div
+              className="ant-card-meta-description"
+            >
+              September 23, 2010
+            </div>
+          </div>
+        </div>
+        <h2
+          className="ant-typography"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+            }
+          }
+        >
+          PostPage Title
+        </h2>
+        <div
+          className="ant-typography post-text"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+            }
+          }
+        >
+          Science is an enterprise that should be cherished as an activity of the free human mind. 
+    Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. 
+    The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that. 
+    If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.
+        </div>
+        <a
+          aria-current={null}
+          href="/blog/1"
+          onClick={[Function]}
+        >
+          <button
+            className="ant-btn ant-btn-primary"
+            onClick={[Function]}
+            type="button"
+          >
+            <span>
+              Read more
+            </span>
+            <span
+              aria-label="arrow-right"
+              className="anticon anticon-arrow-right"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="arrow-right"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 000-48.4z"
+                />
+              </svg>
+            </span>
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="ant-col ant-col-12"
+    style={
+      Object {
+        "paddingBottom": 12,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 12,
+      }
+    }
+  >
+    <div
+      className="ant-card ant-card-bordered post-card"
+    >
+      <div
+        className="ant-card-cover"
+      >
+        <img
+          alt="card-img"
+          src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg"
+        />
+      </div>
+      <div
+        className="ant-card-body"
+        style={Object {}}
+      >
+        <div
+          className="ant-card-meta"
+        >
+          <div
+            className="ant-card-meta-detail"
+          >
+            <div
+              className="ant-card-meta-description"
+            >
+              September 23, 2010
+            </div>
+          </div>
+        </div>
+        <h2
+          className="ant-typography"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+            }
+          }
+        >
+          PostPage Title
+        </h2>
+        <div
+          className="ant-typography post-text"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+            }
+          }
+        >
+          Science is an enterprise that should be cherished as an activity of the free human mind. 
+    Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. 
+    The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that. 
+    If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.
+        </div>
+        <a
+          aria-current={null}
+          href="/blog/2"
+          onClick={[Function]}
+        >
+          <button
+            className="ant-btn ant-btn-primary"
+            onClick={[Function]}
+            type="button"
+          >
+            <span>
+              Read more
+            </span>
+            <span
+              aria-label="arrow-right"
+              className="anticon anticon-arrow-right"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="arrow-right"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 000-48.4z"
+                />
+              </svg>
+            </span>
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="ant-col ant-col-12"
+    style={
+      Object {
+        "paddingBottom": 12,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 12,
+      }
+    }
+  >
+    <div
+      className="ant-card ant-card-bordered post-card"
+    >
+      <div
+        className="ant-card-cover"
+      >
+        <img
+          alt="card-img"
+          src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg"
+        />
+      </div>
+      <div
+        className="ant-card-body"
+        style={Object {}}
+      >
+        <div
+          className="ant-card-meta"
+        >
+          <div
+            className="ant-card-meta-detail"
+          >
+            <div
+              className="ant-card-meta-description"
+            >
+              September 23, 2010
+            </div>
+          </div>
+        </div>
+        <h2
+          className="ant-typography"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+            }
+          }
+        >
+          PostPage Title
+        </h2>
+        <div
+          className="ant-typography post-text"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+            }
+          }
+        >
+          Science is an enterprise that should be cherished as an activity of the free human mind. 
+    Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. 
+    The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that. 
+    If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.
+        </div>
+        <a
+          aria-current={null}
+          href="/blog/3"
+          onClick={[Function]}
+        >
+          <button
+            className="ant-btn ant-btn-primary"
+            onClick={[Function]}
+            type="button"
+          >
+            <span>
+              Read more
+            </span>
+            <span
+              aria-label="arrow-right"
+              className="anticon anticon-arrow-right"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="arrow-right"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 000-48.4z"
+                />
+              </svg>
+            </span>
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="ant-col ant-col-12"
+    style={
+      Object {
+        "paddingBottom": 12,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 12,
+      }
+    }
+  >
+    <div
+      className="ant-card ant-card-bordered post-card"
+    >
+      <div
+        className="ant-card-cover"
+      >
+        <img
+          alt="card-img"
+          src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg"
+        />
+      </div>
+      <div
+        className="ant-card-body"
+        style={Object {}}
+      >
+        <div
+          className="ant-card-meta"
+        >
+          <div
+            className="ant-card-meta-detail"
+          >
+            <div
+              className="ant-card-meta-description"
+            >
+              September 23, 2010
+            </div>
+          </div>
+        </div>
+        <h2
+          className="ant-typography"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+            }
+          }
+        >
+          PostPage Title
+        </h2>
+        <div
+          className="ant-typography post-text"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+            }
+          }
+        >
+          Science is an enterprise that should be cherished as an activity of the free human mind. 
+    Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. 
+    The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that. 
+    If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.
+        </div>
+        <a
+          aria-current={null}
+          href="/blog/4"
+          onClick={[Function]}
+        >
+          <button
+            className="ant-btn ant-btn-primary"
+            onClick={[Function]}
+            type="button"
+          >
+            <span>
+              Read more
+            </span>
+            <span
+              aria-label="arrow-right"
+              className="anticon anticon-arrow-right"
+              role="img"
+            >
+              <svg
+                aria-hidden="true"
+                data-icon="arrow-right"
+                fill="currentColor"
+                focusable="false"
+                height="1em"
+                viewBox="64 64 896 896"
+                width="1em"
+              >
+                <path
+                  d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 000-48.4z"
+                />
+              </svg>
+            </span>
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

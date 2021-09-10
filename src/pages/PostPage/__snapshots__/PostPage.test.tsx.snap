@@ -1,0 +1,427 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostPage Should successfully render 1`] = `
+<div
+  className="post-page container"
+>
+  <section
+    className="ant-layout ant-layout-has-sider layout"
+  >
+    <main
+      className="ant-layout-content content"
+    >
+      <div
+        className="post"
+      >
+        <div
+          className="ant-page-header ant-page-header-ghost"
+        >
+          <div
+            className="ant-page-header-heading"
+          >
+            <div
+              className="ant-page-header-heading-left"
+            >
+              <span
+                className="ant-page-header-heading-title"
+                title="Welcome to Blog Post!"
+              >
+                Welcome to Blog Post!
+              </span>
+            </div>
+          </div>
+          <div
+            className="ant-page-header-content"
+          >
+            <span
+              className="ant-typography ant-typography-secondary"
+              style={
+                Object {
+                  "WebkitLineClamp": undefined,
+                }
+              }
+            >
+              <i>
+                September 23, 2010
+              </i>
+            </span>
+            <div>
+              <span
+                className="ant-tag ant-tag-has-color tag-post"
+                style={
+                  Object {
+                    "backgroundColor": "#6c757d",
+                  }
+                }
+              >
+                Web Design
+              </span>
+              <span
+                className="ant-tag ant-tag-has-color tag-post"
+                style={
+                  Object {
+                    "backgroundColor": "#6c757d",
+                  }
+                }
+              >
+                Freebies
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ant-image"
+          onClick={[Function]}
+          style={
+            Object {
+              "height": undefined,
+              "width": undefined,
+            }
+          }
+        >
+          <img
+            className="ant-image-img img-post"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg"
+            style={
+              Object {
+                "height": undefined,
+              }
+            }
+          />
+          <div
+            className="ant-image-mask"
+          >
+            <div
+              className="ant-image-mask-info"
+            >
+              <span
+                aria-label="eye"
+                className="anticon anticon-eye"
+                role="img"
+              >
+                <svg
+                  aria-hidden="true"
+                  data-icon="eye"
+                  fill="currentColor"
+                  focusable="false"
+                  height="1em"
+                  viewBox="64 64 896 896"
+                  width="1em"
+                >
+                  <path
+                    d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z"
+                  />
+                </svg>
+              </span>
+              Preview
+            </div>
+          </div>
+        </div>
+        <div
+          className="ant-typography text-post"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+            }
+          }
+        >
+          Science is an enterprise that should be cherished as an activity of the free human mind. 
+    Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. 
+    The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that. 
+    If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.
+        </div>
+        MockReactMarkDown
+      </div>
+    </main>
+    <aside
+      className="ant-layout-sider ant-layout-sider-light sidebar"
+      style={
+        Object {
+          "flex": "0 0 400px",
+          "maxWidth": "400px",
+          "minWidth": "400px",
+          "width": "400px",
+        }
+      }
+    >
+      <div
+        className="ant-layout-sider-children"
+      >
+        <div
+          className="ant-card ant-card-bordered search-widget-card"
+        >
+          <div
+            className="ant-card-head"
+            style={Object {}}
+          >
+            <div
+              className="ant-card-head-wrapper"
+            >
+              <div
+                className="ant-card-head-title"
+              >
+                Search
+              </div>
+            </div>
+          </div>
+          <div
+            className="ant-card-body"
+            style={Object {}}
+          >
+            <form
+              className="ant-form ant-form-inline"
+              onReset={[Function]}
+              onSubmit={[Function]}
+            >
+              <div
+                className="ant-row ant-form-item"
+                style={Object {}}
+              >
+                <div
+                  className="ant-col ant-form-item-control"
+                  style={Object {}}
+                >
+                  <div
+                    className="ant-form-item-control-input"
+                  >
+                    <div
+                      className="ant-form-item-control-input-content"
+                    >
+                      <input
+                        className="ant-input input-search"
+                        id="searchInput"
+                        name="search"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        placeholder="Enter search term..."
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="ant-row ant-form-item"
+                style={Object {}}
+              >
+                <div
+                  className="ant-col ant-form-item-control"
+                  style={Object {}}
+                >
+                  <div
+                    className="ant-form-item-control-input"
+                  >
+                    <div
+                      className="ant-form-item-control-input-content"
+                    >
+                      <button
+                        className="ant-btn ant-btn-primary button-search"
+                        onClick={[Function]}
+                        type="submit"
+                      >
+                        <span>
+                          Go!
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div
+          className="ant-card ant-card-bordered categories-widget-card"
+        >
+          <div
+            className="ant-card-head"
+            style={Object {}}
+          >
+            <div
+              className="ant-card-head-wrapper"
+            >
+              <div
+                className="ant-card-head-title"
+              >
+                Categories
+              </div>
+            </div>
+          </div>
+          <div
+            className="ant-card-body"
+            style={Object {}}
+          >
+            <div
+              className="ant-row ant-row-start"
+              style={
+                Object {
+                  "marginBottom": -4,
+                  "marginLeft": -4,
+                  "marginRight": -4,
+                  "marginTop": -4,
+                }
+              }
+            >
+              <div
+                className="ant-col ant-col-12"
+                style={
+                  Object {
+                    "paddingBottom": 4,
+                    "paddingLeft": 4,
+                    "paddingRight": 4,
+                    "paddingTop": 4,
+                  }
+                }
+              >
+                <a
+                  className="ant-btn ant-btn-link"
+                  href="#"
+                  onClick={[Function]}
+                >
+                  <span>
+                    Web Design
+                  </span>
+                </a>
+              </div>
+              <div
+                className="ant-col ant-col-12"
+                style={
+                  Object {
+                    "paddingBottom": 4,
+                    "paddingLeft": 4,
+                    "paddingRight": 4,
+                    "paddingTop": 4,
+                  }
+                }
+              >
+                <a
+                  className="ant-btn ant-btn-link"
+                  href="#"
+                  onClick={[Function]}
+                >
+                  <span>
+                    HTML
+                  </span>
+                </a>
+              </div>
+              <div
+                className="ant-col ant-col-12"
+                style={
+                  Object {
+                    "paddingBottom": 4,
+                    "paddingLeft": 4,
+                    "paddingRight": 4,
+                    "paddingTop": 4,
+                  }
+                }
+              >
+                <a
+                  className="ant-btn ant-btn-link"
+                  href="#"
+                  onClick={[Function]}
+                >
+                  <span>
+                    Freebies
+                  </span>
+                </a>
+              </div>
+              <div
+                className="ant-col ant-col-12"
+                style={
+                  Object {
+                    "paddingBottom": 4,
+                    "paddingLeft": 4,
+                    "paddingRight": 4,
+                    "paddingTop": 4,
+                  }
+                }
+              >
+                <a
+                  className="ant-btn ant-btn-link"
+                  href="#"
+                  onClick={[Function]}
+                >
+                  <span>
+                    JavaScript
+                  </span>
+                </a>
+              </div>
+              <div
+                className="ant-col ant-col-12"
+                style={
+                  Object {
+                    "paddingBottom": 4,
+                    "paddingLeft": 4,
+                    "paddingRight": 4,
+                    "paddingTop": 4,
+                  }
+                }
+              >
+                <a
+                  className="ant-btn ant-btn-link"
+                  href="#"
+                  onClick={[Function]}
+                >
+                  <span>
+                    CSS
+                  </span>
+                </a>
+              </div>
+              <div
+                className="ant-col ant-col-12"
+                style={
+                  Object {
+                    "paddingBottom": 4,
+                    "paddingLeft": 4,
+                    "paddingRight": 4,
+                    "paddingTop": 4,
+                  }
+                }
+              >
+                <a
+                  className="ant-btn ant-btn-link"
+                  href="#"
+                  onClick={[Function]}
+                >
+                  <span>
+                    Tutorials
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ant-card ant-card-bordered side-widget"
+        >
+          <div
+            className="ant-card-head"
+            style={Object {}}
+          >
+            <div
+              className="ant-card-head-wrapper"
+            >
+              <div
+                className="ant-card-head-title"
+              >
+                Side Widget
+              </div>
+            </div>
+          </div>
+          <div
+            className="ant-card-body"
+            style={Object {}}
+          >
+            You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+</div>
+`;

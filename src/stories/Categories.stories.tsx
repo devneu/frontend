@@ -1,13 +1,12 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Categories from '../components/Categories/Categories';
+import CategoriesWidget from '../components/widgets/CategoriesWidget/CategoriesWidget';
 
 export default {
-  title: 'Categories/CategoriesWidget',
-  component: Categories,
-  argTypes: { backgroundColor: { control: 'color' } },
-} as ComponentMeta<typeof Categories>;
+  title: 'Widgets/CategoriesWidget',
+  component: CategoriesWidget,
+} as ComponentMeta<typeof CategoriesWidget>;
 
-const Template: ComponentStory<typeof Categories> = () => <Categories />;
+const Template: ComponentStory<typeof CategoriesWidget> = () => <CategoriesWidget />;
 
 export const Primary = Template.bind({});

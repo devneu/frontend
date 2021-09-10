@@ -1,24 +1,18 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import FeaturePost from '../components/BlogPosts/FeaturePost';
+import { BrowserRouter } from 'react-router-dom';
+import { createMockPost } from '../mock/mockPost';
+import FeaturePost from '../components/FeaturePost/FeaturePost';
 
 export default {
-  title: 'MainPost/FeaturePost',
+  title: 'Posts/FeaturePost',
   component: FeaturePost,
-  argTypes: { backgroundColor: { control: 'color' } },
 } as ComponentMeta<typeof FeaturePost>;
 
 const Template: ComponentStory<typeof FeaturePost> = () => (
-  <FeaturePost
-    post={{
-      id: 1,
-      postImg: 'https://dummyimage.com/850x350/dee2e6/6c757d.jpg',
-      postDate: ' post date',
-      postTitle: ' post title',
-      postText: 'post text',
-      sizeBlock: 2,
-    }}
-  />
+  <BrowserRouter>
+    <FeaturePost post={createMockPost()} />
+  </BrowserRouter>
 );
 
 export const Primary = Template.bind({});
