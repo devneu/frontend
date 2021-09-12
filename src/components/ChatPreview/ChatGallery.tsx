@@ -4,9 +4,9 @@ import { Button } from 'antd';
 import './ChatGallery.scss';
 
 const ChatGallery = ({ photos }: any) => (
-  <div className="photo-multimedia">
+  <div className="chat-gallery">
     <Paragraph>Photos & multimedia</Paragraph>
-    <div className="media-list">
+    <div className="gallery-list">
       {
         // eslint-disable-next-line react/no-array-index-key
         photos.map((photo: any) => (

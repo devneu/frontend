@@ -6,7 +6,7 @@ import './ChatAttachments.scss';
 const ChatAttachments = ({ attachments }: any) => (
   <div className="attachments">
     <Paragraph>Attachments</Paragraph>
-    <div className="document-list">
+    <div className="file-list">
       {attachments.map((attachment: any) => (
         <div className="file-item">
           <img className="file-icon" src={attachment.img} alt="#" />

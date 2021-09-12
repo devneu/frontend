@@ -3,9 +3,9 @@ import Title from 'antd/es/typography/Title';
 import { Avatar } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import SimpleSlider from './SimpleSlider';
-import './СhatGroupMember.scss';
+import './СhatGroupMembers.scss';
 
-const ChatGroupMember = ({ data }: any) => (
+const ChatGroupMembers = ({ data }: any) => (
   <div className="group-members">
     <Title level={4}>Group Members</Title>
     <div className="img-members">
@@ -17,4 +17,4 @@ const ChatGroupMember = ({ data }: any) => (
   </div>
 );
 
-export default ChatGroupMember;
+export default ChatGroupMembers;
