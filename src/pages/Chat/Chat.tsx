@@ -1,11 +1,11 @@
 import React from 'react';
 import './Chat.scss';
-import PreviewOfChat from '../../components/PreviewOfChat/PreviewOfChat';
+import ChatPreview from '../../components/ChatPreview/ChatPreview';
 
 export default function Chat() {
   return (
     <section>
-      <PreviewOfChat />
+      <ChatPreview />
     </section>
   );
 }

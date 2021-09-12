@@ -1,0 +1,27 @@
+.preview-of-chat {
+  width: 270px;
+  height: calc(100vh - 110px);
+  background: #F6EFF0;
+  float: right;
+  border-radius: 20px 20px 20px 0;
+  margin: 30px 10px 30px 10px;
+
+  hr {
+    background: #A9A9A9;
+    margin: 0 10px;
+  }
+
+  .show-all {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background: none;
+    box-shadow: none;
+
+    span {
+      color: orangered;
+      text-decoration: underline;
+      font-weight: 700;
+    }
+  }
+}

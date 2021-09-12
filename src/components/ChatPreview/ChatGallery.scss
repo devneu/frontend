@@ -1,0 +1,17 @@
+.photo-multimedia {
+  padding: 10px;
+
+  .media-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 5px;
+  }
+
+  .gallery-img {
+    height: 80px;
+    max-width: 80px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+}

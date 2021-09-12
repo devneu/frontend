@@ -1,0 +1,24 @@
+.attachments {
+  padding: 10px 0 0 10px;
+
+  .document-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .file-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .file-info {
+    padding: 12px 0;
+  }
+
+  .file-icon {
+    padding: 10px;
+    width: 55px;
+    height: 55px;
+
+  }
+}

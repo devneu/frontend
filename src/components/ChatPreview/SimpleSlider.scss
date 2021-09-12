@@ -1,0 +1,24 @@
+.simple-slider {
+  margin-left: 20px;
+  max-height: 150px;
+  max-width: 106px;
+
+  .slider-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+  }
+  .slick-prev:before, , .slick-next:before{
+    color: black;
+  }
+  .slick-prev{
+    top:100%;
+    left: 20px;
+    padding-top: 10px;
+  }
+  .slick-next{
+    top:100%;
+    left: 50px;
+    padding-top: 10px;
+  }
+}

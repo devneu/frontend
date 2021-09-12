@@ -1,0 +1,13 @@
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .user-avatar {
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+  }
+}
