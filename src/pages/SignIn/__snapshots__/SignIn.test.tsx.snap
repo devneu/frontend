@@ -9,7 +9,7 @@ exports[`SignIn Should successfully render 1`] = `
     style={Object {}}
   >
     <div
-      className="ant-col img-block ant-col-xs-0 ant-col-sm-0 ant-col-md-10 ant-col-lg-10 ant-col-xl-9 ant-col-xxl-8"
+      className="ant-col img-block ant-col-xs-0 ant-col-sm-0 ant-col-md-0 ant-col-lg-8 ant-col-xl-6 ant-col-xxl-6"
       style={Object {}}
     >
       <img
@@ -18,7 +18,7 @@ exports[`SignIn Should successfully render 1`] = `
       />
     </div>
     <div
-      className="ant-col form-block ant-col-xs-20 ant-col-sm-22 ant-col-md-10 ant-col-lg-10 ant-col-xl-9 ant-col-xxl-8"
+      className="ant-col form-block ant-col-xs-20 ant-col-sm-22 ant-col-md-12 ant-col-lg-8 ant-col-xl-6 ant-col-xxl-6"
       style={Object {}}
     >
       <div
@@ -55,7 +55,7 @@ exports[`SignIn Should successfully render 1`] = `
                   className="ant-form-item-control-input-content"
                 >
                   <input
-                    className="ant-input email"
+                    className="ant-input input"
                     name="email"
                     onBlur={[Function]}
                     onChange={[Function]}
@@ -85,7 +85,7 @@ exports[`SignIn Should successfully render 1`] = `
                   className="ant-form-item-control-input-content"
                 >
                   <span
-                    className="ant-input-affix-wrapper ant-input-password password"
+                    className="ant-input-affix-wrapper ant-input-password input"
                     onMouseUp={[Function]}
                   >
                     <input
@@ -138,7 +138,7 @@ exports[`SignIn Should successfully render 1`] = `
             </div>
           </div>
           <label
-            className="ant-checkbox-wrapper"
+            className="ant-checkbox-wrapper checkbox"
           >
             <span
               className="ant-checkbox"
@@ -178,7 +178,7 @@ exports[`SignIn Should successfully render 1`] = `
                   className="ant-form-item-control-input-content"
                 >
                   <button
-                    className="ant-btn ant-btn-primary ant-btn-round ant-btn-block"
+                    className="ant-btn ant-btn-primary ant-btn-round ant-btn-block button"
                     onClick={[Function]}
                     type="submit"
                   >
@@ -208,7 +208,7 @@ exports[`SignIn Should successfully render 1`] = `
                   className="ant-form-item-control-input-content"
                 >
                   <button
-                    className="ant-btn ant-btn-round ant-btn-block ant-btn-dangerous"
+                    className="ant-btn ant-btn-round ant-btn-block ant-btn-dangerous button"
                     onClick={[Function]}
                     type="submit"
                   >
@@ -246,7 +246,6 @@ exports[`SignIn Should successfully render 1`] = `
           <div
             className="footer"
           >
-            <br />
             <a
               className="ant-typography"
               href="/forgot-password"
@@ -258,7 +257,6 @@ exports[`SignIn Should successfully render 1`] = `
             >
               Forgot password ?
             </a>
-            <br />
             <a
               className="ant-typography"
               href="/sign-out"

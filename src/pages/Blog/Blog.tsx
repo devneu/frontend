@@ -1,34 +1,42 @@
-import { Col, Row } from 'antd';
 import React, { useState } from 'react';
 import BlogHeader from '../../components/BlogHeader';
 import Pagination from '../../components/Pagination';
+import PostsCardList from '../../components/PostsCardList/PostCardList';
+import { createMockPosts } from '../../mock/mockPost';
+import LayoutPage from '../../components/LayoutPage/LayoutPage';
 import './Blog.scss';
-import PostsCardList from '../../components/BlogPosts/PostCardList';
-import SearchWidget from '../../components/Search/Search';
-import { mockPosts } from '../../components/BlogPosts/data';
-import CategoriesWidget from '../../components/Categories/Categories';
+import SearchWidget from '../../components/widgets/SearchWidget/SearchWidget';
+import CategoriesWidget from '../../components/widgets/CategoriesWidget/CategoriesWidget';
+import SideWidget from '../../components/widgets/SideWidget/SideWidget';
 
 const Blog = () => {
-  const [featurePost, ...posts] = mockPosts;
+  const [featurePost, ...posts] = createMockPosts();
   const [page, onPageChange] = useState(1);
   return (
     <>
       <BlogHeader title="Post Title" subtitle="Post Subtitle" />
-      <Row className="container" justify="center">
-        <Col span={14}>
-          <PostsCardList posts={posts} featurePost={featurePost} />
-          <Pagination
-            totalItems={51}
-            pageSize={10}
-            currentPage={page}
-            onPageChange={onPageChange}
-          />
-        </Col>
-        <Col span={6} className="sidebar-blog-post">
-          <SearchWidget />
-          <CategoriesWidget />
-        </Col>
-      </Row>
+      <LayoutPage
+        className="blog-page"
+        container
+        content={(
+          <>
+            <PostsCardList posts={posts} featurePost={featurePost} />
+            <Pagination
+              totalItems={51}
+              pageSize={10}
+              currentPage={page}
+              onPageChange={onPageChange}
+            />
+          </>
+        )}
+        side={(
+          <>
+            <SearchWidget />
+            <CategoriesWidget />
+            <SideWidget />
+          </>
+        )}
+      />
     </>
   );
 };
