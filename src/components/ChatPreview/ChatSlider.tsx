@@ -2,9 +2,14 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.scss';
 import 'slick-carousel/slick/slick-theme.scss';
-import './SimpleSlider.scss';
+import './ChatSlider.scss';
+import { Avatar } from 'antd';
+import { ChatData } from '../../types/ChatPreview.interface';
 
-const SimpleSlider = ({ slider }: any) => {
+interface SliderProps {
+  slider: ChatData[];
+}
+const ChatSlider = ({ slider }: SliderProps) => {
   const settings = {
     className: 'simpleSlider',
     arrows: true,
@@ -19,11 +24,11 @@ const SimpleSlider = ({ slider }: any) => {
       <Slider {...settings}>
         {slider.map((item: any) => (
           <div>
-            <img className="slider-img" alt="avatar" src={item.img} />
+            <Avatar className="slider-img" src={item.img} key={item.img} />
           </div>
         ))}
       </Slider>
     </div>
   );
 };
-export default SimpleSlider;
+export default ChatSlider;

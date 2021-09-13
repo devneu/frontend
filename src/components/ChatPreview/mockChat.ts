@@ -1,4 +1,4 @@
-export const galleryImg = [
+export const photos = [
   {
     img: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80',
   },
@@ -19,7 +19,7 @@ export const galleryImg = [
   },
 ];
 
-export const fileImg = [
+export const attachments = [
   {
     name: 'pdf',
     img: 'https://www.iconpacks.net/icons/2/free-pdf-icon-3385.png',
@@ -37,16 +37,13 @@ export const fileImg = [
   },
 ];
 
-export const userData = [
-  {
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPGqX4s6HDBoVTLwIhy3fFmdxvMiDIfUtdA&usqp=CAU',
-  },
-];
+export const avatar = {
+  img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPGqX4s6HDBoVTLwIhy3fFmdxvMiDIfUtdA&usqp=CAU',
+};
 
-export const groupMembersImg = {
-  mainImg:
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPGqX4s6HDBoVTLwIhy3fFmdxvMiDIfUtdA&usqp=CAU',
-  groupMemberImg: [
+export const groupData = {
+  img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPGqX4s6HDBoVTLwIhy3fFmdxvMiDIfUtdA&usqp=CAU',
+  memberImg: [
     {
       img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVxhAxJ4D7MOeTTj6kR9PBeZonW5HM7giKjTbEmR-HMBwf3G1VqGnlwpO1kWrdyIZu8_U&usqp=CAU',
     },

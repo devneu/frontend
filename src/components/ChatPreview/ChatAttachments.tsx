@@ -2,9 +2,14 @@ import React from 'react';
 import Paragraph from 'antd/es/typography/Paragraph';
 import { Button } from 'antd';
 import './ChatAttachments.scss';
+import { ChatData } from '../../types/ChatPreview.interface';
 
-const ChatAttachments = ({ attachments }: any) => (
-  <div className="attachments">
+interface attachmentsProps {
+  attachments: ChatData[];
+}
+
+const ChatAttachments = ({ attachments }: attachmentsProps) => (
+  <div className="chat-attachments">
     <Paragraph>Attachments</Paragraph>
     <div className="file-list">
       {attachments.map((attachment: any) => (

@@ -3,17 +3,17 @@ import ChatAttachments from './ChatAttachments';
 import GalleryOfChat from './ChatGallery';
 import ChatGroupMembers from './ChatGroupMembers';
 import ChatUserInfo from './ChatUserInfo';
-import { galleryImg, fileImg, userData, groupMembersImg } from './mockChat';
+import { photos, attachments, avatar, groupData } from './mockChat';
 import './ChatPreview.scss';
 
 const ChatPreview = () => (
   <div className="preview-of-chat">
-    <ChatUserInfo userData={userData} />
-    <ChatGroupMembers data={groupMembersImg} />
+    <ChatUserInfo photo={avatar} />
+    <ChatGroupMembers data={groupData} />
     <hr />
-    <GalleryOfChat photos={galleryImg} />
+    <GalleryOfChat photos={photos} />
     <hr />
-    <ChatAttachments attachments={fileImg} />
+    <ChatAttachments attachments={attachments} />
   </div>
 );
 
