@@ -1,6 +1,6 @@
 import React from 'react';
-import './Chat.scss';
 import ChatPreview from '../../components/ChatPreview/ChatPreview';
+import './Chat.scss';
 
 export default function Chat() {
   return (

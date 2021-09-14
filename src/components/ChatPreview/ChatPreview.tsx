@@ -1,9 +1,9 @@
 import React from 'react';
-import ChatAttachments from './ChatAttachments';
-import GalleryOfChat from './ChatGallery';
-import ChatGroupMembers from './ChatGroupMembers';
-import ChatUserInfo from './ChatUserInfo';
-import { photos, attachments, avatar, groupData } from './mockChat';
+import ChatAttachments from '../ChatAttachments/ChatAttachments';
+import GalleryOfChat from '../ChatGallery/ChatGallery';
+import ChatGroupMembers from '../ChatGroupMembers/ChatGroupMembers';
+import ChatUserInfo from '../ChatUserInfo/ChatUserInfo';
+import { photos, attachments, avatar, groupData } from '../../mock/mockChat';
 import './ChatPreview.scss';
 
 const ChatPreview = () => (

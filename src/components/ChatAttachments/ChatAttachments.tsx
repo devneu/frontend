@@ -19,7 +19,9 @@ const ChatAttachments = ({ attachments }: attachmentsProps) => (
         </div>
       ))}
     </div>
-    <Button className="show-all">View all</Button>
+    <Button className="show-all" type="link" block>
+      View all
+    </Button>
   </div>
 );
 
