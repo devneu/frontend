@@ -7,11 +7,10 @@ import SignIn from './pages/SignIn/SignIn';
 import SignOut from './pages/SignOut/SignOut';
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 import ComingSoon from './pages/ComingSoon/ComingSoon';
-import PageNotFound from './pages/PageNotFound/PageNotFound';
-import PostPage from './pages/PostPage/PostPage';
-import BlogPostContainer from './pages/PostPage/PostPageContainer'; // todo
 
 import './App.scss';
+import PageNotFound from './pages/PageNotFound/PageNotFound';
+import PostPageContainer from './pages/PostPage/PostPageContainer';
 
 const Chat = lazy(() => import('./pages/Chat/Chat' /* webpackChunkName: "ChatPage" */));
 const Weather = lazy(() => import('./pages/Weather/Weather' /* webpackChunkName: "WeatherPage" */));
@@ -37,10 +36,7 @@ function App(): ReactElement {
               <Blog />
             </Route>
             <Route path="/blog/:postId">
-              <PostPage />
-            </Route>
-            <Route path="/blog-post">
-              <BlogPostContainer />
+              <PostPageContainer />
             </Route>
             <Route path="/sign-in">
               <SignIn />

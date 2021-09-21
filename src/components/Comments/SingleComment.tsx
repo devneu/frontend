@@ -5,7 +5,7 @@ import scrollToElement from '../../utils/scrollTo';
 
 interface CommentProps {
   comment: Comment;
-  onSelectReplyTo: (commentId: number | null) => void;
+  onSelectReplyTo: (commentId: number | null) => any;
 }
 
 function SingleComment({ comment: com, onSelectReplyTo }: CommentProps) {

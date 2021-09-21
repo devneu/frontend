@@ -11,7 +11,7 @@ export default {
 const Template: ComponentStory<typeof PostPage> = () => (
   <MemoryRouter initialEntries={['/blog/1']}>
     <Route path="/blog/:postId">
-      <PostPage />
+      {/*      <PostPage /> */}
     </Route>
   </MemoryRouter>
 );

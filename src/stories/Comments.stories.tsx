@@ -24,5 +24,4 @@ Primary.args = {
       userAvatar: null,
     },
   ],
-  onCommentAdded: () => console.log('added'),
 };

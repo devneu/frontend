@@ -26,7 +26,7 @@ const commentsList: Comment[] = [
 describe('Comments', () => {
   it('Should successfully render', () => {
     const wrapper = renderer
-      .create(<Comments commentsList={commentsList} onCommentAdded={() => console.log('added')} />)
+      .create(<Comments commentsList={commentsList} />)
       .toJSON();
     expect(wrapper).toMatchSnapshot();
   });

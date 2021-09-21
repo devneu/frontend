@@ -1,39 +1,27 @@
 import { Form, Button, Input } from 'antd';
-import React, { useRef } from 'react';
-import { useForm } from 'react-hook-form';
+import React from 'react';
+import { useForm, useFormState } from 'react-hook-form';
 
 const { TextArea } = Input;
 
-interface AddCommentFormProps {
-  onSubmit: (value: string) => void;
-  focus: boolean;
-}
-const focusOnTextArea = (ref: any) => {
-  ref.current?.focus({ cursor: 'end' });
-};
 interface FormInput {
   commentText: string;
 }
+const AddCommentForm = () => {
+  const { register, handleSubmit, control } = useForm<FormInput>();
+  const formState = useFormState({
+    control,
+  });
+  console.log('formState', formState.isValid);
+  console.log('register', register);
 
-const AddCommentForm = ({ onSubmit, focus }: AddCommentFormProps) => {
-  const { register, handleSubmit, watch, reset } = useForm<FormInput>();
+  const onSubmit = (data: any) => console.log('SignIn basic', data);
 
-  const addComment = (data: FormInput) => onSubmit(data.commentText);
-
-  const textAreaRef = useRef<any>(null);
-
-  if (focus) focusOnTextArea(textAreaRef);
-
-  let disabled: boolean = true;
-  const textAreaValue = watch('commentText');
-
-  if (textAreaValue?.length) disabled = false;
   return (
     <Form
       className="comments__form"
       onFinish={(data) => {
-        handleSubmit(addComment)(data);
-        reset({ commentText: '' });
+        handleSubmit(onSubmit)(data);
       }}
     >
       <Form.Item>
@@ -41,14 +29,11 @@ const AddCommentForm = ({ onSubmit, focus }: AddCommentFormProps) => {
           {...register('commentText', {
             required: true,
           })}
-          value={textAreaValue}
-          name="commentText"
-          ref={textAreaRef}
           rows={4}
         />
       </Form.Item>
       <Form.Item>
-        <Button disabled={disabled} htmlType="submit" type="primary">
+        <Button disabled={!formState.isValid} htmlType="submit" type="primary">
           Add Comment
         </Button>
       </Form.Item>
