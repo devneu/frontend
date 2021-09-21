@@ -1,0 +1,32 @@
+.comments{
+   padding: 15px;
+   background-color: #f8f9fa;
+   border: 1px solid rgba(0, 0, 0, 0.125);
+   border-radius: 5px;
+   max-width: 900px;
+   margin: 20px auto 0;
+   &__user-name{
+      font-weight: 700;
+      font-size: 1rem;
+      color: #212529;
+   }
+   &__user-avatar{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      img{
+         width: 100%;
+         height: 100%;
+      }
+   }
+   &__reply-btn{
+      border: none;
+      outline: none;
+      background-color: inherit;
+      cursor: pointer;
+      transition: .3s;
+      &:hover{
+         color: #585858
+      }
+   }
+}

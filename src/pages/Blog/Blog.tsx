@@ -4,10 +4,10 @@ import Pagination from '../../components/Pagination';
 import PostsCardList from '../../components/PostsCardList/PostCardList';
 import { createMockPosts } from '../../mock/mockPost';
 import LayoutPage from '../../components/LayoutPage/LayoutPage';
-import './Blog.scss';
 import SearchWidget from '../../components/widgets/SearchWidget/SearchWidget';
 import CategoriesWidget from '../../components/widgets/CategoriesWidget/CategoriesWidget';
 import SideWidget from '../../components/widgets/SideWidget/SideWidget';
+import './Blog.scss';
 
 const Blog = () => {
   const [featurePost, ...posts] = createMockPosts();

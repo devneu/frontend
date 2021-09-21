@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Comments Should successfully render 1`] = `
+<div
+  className="comments"
+>
+  <form
+    className="ant-form ant-form-horizontal comments__form"
+    onReset={[Function]}
+    onSubmit={[Function]}
+  >
+    <div
+      className="ant-row ant-form-item"
+      style={Object {}}
+    >
+      <div
+        className="ant-col ant-form-item-control"
+        style={Object {}}
+      >
+        <div
+          className="ant-form-item-control-input"
+        >
+          <div
+            className="ant-form-item-control-input-content"
+          >
+            <textarea
+              className="ant-input"
+              name="commentText"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onCompositionEnd={[Function]}
+              onCompositionStart={[Function]}
+              onKeyDown={[Function]}
+              rows={4}
+              style={Object {}}
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+      style={Object {}}
+    >
+      <div
+        className="ant-col ant-form-item-control"
+        style={Object {}}
+      >
+        <div
+          className="ant-form-item-control-input"
+        >
+          <div
+            className="ant-form-item-control-input-content"
+          >
+            <button
+              className="ant-btn ant-btn-primary"
+              disabled={true}
+              onClick={[Function]}
+              type="submit"
+            >
+              <span>
+                Add Comment
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div
+    className="ant-list ant-list-split comments__list"
+  >
+    <div
+      className="ant-spin-nested-loading"
+    >
+      <div
+        className="ant-spin-container"
+      >
+        <div
+          className="ant-comment"
+        >
+          <div
+            className="ant-comment-inner"
+          >
+            <div
+              className="ant-comment-avatar"
+            >
+              <span
+                className="ant-avatar ant-avatar-circle comments__user-avatar"
+                style={Object {}}
+              >
+                <span
+                  className="ant-avatar-string"
+                  style={
+                    Object {
+                      "WebkitTransform": "scale(1) translateX(-50%)",
+                      "msTransform": "scale(1) translateX(-50%)",
+                      "transform": "scale(1) translateX(-50%)",
+                    }
+                  }
+                />
+              </span>
+            </div>
+            <div
+              className="ant-comment-content"
+            >
+              <div
+                className="ant-comment-content-author"
+              >
+                <span
+                  className="ant-comment-content-author-name"
+                >
+                  <span
+                    className="comments__user-name"
+                  >
+                    John Newman 3
+                  </span>
+                </span>
+              </div>
+              <div
+                className="ant-comment-content-detail"
+              >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum neque distinctio praesentium quisquam laudantium tempore? Illum fugit esse nihil obcaecati?
+                </p>
+              </div>
+              <ul
+                className="ant-comment-actions"
+              >
+                <li>
+                  <button
+                    className="comments__reply-btn"
+                    onClick={[Function]}
+                    type="submit"
+                  >
+                    Reply to
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            className="ant-comment-nested"
+          />
+        </div>
+        <div
+          className="ant-comment"
+        >
+          <div
+            className="ant-comment-inner"
+          >
+            <div
+              className="ant-comment-avatar"
+            >
+              <span
+                className="ant-avatar ant-avatar-circle comments__user-avatar"
+                style={Object {}}
+              >
+                <span
+                  className="ant-avatar-string"
+                  style={
+                    Object {
+                      "WebkitTransform": "scale(1) translateX(-50%)",
+                      "msTransform": "scale(1) translateX(-50%)",
+                      "transform": "scale(1) translateX(-50%)",
+                    }
+                  }
+                />
+              </span>
+            </div>
+            <div
+              className="ant-comment-content"
+            >
+              <div
+                className="ant-comment-content-author"
+              >
+                <span
+                  className="ant-comment-content-author-name"
+                >
+                  <span
+                    className="comments__user-name"
+                  >
+                    John Newman 3
+                  </span>
+                </span>
+              </div>
+              <div
+                className="ant-comment-content-detail"
+              >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum neque distinctio praesentium quisquam laudantium tempore? Illum fugit esse nihil obcaecati?
+                </p>
+              </div>
+              <ul
+                className="ant-comment-actions"
+              >
+                <li>
+                  <button
+                    className="comments__reply-btn"
+                    onClick={[Function]}
+                    type="submit"
+                  >
+                    Reply to
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            className="ant-comment-nested"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

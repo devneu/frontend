@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
-import ReduxExample, { OwnProps } from './ReduxExample';
 import CounterSelectors from '../../selectors/counter';
-import { InitialState } from '../../reducers';
+import { InitialState } from '../../reducers/index';
 import { CounterActions } from '../../actions/CounterActions';
+import ReduxExample, { OwnProps } from './ReduxExample';
 
 export interface StateProps {
   value: number;

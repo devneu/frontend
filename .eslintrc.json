@@ -4,7 +4,14 @@
     "es2021": true,
     "node": true
   },
-  "extends": ["plugin:react/recommended", "prettier", "react-app", "react-app/jest", "airbnb", "airbnb/hooks"],
+  "extends": [
+    "plugin:react/recommended",
+    "prettier",
+    "react-app",
+    "react-app/jest",
+    "airbnb",
+    "airbnb/hooks"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -13,23 +20,44 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
   "rules": {
-    "quotes": ["error", "single"],
-    "jsx-quotes": ["error", "prefer-double"],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "jsx-quotes": [
+      "error",
+      "prefer-double"
+    ],
     "no-use-before-define": 0,
     "import/extensions": 0,
     "import/no-unresolved": 0,
-    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
     "import/prefer-default-export": 0,
     "react/require-default-props": 0,
     "@typescript-eslint/no-unused-vars-experimental": "error",
     "import/no-extraneous-dependencies": 0,
     "react/jsx-props-no-spreading": 0,
     "no-shadow": 0,
-    "@typescript-eslint/no-shadow": ["error"],
+    "@typescript-eslint/no-shadow": [
+      "error"
+    ],
     "no-unused-vars": 0,
-    "@typescript-eslint/no-unused-vars": ["error"],
+    "@typescript-eslint/no-unused-vars": [
+      "error"
+    ],
     "object-curly-newline": 0,
     "linebreak-style": 0
   },
