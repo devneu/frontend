@@ -1,5 +1,5 @@
 .chat-attachments {
-  padding: 10px 0 0 10px;
+  padding: 0 10px;
 
   .file-list {
     display: flex;
@@ -9,16 +9,19 @@
   .file-item {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
   }
 
   .file-info {
-    padding: 12px 0;
+    padding-left: 5px;
+    font-size: 12px;
   }
 
   .file-icon {
-    padding: 10px;
-    width: 55px;
-    height: 55px;
+
+    width: 30px;
+
 
   }
 }

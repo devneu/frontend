@@ -6,15 +6,17 @@ import ChatUserInfo from '../ChatUserInfo/ChatUserInfo';
 import { photos, attachments, avatar, groupData } from '../../mock/mockChat';
 import './ChatPreview.scss';
 
-const ChatPreview = () => (
-  <div className="preview-of-chat">
-    <ChatUserInfo photo={avatar} />
-    <ChatGroupMembers data={groupData} />
-    <hr />
-    <GalleryOfChat photos={photos} />
-    <hr />
-    <ChatAttachments attachments={attachments} />
-  </div>
-);
+const ChatPreview = () => {
+  const isGroup: boolean = true;
+  return (
+    <div className="preview-of-chat">
+      {isGroup ? <ChatGroupMembers data={groupData} /> : <ChatUserInfo photo={avatar} />}
+      <hr />
+      <GalleryOfChat photos={photos} />
+      <hr />
+      <ChatAttachments attachments={attachments} />
+    </div>
+  );
+};
 
 export default ChatPreview;

@@ -1,5 +1,5 @@
 .chat-gallery {
-  padding: 10px;
+  padding: 0 10px;
 
   .gallery-list {
     display: grid;
@@ -9,12 +9,9 @@
   }
 
   .gallery-img {
-    height: 80px;
-    max-width: 80px;
-    border-radius: 20px;
+    height: 55px;
+    max-width: 55px;
+    border-radius: 10px;
     object-fit: cover;
-  }
-  .button-show{
-    text-decoration: underline;
   }
 }

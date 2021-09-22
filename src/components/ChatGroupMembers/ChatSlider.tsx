@@ -1,33 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.scss';
 import 'slick-carousel/slick/slick-theme.scss';
-import './ChatSlider.scss';
 import { Avatar } from 'antd';
-import { ChatData } from '../../types/ChatPreview.interface';
+import { groupData } from '../../types/ChatPreview.interface';
+import './ChatSlider.scss';
 
-interface SliderProps {
-  slider: ChatData[];
+interface ChatSliderProps {
+  slides: groupData[];
 }
-const ChatSlider = ({ slider }: SliderProps) => {
+
+const ChatSlider = ({ slides }: ChatSliderProps) => {
+  const [activeSlide, setActiveSlide] = useState(1);
+  const amountOfPhotos = slides.length;
+  const oneSlidePhotos = 6;
+  const lastSlide = Math.ceil(amountOfPhotos / oneSlidePhotos);
+
+  const SliderArrowNext = ({ ...props }) => (
+    <img src={`${process.env.PUBLIC_URL}/images/next-arrow.png`} alt="prevArrow" {...props} />
+  );
+  const SliderArrowPrev = ({ ...props }) => (
+    <img src={`${process.env.PUBLIC_URL}/images/prev-arrow.png`} alt="prevArrow" {...props} />
+  );
   const settings = {
-    className: 'simpleSlider',
+    className: 'slider',
     arrows: true,
     infinite: true,
     slidesToShow: 1,
     speed: 500,
     rows: 2,
     slidesPerRow: 3,
+    nextArrow: <SliderArrowNext />,
+    prevArrow: <SliderArrowPrev />,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars-experimental
+    beforeChange: (current: number, next: number) => {
+      setActiveSlide(next + 1);
+    },
   };
+
   return (
-    <div className="simple-slider">
+    <div className="chat-slider">
       <Slider {...settings}>
-        {slider.map((item: any) => (
-          <div>
-            <Avatar className="slider-img" src={item.img} key={item.img} />
-          </div>
+        {slides.map((item: any) => (
+          <Avatar className="slider-img" alt="avatar" src={item.img} key={item.img} />
         ))}
       </Slider>
+      <div className="slides-number">
+        <p>
+          {activeSlide}
+          /
+          {lastSlide}
+        </p>
+      </div>
     </div>
   );
 };

@@ -43,9 +43,12 @@ export const avatar = {
 
 export const groupData = {
   img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPGqX4s6HDBoVTLwIhy3fFmdxvMiDIfUtdA&usqp=CAU',
-  memberImg: [
+  name: 'Nasir Uddin',
+  description: 'Ux Designer',
+  icon: 'https://i.pinimg.com/originals/44/9d/d1/449dd1f38a8bd87b41f7b960db0fefff.png',
+  memberImgs: [
     {
-      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVxhAxJ4D7MOeTTj6kR9PBeZonW5HM7giKjTbEmR-HMBwf3G1VqGnlwpO1kWrdyIZu8_U&usqp=CAU',
+      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPGqX4s6HDBoVTLwIhy3fFmdxvMiDIfUtdA&usqp=CAU',
     },
     {
       img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgnq9pVEA16U0vH0nT0UeFY9vrTn99Za2a7QWub_dBpXSYTCZtBQULWaaRJ4ENFreEmPc&usqp=CAU',

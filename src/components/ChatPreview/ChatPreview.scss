@@ -1,14 +1,14 @@
 .preview-of-chat {
-  width: 270px;
-  height: calc(100vh - 110px);
-  background: #F6EFF0;
+  width: 205px;
+  height: calc(100vh - 194px);
+  background: rgb(244, 244, 250);
   float: right;
-  border-radius: 20px 20px 20px 0;
-  margin: 30px 10px 30px 10px;
+  border-radius: 20px 20px 5px 0;
+  margin: 130px 15px 30px 15px;
 
   hr {
-    background: #A9A9A9;
-    margin: 0 10px;
+    margin: 20px 10px;
+    border: 1px solid rgb(223, 234, 243);
   }
 
 }
