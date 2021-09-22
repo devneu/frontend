@@ -16,10 +16,10 @@ const ChatSlider = ({ slides }: ChatSliderProps) => {
   const oneSlidePhotos = 6;
   const lastSlide = Math.ceil(amountOfPhotos / oneSlidePhotos);
 
-  const SliderArrowNext = ({ ...props }) => (
+  const SliderArrowNext = ({ currentSlide, slideCount, ...props }: any) => (
     <img src={`${process.env.PUBLIC_URL}/images/next-arrow.png`} alt="prevArrow" {...props} />
   );
-  const SliderArrowPrev = ({ ...props }) => (
+  const SliderArrowPrev = ({ currentSlide, slideCount, ...props }: any) => (
     <img src={`${process.env.PUBLIC_URL}/images/prev-arrow.png`} alt="prevArrow" {...props} />
   );
   const settings = {
@@ -30,8 +30,8 @@ const ChatSlider = ({ slides }: ChatSliderProps) => {
     speed: 500,
     rows: 2,
     slidesPerRow: 3,
-    nextArrow: <SliderArrowNext />,
-    prevArrow: <SliderArrowPrev />,
+    nextArrow: <SliderArrowNext currentSlide={0} slideCount={lastSlide} />,
+    prevArrow: <SliderArrowPrev currentSlide={0} slideCount={lastSlide} />,
     // eslint-disable-next-line @typescript-eslint/no-unused-vars-experimental
     beforeChange: (current: number, next: number) => {
       setActiveSlide(next + 1);
