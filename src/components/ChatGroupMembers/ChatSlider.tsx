@@ -11,7 +11,7 @@ interface ChatSliderProps {
 }
 
 const ChatSlider = ({ slides }: ChatSliderProps) => {
-  const [activeSlideNumber, setActivesSlideNumber] = useState(1);
+  const [activeSlideNumber, setActiveSlideNumber] = useState(1);
   const SLIDER_ITEMS_NUMBER = slides.length;
   const ITEMS_PER_SLIDE = 6;
   const lastSlideNumber = Math.ceil(SLIDER_ITEMS_NUMBER / ITEMS_PER_SLIDE);
@@ -34,7 +34,7 @@ const ChatSlider = ({ slides }: ChatSliderProps) => {
     prevArrow: <SliderArrowPrev currentSlide={0} slideCount={lastSlideNumber} />,
     // eslint-disable-next-line @typescript-eslint/no-unused-vars-experimental
     beforeChange: (current: number, next: number) => {
-      setActivesSlideNumber(next + 1);
+      setActiveSlideNumber(next + 1);
     },
   };
 
