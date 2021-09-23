@@ -1,9 +1,17 @@
 .chat-attachments {
   padding: 0 10px;
 
+  .attachments-title {
+    text-transform: uppercase;
+  }
+
   .file-list {
     display: flex;
     flex-direction: column;
+  }
+
+  .file-source {
+    color: rgb(162, 162, 175);
   }
 
   .file-item {

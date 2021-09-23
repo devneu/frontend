@@ -1,16 +1,28 @@
 import React from 'react';
 import Title from 'antd/es/typography/Title';
 import { Avatar } from 'antd';
-import './ChatUserInfo.scss';
+import Paragraph from 'antd/es/typography/Paragraph';
 import { UserInfo } from '../../types/ChatPreview.interface';
+import './ChatUserInfo.scss';
 
 interface ChatUserProps {
-  photo: UserInfo;
+  data: UserInfo;
 }
-const ChatUserInfo = ({ photo }: ChatUserProps) => (
+
+const ChatUserInfo = ({ data }: ChatUserProps) => (
   <div className="user-info">
     <Title level={4}>user info</Title>
-    <Avatar className="user-avatar" src={photo.img} size="large" />
+    <Avatar className="user-avatar" src={data.img} size="large" />
+    <Paragraph className="mg-bot-0">
+      {data.name}
+      &nbsp;
+      {data.lastName}
+    </Paragraph>
+    <Paragraph className="mg-bot-0">
+      +
+      {data.phoneNumber}
+    </Paragraph>
+    <Paragraph className="mg-bot-0">{data.description}</Paragraph>
   </div>
 );
 

@@ -1,6 +1,10 @@
 .chat-gallery {
   padding: 0 10px;
 
+  .gallery-title {
+    text-transform: uppercase;
+  }
+
   .gallery-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

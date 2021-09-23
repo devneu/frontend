@@ -8,13 +8,18 @@ export interface Photos {
   img: string;
 }
 
-export interface groupData {
+export interface GroupChat {
   img: string;
   name: string;
+  lastName: string;
   description: string;
-  memberImgs: any;
+  memberImages: any;
   icon: string;
 }
 export interface UserInfo {
   img: string;
+  name: string;
+  lastName: string;
+  description: string;
+  phoneNumber: number;
 }

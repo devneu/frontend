@@ -10,11 +10,11 @@ interface ChatGalleryProps {
 
 const ChatGallery = ({ photos }: ChatGalleryProps) => (
   <div className="chat-gallery">
-    <Paragraph>
-      <strong>PHOTOS & MULTIMEDIA</strong>
+    <Paragraph className="gallery-title" strong>
+      Photos & Multimedia
     </Paragraph>
     <div className="gallery-list">
-      {photos.map((photo: any) => (
+      {photos.map((photo) => (
         <img className="gallery-img" src={photo.img} key={photo.img} alt="#" />
       ))}
     </div>

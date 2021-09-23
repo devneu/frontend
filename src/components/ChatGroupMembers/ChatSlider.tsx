@@ -1,28 +1,28 @@
 import React, { useState } from 'react';
-import Slider from 'react-slick';
+import Slider, { CustomArrowProps, Settings } from 'react-slick';
 import 'slick-carousel/slick/slick.scss';
 import 'slick-carousel/slick/slick-theme.scss';
 import { Avatar } from 'antd';
-import { groupData } from '../../types/ChatPreview.interface';
+import { GroupChat } from '../../types/ChatPreview.interface';
 import './ChatSlider.scss';
 
 interface ChatSliderProps {
-  slides: groupData[];
+  slides: GroupChat[];
 }
 
 const ChatSlider = ({ slides }: ChatSliderProps) => {
-  const [activeSlide, setActiveSlide] = useState(1);
+  const [activeNumberSlide, setActiveNumberSlide] = useState(1);
   const amountOfPhotos = slides.length;
-  const oneSlidePhotos = 6;
-  const lastSlide = Math.ceil(amountOfPhotos / oneSlidePhotos);
+  const ITEMS_PER_SLIDE = 6;
+  const lastNumberSlide = Math.ceil(amountOfPhotos / ITEMS_PER_SLIDE);
 
-  const SliderArrowNext = ({ currentSlide, slideCount, ...props }: any) => (
+  const SliderArrowNext = ({ currentSlide, slideCount, ...props }: CustomArrowProps) => (
     <img src={`${process.env.PUBLIC_URL}/images/next-arrow.png`} alt="prevArrow" {...props} />
   );
-  const SliderArrowPrev = ({ currentSlide, slideCount, ...props }: any) => (
+  const SliderArrowPrev = ({ currentSlide, slideCount, ...props }: CustomArrowProps) => (
     <img src={`${process.env.PUBLIC_URL}/images/prev-arrow.png`} alt="prevArrow" {...props} />
   );
-  const settings = {
+  const settings: Settings = {
     className: 'slider',
     arrows: true,
     infinite: true,
@@ -30,27 +30,25 @@ const ChatSlider = ({ slides }: ChatSliderProps) => {
     speed: 500,
     rows: 2,
     slidesPerRow: 3,
-    nextArrow: <SliderArrowNext currentSlide={0} slideCount={lastSlide} />,
-    prevArrow: <SliderArrowPrev currentSlide={0} slideCount={lastSlide} />,
+    nextArrow: <SliderArrowNext currentSlide={0} slideCount={lastNumberSlide} />,
+    prevArrow: <SliderArrowPrev currentSlide={0} slideCount={lastNumberSlide} />,
     // eslint-disable-next-line @typescript-eslint/no-unused-vars-experimental
     beforeChange: (current: number, next: number) => {
-      setActiveSlide(next + 1);
+      setActiveNumberSlide(next + 1);
     },
   };
 
   return (
     <div className="chat-slider">
       <Slider {...settings}>
-        {slides.map((item: any) => (
+        {slides.map((item) => (
           <Avatar className="slider-img" alt="avatar" src={item.img} key={item.img} />
         ))}
       </Slider>
       <div className="slides-number">
-        <p>
-          {activeSlide}
-          /
-          {lastSlide}
-        </p>
+        {activeNumberSlide}
+        /
+        {lastNumberSlide}
       </div>
     </div>
   );

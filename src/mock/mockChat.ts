@@ -37,16 +37,21 @@ export const attachments = [
   },
 ];
 
-export const avatar = {
+export const userData = {
   img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPGqX4s6HDBoVTLwIhy3fFmdxvMiDIfUtdA&usqp=CAU',
+  name: 'Nasir',
+  lastName: 'Uddin',
+  description: 'Ux Designer',
+  phoneNumber: +380937343021,
 };
 
 export const groupData = {
   img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPGqX4s6HDBoVTLwIhy3fFmdxvMiDIfUtdA&usqp=CAU',
-  name: 'Nasir Uddin',
+  name: 'Nasir',
+  lastName: 'Uddin',
   description: 'Ux Designer',
   icon: 'https://i.pinimg.com/originals/44/9d/d1/449dd1f38a8bd87b41f7b960db0fefff.png',
-  memberImgs: [
+  memberImages: [
     {
       img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPGqX4s6HDBoVTLwIhy3fFmdxvMiDIfUtdA&usqp=CAU',
     },
