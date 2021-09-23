@@ -11,10 +11,10 @@ interface ChatSliderProps {
 }
 
 const ChatSlider = ({ slides }: ChatSliderProps) => {
-  const [activeNumberSlide, setActiveNumberSlide] = useState(1);
+  const [activeSlideNumber, setActivesSlideNumber] = useState(1);
   const SLIDER_ITEMS_NUMBER = slides.length;
   const ITEMS_PER_SLIDE = 6;
-  const lastNumberSlide = Math.ceil(SLIDER_ITEMS_NUMBER / ITEMS_PER_SLIDE);
+  const lastSlideNumber = Math.ceil(SLIDER_ITEMS_NUMBER / ITEMS_PER_SLIDE);
 
   const SliderArrowNext = ({ currentSlide, slideCount, ...props }: CustomArrowProps) => (
     <img src={`${process.env.PUBLIC_URL}/images/next-arrow.png`} alt="prevArrow" {...props} />
@@ -30,11 +30,11 @@ const ChatSlider = ({ slides }: ChatSliderProps) => {
     speed: 500,
     rows: 2,
     slidesPerRow: 3,
-    nextArrow: <SliderArrowNext currentSlide={0} slideCount={lastNumberSlide} />,
-    prevArrow: <SliderArrowPrev currentSlide={0} slideCount={lastNumberSlide} />,
+    nextArrow: <SliderArrowNext currentSlide={0} slideCount={lastSlideNumber} />,
+    prevArrow: <SliderArrowPrev currentSlide={0} slideCount={lastSlideNumber} />,
     // eslint-disable-next-line @typescript-eslint/no-unused-vars-experimental
     beforeChange: (current: number, next: number) => {
-      setActiveNumberSlide(next + 1);
+      setActivesSlideNumber(next + 1);
     },
   };
 
@@ -46,9 +46,9 @@ const ChatSlider = ({ slides }: ChatSliderProps) => {
         ))}
       </Slider>
       <div className="slides-number">
-        {activeNumberSlide}
+        {activeSlideNumber}
         /
-        {lastNumberSlide}
+        {lastSlideNumber}
       </div>
     </div>
   );

@@ -45,7 +45,7 @@ export const userData = {
   phoneNumber: +380937343021,
 };
 
-export const groupData = {
+export const groupChat = {
   img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPGqX4s6HDBoVTLwIhy3fFmdxvMiDIfUtdA&usqp=CAU',
   name: 'Nasir',
   lastName: 'Uddin',

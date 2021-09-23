@@ -6,25 +6,25 @@ import { GroupChat } from '../../types/ChatPreview.interface';
 import './СhatGroupMembers.scss';
 
 interface GroupMembersProps {
-  data: GroupChat;
+  member: GroupChat;
 }
-const ChatGroupMembers = ({ data }: GroupMembersProps) => (
+const ChatGroupMembers = ({ member }: GroupMembersProps) => (
   <div className="chat-group-members">
-    <img className="group-icon" src={data.icon} alt="" />
+    <img className="group-icon" src={member.icon} alt="" />
     <Title className="group-title" level={4}>
       Group Members
     </Title>
     <div className="group-images">
       <div className="main-user">
-        <Avatar className="main-avatar" src={data.img} />
+        <Avatar className="main-avatar" src={member.img} />
         <div className="main-name">
-          {data.name}
+          {member.name}
           &nbsp;
-          {data.lastName}
+          {member.lastName}
         </div>
-        <div className="main-description">{data.description}</div>
+        <div className="main-description">{member.description}</div>
       </div>
-      <ChatSlider slides={data.memberImages} />
+      <ChatSlider slides={member.memberImages} />
     </div>
   </div>
 );
