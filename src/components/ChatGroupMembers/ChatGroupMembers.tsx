@@ -1,13 +1,15 @@
 import React from 'react';
-import Title from 'antd/es/typography/Title';
-import { Avatar } from 'antd';
-import ChatSlider from './ChatSlider';
+import { Avatar, Typography } from 'antd';
+import ChatSlider from '../ChatSlider/ChatSlider';
 import { GroupChat } from '../../types/ChatPreview.interface';
+import { slides } from '../../mock/mockChat';
 import './СhatGroupMembers.scss';
 
 interface GroupMembersProps {
   member: GroupChat;
 }
+const { Title } = Typography;
+
 const ChatGroupMembers = ({ member }: GroupMembersProps) => (
   <div className="chat-group-members">
     <img className="group-icon" src={member.icon} alt="" />
@@ -24,7 +26,7 @@ const ChatGroupMembers = ({ member }: GroupMembersProps) => (
         </div>
         <div className="main-description">{member.description}</div>
       </div>
-      <ChatSlider slides={member.memberImages} />
+      <ChatSlider slides={slides} />
     </div>
   </div>
 );

@@ -1,0 +1,918 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChatGroupMembers Should successfully render 1`] = `
+<div
+  className="chat-group-members"
+>
+  <img
+    alt=""
+    className="group-icon"
+    src="https://i.pinimg.com/originals/44/9d/d1/449dd1f38a8bd87b41f7b960db0fefff.png"
+  />
+  <h4
+    className="ant-typography group-title"
+    style={
+      Object {
+        "WebkitLineClamp": undefined,
+      }
+    }
+  >
+    Group Members
+  </h4>
+  <div
+    className="group-images"
+  >
+    <div
+      className="main-user"
+    >
+      <span
+        className="ant-avatar ant-avatar-circle ant-avatar-image main-avatar"
+        style={Object {}}
+      >
+        <img
+          onError={[Function]}
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPGqX4s6HDBoVTLwIhy3fFmdxvMiDIfUtdA&usqp=CAU"
+        />
+      </span>
+      <div
+        className="main-name"
+      >
+        Nasir
+         
+        Uddin
+      </div>
+      <div
+        className="main-description"
+      >
+        Ux Designer
+      </div>
+    </div>
+    <div
+      className="chat-slider"
+    >
+      <div
+        className="slick-slider slider slick-initialized"
+        dir="ltr"
+      >
+        <img
+          alt="prevArrow"
+          className="slick-arrow slick-prev"
+          data-role="none"
+          onClick={[Function]}
+          src="/images/prev-arrow.png"
+          style={
+            Object {
+              "display": "block",
+            }
+          }
+        />
+        <div
+          className="slick-list"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={null}
+          onMouseMove={null}
+          onMouseUp={[Function]}
+          onTouchCancel={null}
+          onTouchEnd={[Function]}
+          onTouchMove={null}
+          onTouchStart={[Function]}
+          style={Object {}}
+        >
+          <div
+            className="slick-track"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onMouseOver={[Function]}
+            style={
+              Object {
+                "WebkitTransform": "translate3d(0px, 0px, 0px)",
+                "WebkitTransition": "",
+                "msTransform": "translateX(0px)",
+                "opacity": 1,
+                "transform": "translate3d(0px, 0px, 0px)",
+                "transition": "",
+              }
+            }
+          >
+            <div
+              aria-hidden={true}
+              className="slick-slide slick-cloned"
+              data-index={-1}
+              onClick={[Function]}
+              style={
+                Object {
+                  "width": 0,
+                }
+              }
+              tabIndex="-1"
+            >
+              <div>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVxhAxJ4D7MOeTTj6kR9PBeZonW5HM7giKjTbEmR-HMBwf3G1VqGnlwpO1kWrdyIZu8_U&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgnq9pVEA16U0vH0nT0UeFY9vrTn99Za2a7QWub_dBpXSYTCZtBQULWaaRJ4ENFreEmPc&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://international-home.net/wp-content/uploads/2018/12/matureman1-512.png"
+                  />
+                </span>
+              </div>
+              <div>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVxhAxJ4D7MOeTTj6kR9PBeZonW5HM7giKjTbEmR-HMBwf3G1VqGnlwpO1kWrdyIZu8_U&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgnq9pVEA16U0vH0nT0UeFY9vrTn99Za2a7QWub_dBpXSYTCZtBQULWaaRJ4ENFreEmPc&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://www.w3schools.com/w3images/avatar6.png"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              aria-hidden={false}
+              className="slick-slide slick-active slick-current"
+              data-index={0}
+              onClick={[Function]}
+              style={
+                Object {
+                  "outline": "none",
+                  "width": 0,
+                }
+              }
+              tabIndex="-1"
+            >
+              <div>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPGqX4s6HDBoVTLwIhy3fFmdxvMiDIfUtdA&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgnq9pVEA16U0vH0nT0UeFY9vrTn99Za2a7QWub_dBpXSYTCZtBQULWaaRJ4ENFreEmPc&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://international-home.net/wp-content/uploads/2018/12/matureman1-512.png"
+                  />
+                </span>
+              </div>
+              <div>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://www.w3schools.com/howto/img_avatar2.png"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgnq9pVEA16U0vH0nT0UeFY9vrTn99Za2a7QWub_dBpXSYTCZtBQULWaaRJ4ENFreEmPc&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://international-home.net/wp-content/uploads/2018/12/matureman1-512.png"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              aria-hidden={true}
+              className="slick-slide"
+              data-index={1}
+              onClick={[Function]}
+              style={
+                Object {
+                  "outline": "none",
+                  "width": 0,
+                }
+              }
+              tabIndex="-1"
+            >
+              <div>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVxhAxJ4D7MOeTTj6kR9PBeZonW5HM7giKjTbEmR-HMBwf3G1VqGnlwpO1kWrdyIZu8_U&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgnq9pVEA16U0vH0nT0UeFY9vrTn99Za2a7QWub_dBpXSYTCZtBQULWaaRJ4ENFreEmPc&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://international-home.net/wp-content/uploads/2018/12/matureman1-512.png"
+                  />
+                </span>
+              </div>
+              <div>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVxhAxJ4D7MOeTTj6kR9PBeZonW5HM7giKjTbEmR-HMBwf3G1VqGnlwpO1kWrdyIZu8_U&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgnq9pVEA16U0vH0nT0UeFY9vrTn99Za2a7QWub_dBpXSYTCZtBQULWaaRJ4ENFreEmPc&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://www.w3schools.com/howto/img_avatar.png"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              aria-hidden={true}
+              className="slick-slide"
+              data-index={2}
+              onClick={[Function]}
+              style={
+                Object {
+                  "outline": "none",
+                  "width": 0,
+                }
+              }
+              tabIndex="-1"
+            >
+              <div>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVxhAxJ4D7MOeTTj6kR9PBeZonW5HM7giKjTbEmR-HMBwf3G1VqGnlwpO1kWrdyIZu8_U&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgnq9pVEA16U0vH0nT0UeFY9vrTn99Za2a7QWub_dBpXSYTCZtBQULWaaRJ4ENFreEmPc&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://international-home.net/wp-content/uploads/2018/12/matureman1-512.png"
+                  />
+                </span>
+              </div>
+              <div>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVxhAxJ4D7MOeTTj6kR9PBeZonW5HM7giKjTbEmR-HMBwf3G1VqGnlwpO1kWrdyIZu8_U&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgnq9pVEA16U0vH0nT0UeFY9vrTn99Za2a7QWub_dBpXSYTCZtBQULWaaRJ4ENFreEmPc&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://www.w3schools.com/w3images/avatar6.png"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              aria-hidden={true}
+              className="slick-slide slick-cloned"
+              data-index={3}
+              onClick={[Function]}
+              style={
+                Object {
+                  "width": 0,
+                }
+              }
+              tabIndex="-1"
+            >
+              <div>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPGqX4s6HDBoVTLwIhy3fFmdxvMiDIfUtdA&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgnq9pVEA16U0vH0nT0UeFY9vrTn99Za2a7QWub_dBpXSYTCZtBQULWaaRJ4ENFreEmPc&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://international-home.net/wp-content/uploads/2018/12/matureman1-512.png"
+                  />
+                </span>
+              </div>
+              <div>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://www.w3schools.com/howto/img_avatar2.png"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgnq9pVEA16U0vH0nT0UeFY9vrTn99Za2a7QWub_dBpXSYTCZtBQULWaaRJ4ENFreEmPc&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://international-home.net/wp-content/uploads/2018/12/matureman1-512.png"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              aria-hidden={true}
+              className="slick-slide slick-cloned"
+              data-index={4}
+              onClick={[Function]}
+              style={
+                Object {
+                  "width": 0,
+                }
+              }
+              tabIndex="-1"
+            >
+              <div>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVxhAxJ4D7MOeTTj6kR9PBeZonW5HM7giKjTbEmR-HMBwf3G1VqGnlwpO1kWrdyIZu8_U&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgnq9pVEA16U0vH0nT0UeFY9vrTn99Za2a7QWub_dBpXSYTCZtBQULWaaRJ4ENFreEmPc&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://international-home.net/wp-content/uploads/2018/12/matureman1-512.png"
+                  />
+                </span>
+              </div>
+              <div>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVxhAxJ4D7MOeTTj6kR9PBeZonW5HM7giKjTbEmR-HMBwf3G1VqGnlwpO1kWrdyIZu8_U&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgnq9pVEA16U0vH0nT0UeFY9vrTn99Za2a7QWub_dBpXSYTCZtBQULWaaRJ4ENFreEmPc&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://www.w3schools.com/howto/img_avatar.png"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              aria-hidden={true}
+              className="slick-slide slick-cloned"
+              data-index={5}
+              onClick={[Function]}
+              style={
+                Object {
+                  "width": 0,
+                }
+              }
+              tabIndex="-1"
+            >
+              <div>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVxhAxJ4D7MOeTTj6kR9PBeZonW5HM7giKjTbEmR-HMBwf3G1VqGnlwpO1kWrdyIZu8_U&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgnq9pVEA16U0vH0nT0UeFY9vrTn99Za2a7QWub_dBpXSYTCZtBQULWaaRJ4ENFreEmPc&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://international-home.net/wp-content/uploads/2018/12/matureman1-512.png"
+                  />
+                </span>
+              </div>
+              <div>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVxhAxJ4D7MOeTTj6kR9PBeZonW5HM7giKjTbEmR-HMBwf3G1VqGnlwpO1kWrdyIZu8_U&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgnq9pVEA16U0vH0nT0UeFY9vrTn99Za2a7QWub_dBpXSYTCZtBQULWaaRJ4ENFreEmPc&usqp=CAU"
+                  />
+                </span>
+                <span
+                  className="ant-avatar ant-avatar-circle ant-avatar-image slider-img"
+                  style={
+                    Object {
+                      "display": "inline-block",
+                      "width": "33.333333333333336%",
+                    }
+                  }
+                  tabIndex={-1}
+                >
+                  <img
+                    alt="avatar"
+                    onError={[Function]}
+                    src="https://www.w3schools.com/w3images/avatar6.png"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          alt="prevArrow"
+          className="slick-arrow slick-next"
+          data-role="none"
+          onClick={[Function]}
+          src="/images/next-arrow.png"
+          style={
+            Object {
+              "display": "block",
+            }
+          }
+        />
+      </div>
+      <div
+        className="slides-number"
+      >
+        1
+        /
+        3
+      </div>
+    </div>
+  </div>
+</div>
+`;

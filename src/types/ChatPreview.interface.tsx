@@ -13,7 +13,6 @@ export interface GroupChat {
   name: string;
   lastName: string;
   description: string;
-  memberImages: any;
   icon: string;
 }
 export interface UserInfo {
@@ -22,4 +21,7 @@ export interface UserInfo {
   lastName: string;
   description: string;
   phoneNumber: number;
+}
+export interface ChatSlides {
+  img: string;
 }

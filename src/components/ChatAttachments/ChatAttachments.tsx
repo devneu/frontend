@@ -1,12 +1,12 @@
 import React from 'react';
-import Paragraph from 'antd/es/typography/Paragraph';
-import { Button } from 'antd';
+import { Button, Typography } from 'antd';
 import './ChatAttachments.scss';
 import { Attachments } from '../../types/ChatPreview.interface';
 
 interface ChatAttachmentsProps {
   attachments: Attachments[];
 }
+const { Paragraph } = Typography;
 
 const ChatAttachments = ({ attachments }: ChatAttachmentsProps) => (
   <div className="chat-attachments">

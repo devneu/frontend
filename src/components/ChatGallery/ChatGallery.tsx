@@ -1,12 +1,12 @@
 import React from 'react';
-import Paragraph from 'antd/es/typography/Paragraph';
-import { Button } from 'antd';
+import { Button, Typography, Image } from 'antd';
 import './ChatGallery.scss';
 import { Photos } from '../../types/ChatPreview.interface';
 
 interface ChatGalleryProps {
   photos: Photos[];
 }
+const { Paragraph } = Typography;
 
 const ChatGallery = ({ photos }: ChatGalleryProps) => (
   <div className="chat-gallery">
@@ -14,9 +14,18 @@ const ChatGallery = ({ photos }: ChatGalleryProps) => (
       Photos & Multimedia
     </Paragraph>
     <div className="gallery-list">
-      {photos.map((photo) => (
-        <img className="gallery-img" src={photo.img} key={photo.img} alt="#" />
-      ))}
+      <Image.PreviewGroup>
+        {photos.map((photo) => (
+          <Image
+            className="gallery-img"
+            src={photo.img}
+            key={photo.img}
+            alt="#"
+            height={55}
+            width={55}
+          />
+        ))}
+      </Image.PreviewGroup>
     </div>
     <Button className="show-all" type="link" block>
       View all

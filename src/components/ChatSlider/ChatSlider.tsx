@@ -3,11 +3,11 @@ import Slider, { CustomArrowProps, Settings } from 'react-slick';
 import 'slick-carousel/slick/slick.scss';
 import 'slick-carousel/slick/slick-theme.scss';
 import { Avatar } from 'antd';
-import { GroupChat } from '../../types/ChatPreview.interface';
+import { ChatSlides } from '../../types/ChatPreview.interface';
 import './ChatSlider.scss';
 
 interface ChatSliderProps {
-  slides: GroupChat[];
+  slides: ChatSlides[];
 }
 
 const ChatSlider = ({ slides }: ChatSliderProps) => {
