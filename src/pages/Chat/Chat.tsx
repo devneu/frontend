@@ -1,10 +1,11 @@
 import React from 'react';
+import ChatPreview from '../../components/ChatPreview/ChatPreview';
 import './Chat.scss';
 
 export default function Chat() {
   return (
     <section>
-      <h1>Chat page</h1>
+      <ChatPreview />
     </section>
   );
 }

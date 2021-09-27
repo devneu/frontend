@@ -1,0 +1,44 @@
+.chat-slider {
+
+  .slider-img {
+    max-width: 27px;
+    height: 27px;
+    border-radius: 100%;
+    border: 1px solid rgb(252, 253, 255);
+    margin: 3px;
+    background: #0050b3;
+  }
+
+  .slider {
+    margin-right: 10px;
+    max-height: 150px;
+    max-width: 100px;
+
+  }
+
+  .slick-prev:before, .slick-next:before {
+    color: black;
+  }
+
+  .slick-prev {
+    top: 74px;
+    left: 30px;
+    padding-top: 10px;
+    height: 20px;
+    width: 12px;
+  }
+
+  .slick-next {
+    top: 74px;
+    left: 70px;
+    padding-top: 10px;
+    height: 20px;
+    width: 12px;
+  }
+
+  .slides-number {
+    text-align: center;
+    font-size: 16px;
+  }
+
+}

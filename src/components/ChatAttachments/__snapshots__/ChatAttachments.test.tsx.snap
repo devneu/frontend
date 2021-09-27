@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChatAttachments Should successfully render 1`] = `
+<div
+  className="chat-attachments"
+>
+  <div
+    className="ant-typography attachments-title"
+    style={
+      Object {
+        "WebkitLineClamp": undefined,
+      }
+    }
+  >
+    <strong>
+      Attachments
+    </strong>
+  </div>
+  <div
+    className="file-list"
+  >
+    <div
+      className="ant-typography file-source"
+      style={
+        Object {
+          "WebkitLineClamp": undefined,
+        }
+      }
+    >
+      Source file
+    </div>
+    <div
+      className="file-item"
+    >
+      <img
+        alt="#"
+        className="file-icon"
+        src="https://www.iconpacks.net/icons/2/free-pdf-icon-3385.png"
+      />
+      <div
+        className="file-info"
+      >
+        how to create a case study
+      </div>
+    </div>
+    <div
+      className="file-item"
+    >
+      <img
+        alt="#"
+        className="file-icon"
+        src="https://www.iconpacks.net/icons/2/free-zip-icon-1519-thumb.png"
+      />
+      <div
+        className="file-info"
+      >
+        Project Documents
+      </div>
+    </div>
+    <div
+      className="file-item"
+    >
+      <img
+        alt="#"
+        className="file-icon"
+        src="https://www.pngkey.com/png/full/210-2104640_imagen-microsoft-office-365-word-logo.png "
+      />
+      <div
+        className="file-info"
+      >
+        Competitor Analysis Template
+      </div>
+    </div>
+  </div>
+  <button
+    className="ant-btn ant-btn-link ant-btn-block show-all"
+    onClick={[Function]}
+    type="button"
+  >
+    <span>
+      View all
+    </span>
+  </button>
+</div>
+`;

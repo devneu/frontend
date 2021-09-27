@@ -1,0 +1,339 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChatGallery Should successfully render 1`] = `
+<div
+  className="chat-gallery"
+>
+  <div
+    className="ant-typography gallery-title"
+    style={
+      Object {
+        "WebkitLineClamp": undefined,
+      }
+    }
+  >
+    <strong>
+      Photos & Multimedia
+    </strong>
+  </div>
+  <div
+    className="gallery-list"
+  >
+    <div
+      className="ant-image"
+      onClick={[Function]}
+      style={
+        Object {
+          "height": 55,
+          "width": 55,
+        }
+      }
+    >
+      <img
+        alt="#"
+        className="ant-image-img gallery-img"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80"
+        style={
+          Object {
+            "height": 55,
+          }
+        }
+      />
+      <div
+        className="ant-image-mask"
+      >
+        <div
+          className="ant-image-mask-info"
+        >
+          <span
+            aria-label="eye"
+            className="anticon anticon-eye"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="eye"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z"
+              />
+            </svg>
+          </span>
+          Preview
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-image"
+      onClick={[Function]}
+      style={
+        Object {
+          "height": 55,
+          "width": 55,
+        }
+      }
+    >
+      <img
+        alt="#"
+        className="ant-image-img gallery-img"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="https://lp-cms-production.imgix.net/features/2019/05/Solo-Travel-in-Nature-acbfea52bfaf.jpg"
+        style={
+          Object {
+            "height": 55,
+          }
+        }
+      />
+      <div
+        className="ant-image-mask"
+      >
+        <div
+          className="ant-image-mask-info"
+        >
+          <span
+            aria-label="eye"
+            className="anticon anticon-eye"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="eye"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z"
+              />
+            </svg>
+          </span>
+          Preview
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-image"
+      onClick={[Function]}
+      style={
+        Object {
+          "height": 55,
+          "width": 55,
+        }
+      }
+    >
+      <img
+        alt="#"
+        className="ant-image-img gallery-img"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="https://www.workaway.info/gfx/2015/content/frontpage/header_frontpage_5.jpg"
+        style={
+          Object {
+            "height": 55,
+          }
+        }
+      />
+      <div
+        className="ant-image-mask"
+      >
+        <div
+          className="ant-image-mask-info"
+        >
+          <span
+            aria-label="eye"
+            className="anticon anticon-eye"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="eye"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z"
+              />
+            </svg>
+          </span>
+          Preview
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-image"
+      onClick={[Function]}
+      style={
+        Object {
+          "height": 55,
+          "width": 55,
+        }
+      }
+    >
+      <img
+        alt="#"
+        className="ant-image-img gallery-img"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="https://sourceduk.com/wp-content/uploads/2018/10/girlgoneabroad.jpg"
+        style={
+          Object {
+            "height": 55,
+          }
+        }
+      />
+      <div
+        className="ant-image-mask"
+      >
+        <div
+          className="ant-image-mask-info"
+        >
+          <span
+            aria-label="eye"
+            className="anticon anticon-eye"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="eye"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z"
+              />
+            </svg>
+          </span>
+          Preview
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-image"
+      onClick={[Function]}
+      style={
+        Object {
+          "height": 55,
+          "width": 55,
+        }
+      }
+    >
+      <img
+        alt="#"
+        className="ant-image-img gallery-img"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="https://www.workandtravelgroup.com/wp-content/uploads/wtg-group-2.jpg"
+        style={
+          Object {
+            "height": 55,
+          }
+        }
+      />
+      <div
+        className="ant-image-mask"
+      >
+        <div
+          className="ant-image-mask-info"
+        >
+          <span
+            aria-label="eye"
+            className="anticon anticon-eye"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="eye"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z"
+              />
+            </svg>
+          </span>
+          Preview
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-image"
+      onClick={[Function]}
+      style={
+        Object {
+          "height": 55,
+          "width": 55,
+        }
+      }
+    >
+      <img
+        alt="#"
+        className="ant-image-img gallery-img"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="https://www.moneycrashers.com/wp-content/uploads/2018/10/travel-world-map-1068x713.jpg"
+        style={
+          Object {
+            "height": 55,
+          }
+        }
+      />
+      <div
+        className="ant-image-mask"
+      >
+        <div
+          className="ant-image-mask-info"
+        >
+          <span
+            aria-label="eye"
+            className="anticon anticon-eye"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="eye"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z"
+              />
+            </svg>
+          </span>
+          Preview
+        </div>
+      </div>
+    </div>
+  </div>
+  <button
+    className="ant-btn ant-btn-link ant-btn-block show-all"
+    onClick={[Function]}
+    type="button"
+  >
+    <span>
+      View all
+    </span>
+  </button>
+</div>
+`;

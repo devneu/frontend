@@ -1,0 +1,15 @@
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .mg-bot-0 {
+    margin-bottom: 0;
+  }
+
+  .user-avatar {
+    height: 75px;
+    width: 75px;
+  }
+}
