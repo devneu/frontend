@@ -616,6 +616,70 @@ Array [
         <div
           className="ant-layout-sider-children"
         >
+          <button
+            className="add-post"
+            onClick={[Function]}
+            title="Create post"
+            type="button"
+          >
+            <img
+              alt="add-post"
+              src="/images/plus_icon.png"
+            />
+          </button>
+          <div
+            className="modal"
+            onClick={[Function]}
+            role="button"
+          >
+            <div
+              className="modal__content"
+              onClick={[Function]}
+            >
+              <form
+                action=""
+                className="form-add-post"
+                method=""
+              >
+                <div>
+                  <p>
+                    Post title 
+                  </p>
+                  <input
+                    onChange={[Function]}
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <div>
+                  <p>
+                    Post author 
+                  </p>
+                  <input
+                    onChange={[Function]}
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <div>
+                  <p>
+                    Post text 
+                  </p>
+                  <textarea
+                    className="post-text"
+                    onChange={[Function]}
+                    value=""
+                  />
+                </div>
+                <button
+                  onClick={[Function]}
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
           <div
             className="ant-card ant-card-bordered search-widget-card"
           >
