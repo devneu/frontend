@@ -8,10 +8,12 @@ import './Blog.scss';
 import SearchWidget from '../../components/widgets/SearchWidget/SearchWidget';
 import CategoriesWidget from '../../components/widgets/CategoriesWidget/CategoriesWidget';
 import SideWidget from '../../components/widgets/SideWidget/SideWidget';
+import AddPost from '../../Modal/AddPost/AddPost';
 
 const Blog = () => {
   const [featurePost, ...posts] = createMockPosts();
   const [page, onPageChange] = useState(1);
+  const [modalActive, setModalActive] = useState(false);
   return (
     <>
       <BlogHeader title="Post Title" subtitle="Post Subtitle" />
@@ -31,6 +33,15 @@ const Blog = () => {
         )}
         side={(
           <>
+            <button
+              className="add-post"
+              onClick={() => setModalActive(true)}
+              type="button"
+              title="Create post"
+            >
+              <img src={`${process.env.PUBLIC_URL}/images/plus_icon.png`} alt="add-post" />
+            </button>
+            <AddPost active={modalActive} setActive={setModalActive} />
             <SearchWidget />
             <CategoriesWidget />
             <SideWidget />
